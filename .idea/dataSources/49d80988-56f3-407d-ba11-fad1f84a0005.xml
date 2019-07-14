@@ -1083,20 +1083,25 @@
     </column>
     <column id="261" parent="226" name="senha">
       <Position>3</Position>
-      <DataType>varchar(10)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="262" parent="226" name="tipo">
-      <Position>4</Position>
-      <DataType>int(11)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="263" parent="226" name="token">
-      <Position>5</Position>
       <DataType>varchar(70)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="264" parent="226" name="PRIMARY">
+    <column id="262" parent="226" name="email">
+      <Position>4</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="263" parent="226" name="tipo">
+      <Position>5</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="264" parent="226" name="token">
+      <Position>6</Position>
+      <DataType>varchar(70)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="265" parent="226" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
