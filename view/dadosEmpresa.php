@@ -79,23 +79,7 @@
      }
   </style>
 </div>
-=======
-<style type="text/css">
-    .panel {
-        margin-top: 15px;
-        border: 1px solid #D3D3D3;
-        width: 500px
-    }
 
-    button {
-        margin-top: 20px;
-        margin-left: 130px;
-    }
-
-    h4, h5 {
-        text-align: justify;
-    }
-</style>
 
 <script type="text/javascript" src="../resources/js_page/dadosEmpresa.js"></script>
 
