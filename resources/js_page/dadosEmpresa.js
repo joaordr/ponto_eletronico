@@ -3,7 +3,7 @@ var empresa;
 function load_modal() {
     $("#nome").val(empresa.nome);
     $("#razaoSocial").val(empresa.razaoSocial);
-    $("#cnpj").val(empresa.cnpj);
+    $("#cnpj1").val(empresa.cnpj);
     $("#ramo").val(empresa.ramoAtividade);
     $("#telefone").val(empresa.telefone);
 }
