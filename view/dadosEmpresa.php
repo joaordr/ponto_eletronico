@@ -88,9 +88,6 @@
         margin-left: 130px;
     }
 
-    h4, h5 {
-        text-align: justify;
-    }
-</style>
 
+<script type="text/javascript" src="../resources/js_page/dadosEmpresa.js"></script>
 <script type="text/javascript" src="../resources/js_page/dadosEmpresa.js"></script>
