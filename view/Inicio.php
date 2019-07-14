@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--tag meta viewport responsiva-->
+    <script type="text/javascript" src="resources/js/validacaoFormularios.js"></script>
+    
 </head>
 <body>
 <div class="container">
@@ -143,7 +145,7 @@
                     </div>
                     <div class="form-group">
                         <label>Senha</label>
-                        <input type="password" name="senhaLogin" id="senhaLoginCad" class="form-control">
+                        <input type="password" name="senhaLoginCad" id="senhaLoginCad" class="form-control">
                         <span class="badge badge-secondary">Senha de até 10 caracteres.</span>
                     </div>
                     <div class="form-group">
@@ -154,7 +156,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                        <button type="submit" class="btn btn-success">Registrar</button>
+                        <button type="submit" class="btn btn-success" >Registrar</button>
                     </div>
                 </form>
             </div>
@@ -164,6 +166,62 @@
 
 <script type="text/javascript" src="resources/js/request_api.js"></script>
 <script type="text/javascript" src="resources/js_page/inicio.js"></script>
+<script type="text/javascript">
+            $(document).ready(function(){
+            $("#formEntrarAdm").validate({
+                rules:{
+                    userLogin: {
+                        required: true,
+                        email: true,
+                        maxWords: 1,
+                        maxlength: 100
+                    },
+                    senhaLogin: {
+                        required: true,
+                        maxlength: 10
+                    }
+                }
+            })
+
+            $("#formEntrarFunc").validate({
+                rules:{
+                    userLogin: {
+                        required: true,
+                        email: true,
+                        maxWords: 1,
+                        maxlength: 100
+                    },
+                    senhaLogin: {
+                        required: true,
+                        maxlength: 10
+                    }
+                }
+            })
+
+            $("#formNovoUsuario").validate({
+                rules:{
+                    userLogin: {
+                        required: true,
+                        maxWords: 1,
+                        maxlength: 25
+                    },
+                    emailLogin: {
+                        required: true,
+                        email: true,
+                        maxWords: 1
+                    },
+                    senhaLoginCad: {
+                        required: true,
+                        maxlength: 10,
+                    },
+                    senhaLoginCon: {
+                        required: true,
+                        maxlength: 10
+                    }
+                }
+            })
+    });
+</script>
 
 </body>
 </html>

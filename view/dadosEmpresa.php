@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col"></div>
   <div class="col">
-    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalCadEmpresa">+ Adicionar Empresa</button>
+    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalCadEmpresa">Alterar</button>
   </div>
   <div class="col"></div>
 </div>
@@ -10,8 +10,8 @@
   <div class="col">
       <div class="panel panel-default jumbotron">
         <div class="panel-body">
-            <h4>Nome da Empresa</h4>
-            <h5>41.168.726/0001-15</h5>
+            <h4 id="nomeEmpresa">Nome da Empresa</h4>
+            <h5 id="cnpj">41.168.726/0001-15</h5>
         </div>
       </div>
   </div>
@@ -26,7 +26,7 @@
      }
      button{
       margin-top: 20px;
-      margin-left: 80px;
+      margin-left: 130px;
      }
      h4, h5{
       text-align: justify;
