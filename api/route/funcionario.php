@@ -48,6 +48,18 @@ try {
         die();
     }
 
+    if (isset($_POST['list_func'])) {
+        $empresa = unserialize($_SESSION['empresaLogadoAdmin']);
+        $retorno = $controle->listarFuncionarios($empresa->getId());
+        if ($retorno != null) {
+            foreach ($retorno as $func) {
+                $lista_convertida[] = $func->toArray();
+            }
+        }
+        echo json_encode((isset($lista_convertida) ? $lista_convertida : null));
+        die();
+    }
+
     http_response_code(404);
 } catch (Exception $ex) {
     http_response_code(500);

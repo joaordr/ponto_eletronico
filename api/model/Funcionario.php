@@ -13,6 +13,7 @@ class Funcionario extends AbstractEntity
     private $cargo;
     private $setor;
     private $empresa;
+    private $usuario;
 
     public function __construct()
     {
@@ -177,6 +178,22 @@ class Funcionario extends AbstractEntity
     public function setEmpresa($empresa)
     {
         $this->empresa = $empresa;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUsuario()
+    {
+        return $this->usuario;
+    }
+
+    /**
+     * @param mixed $usuario
+     */
+    public function setUsuario($usuario)
+    {
+        $this->usuario = $usuario;
     }
 
 }

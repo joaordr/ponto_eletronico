@@ -58,4 +58,15 @@ class FuncionarioControle
             $this->dao->update($funcionario);
         }
     }
+
+    /**
+     * @param $empresaId
+     * @return array|null
+     * @throws Exception
+     */
+    public function listarFuncionarios($empresaId)
+    {
+        return $this->dao->listarFuncionarios($empresaId);
+    }
+
 }

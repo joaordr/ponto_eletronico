@@ -99,8 +99,40 @@ class FuncionarioDao
 
     }
 
+
+    /**
+     * @param $empresaId
+     * @return null|array
+     * @throws Exception
+     */
     public function listarFuncionarios($empresaId)
     {
-
+        try {
+            $conexao = Conexao::get_conexao();
+            $sql = 'SELECT funcionario.* FROM funcionario, usuario WHERE funcionario.empresa_id = ? AND usuario.id = funcionario.user_id AND usuario.tipo = 2';
+            $stmt = $conexao->prepare($sql);
+            $stmt->bindValue(1, $empresaId);
+            $stmt->execute();
+            if ($stmt->setFetchMode(PDO::FETCH_ASSOC)) {
+                $result = $stmt->fetchAll();
+                foreach ($result as $key => $row) {
+                    $funcionario = new Funcionario();
+                    $funcionario->setId($row['id']);
+                    $funcionario->setNome($row['nome']);
+                    $funcionario->setCpf($row['cpf']);
+                    $funcionario->setRg($row['rg']);
+                    $funcionario->setEmail($row['email']);
+                    $funcionario->setDataNascimento($row['data_nascimento']);
+                    $funcionario->setTelefone($row['telefone']);
+                    $funcionario->setCargo($row['cargo']);
+                    $funcionario->setSetor($row['setor']);
+                    $funcionario->setSetor($row['user_id']);
+                    $lista[] = $funcionario;
+                }
+            }
+            return isset($lista) ? $lista : null;
+        } catch (Exception $ex) {
+            throw $ex;
+        }
     }
 }
