@@ -99,20 +99,20 @@
                 <h5 class="modal-title" id="exampleModalLabel">Login</h5>
             </div>
             <div class="modal-body">
-                <form name="formEntrar" id="formEntrar" method="POST">
+                <form name="formEntrarFunc" id="formEntrarFunc">
                     <div class="form-group">
                         <label>Email</label>
-                        <input type="text" name="emailLogin" id="emailLogin" class="form-control">
+                        <input type="text" name="userLogin" id="userLogin" class="form-control">
                     </div>
                     <div class="form-group">
                         <label>Senha</label>
                         <input type="password" name="senhaLogin" id="senhaLogin" class="form-control">
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="submit" class="btn btn-success">Log in</button>
+                    </div>
                 </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                <button type="button" class="btn btn-success">Log in</button>
             </div>
         </div>
     </div>
