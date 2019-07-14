@@ -47,7 +47,7 @@
 	<div class="container" style="width: 400px; background-color: #ffffff; border-radius: 30px; margin-top: 50px;">
 		<!--botoes para acionar modais-->
 		<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#modalInscreva" style="margin-bottom: 20px; vertical-align: super;" >Inscrever-se</button><br>
-		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modalEntrar">Entrar</button>
+		<button type="button" class="btn btn-info btn-lg" >Entrar</button>
 
 		<!-- Modal Increver-se -->
 		<div class="modal fade" id="modalInscreva" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
