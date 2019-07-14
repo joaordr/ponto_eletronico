@@ -10,6 +10,10 @@ class UsuarioControle
         $this->dao = new UsuarioDao();
     }
 
+    /**
+     * @param Usuario $usuario
+     * @throws Exception
+     */
     public function save(Usuario $usuario)
     {
         if ($usuario->getId() == 0) {

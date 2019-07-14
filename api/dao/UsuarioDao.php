@@ -15,9 +15,9 @@ class UsuarioDao
             $sql = 'INSERT INTO usuario (user, senha, tipo, email)VALUES(?,?,?,?)';
             $stmt = $conexao->prepare($sql);
             $stmt->bindValue(1, $usuario->getUser());
-            $stmt->bindValue(1, $usuario->getSenha());
-            $stmt->bindValue(1, $usuario->getTipo());
-            $stmt->bindValue(1, $usuario->getEmail());
+            $stmt->bindValue(2, $usuario->getSenha());
+            $stmt->bindValue(3, $usuario->getTipo());
+            $stmt->bindValue(4, $usuario->getEmail());
             $stmt->execute();
         } catch (Exception $ex) {
             throw $ex;

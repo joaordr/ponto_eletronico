@@ -24,7 +24,7 @@
 	  <div class="col-lg-6 col-md-12">
 		<div class="card" style="width: 18rem;">
   			<div class="card-body">
-  				<img src="../resources/img/icone.png" id="icone">
+  				<img src="resources/img/icone.png" id="icone">
     			<h5 class="card-title" id="title">Login</h5>
     			<button type="button" class="btn btn-primary btn-lg button" data-toggle="modal" data-target="#modalLoginAdm">Administrador</button>
 				<button type="button" class="btn btn-success btn-lg button" data-toggle="modal" data-target="#modalLoginFunc">Funcionario</button>
@@ -119,11 +119,11 @@
       				<div class="modal-body">
         				<form name="formEntrar" id="formEntrar" method="POST">
         					<div class="form-group">
-        						<label>Nome de usuario</label>
-        						<input type="text" name="emailLogin" id="emailLogin" class="form-control">
+        						<label for="userLogin">Nome de usuario</label>
+        						<input type="text" name="userLogin" id="userLogin" class="form-control">
         					</div>
         					<div class="form-group">
-        						<label>Email</label>
+        						<label for="emailLogin">Email</label>
         						<input type="text" name="emailLogin" id="emailLogin" class="form-control">
         					</div>
         					<div class="form-group">
