@@ -19,6 +19,7 @@
     <div class="col"></div>
 </div>
 
+
 <!-- Modal update empresa -->
 <div class="modal fade" id="modalUpdateEmpresa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
