@@ -12,6 +12,9 @@ try {
         $empresa->setRamoAtividade(filter_input(INPUT_POST, 'ramo', FILTER_SANITIZE_STRING));
         $empresa->setTelefone(filter_input(INPUT_POST, 'telefone', FILTER_SANITIZE_STRING));
 
+        $funcionario = unserialize($_SESSION['funcionarioLogadoAdmin']);
+        $controle->save($empresa, $funcionario);
+
         http_response_code(200);
         die();
     }
