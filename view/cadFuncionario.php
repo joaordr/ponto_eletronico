@@ -71,5 +71,44 @@
 <script type="text/javascript" src="../resources/js/request_api.js"></script>
 <script type="text/javascript" src="../resources/js_page/cadastroAdm.js"></script>
 </body>
+<script type="text/javascript">
+   $(document).ready(function(){
+      $("#cadFuncionario").validate({
+         rules:{
+            nome: {
+               required: true,
+               maxlength: 100
 
+            },
+            cpf: {
+               cpfBR: true,
+               required: true
+            }, 
+            rg:{
+               required: true,
+            },
+            dtNasc:{
+               required: true,
+               date: true
+            },
+            email:{
+               required: true,
+               email: true
+            },
+            telefone:{
+               required: true;
+               maxlength: 10
+            },
+            cargo:{
+               required: true
+               maxlength: 100,
+            },
+            setor:{
+               required: true,
+               maxlength: 100
+            }
+         }
+      })
+   });
+</script>
 </html>

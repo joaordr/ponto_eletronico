@@ -60,3 +60,53 @@
       border: 1px solid #D3D3D3;
    }
 </style>
+
+<script type="text/javascript">
+   $(document).ready(function(){
+      $("#cadFuncionario").validate({
+         rules:{
+            nome: {
+               required: true,
+               maxlength: 100
+
+            },
+            cpf: {
+               cpfBR: true,
+               required: true
+            }, 
+            rg:{
+               required: true,
+            },
+            dtNasc:{
+               required: true,
+               date: true
+            },
+            email:{
+               required: true,
+               email: true
+            },
+            telefone:{
+               required: true;
+               maxlength: 10
+            },
+            cargo:{
+               required: true
+               maxlength: 100,
+            },
+            setor:{
+               required: true,
+               maxlength: 100
+            },
+            nomeUsuario:{
+               required: true,
+               maxlength: 100
+            },
+            senhaFunc:{
+               required: true,
+               maxlength: 10
+
+            }
+         }
+      })
+   });
+</script>
