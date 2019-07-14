@@ -59,5 +59,30 @@
     <script type="text/javascript" src="../resources/js/request_api.js"></script>
     <script type="text/javascript" src="../resources/js_page/cadastroEmpresa.js"></script>
 </body>
-
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#cadEmpresa").validate({
+      rules: {
+        nome: {
+          maxlength: 50,
+          maxWords: 5
+        },
+        razaoSocial: {
+          required: true,
+          maxlength: 80,
+          maxWords: 5
+        },
+        cnpj: {
+          required: true,
+          cnpjBR: true
+        }, 
+        ramo: {
+          maxlength: 100,
+          maxWords: 20
+        }
+        te
+      }
+    })
+  })
+</script>
 </html>
