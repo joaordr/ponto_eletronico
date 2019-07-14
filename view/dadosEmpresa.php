@@ -2,7 +2,7 @@
 
   <div class="col"></div>
   <div class="col">
-    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalUpdateEmpresa">Alterar</button>
+    <button type="button" onclick="load_modal();" class="btn btn-warning" data-toggle="modal" data-target="#modalUpdateEmpresa">Alterar</button>
   </div>
   <div class="col"></div>
 </div>
@@ -12,12 +12,13 @@
         <div class="panel panel-default jumbotron">
             <div class="panel-body">
                 <h4 id="nomeEmpresa"></h4>
-                <h5 id="cnpj"></h5>
+                <h5 id="cnpj_value"></h5>
             </div>
         </div>
     </div>
     <div class="col"></div>
 </div>
+
 
 <!-- Modal update empresa -->
 <div class="modal fade" id="modalUpdateEmpresa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
