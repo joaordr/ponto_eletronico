@@ -3,6 +3,8 @@
 <head>
     <title>Administrador</title>
     <link rel="icon" type="imagem/png" href="../resources/img/icone.png"/>
+	<title>Cadastro de Funcionário</title>
+	<link rel="icon" type="imagem/png" href="../resources/img/icone.png" />
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

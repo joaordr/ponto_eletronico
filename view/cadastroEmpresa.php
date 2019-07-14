@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>Administrador</title>
+   <title>Cadastro de Empresa</title>
    <link rel="icon" type="imagem/png" href="../resources/img/icone.png" />
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -23,6 +23,9 @@
    <div class="col"></div>
    <div class="col-lg-6">
       <div class="panel panel-default jumbotron">
+        <div class="panel-heading">
+          <h5>Cadastre a empresa aqui:</h5>
+        </div>
         <div class="panel-body">
           <form name="cadEmpresa" id="cadEmpresa" method="POST">
             <div class="form-group">
