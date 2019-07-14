@@ -37,6 +37,14 @@
             <label for="setor">Setor</label>
             <input type="text" name="setor" id="setor" class="form-control">
          </div>
+         <div class="form-group">
+            <label for="nomeUsuario">Nome de Usuário</label>
+            <input type="text" name="nomeUsuario" id="nomeUsuario" class="form-control">
+         </div>
+         <div class="form-group">
+            <label for="senhaFunc">Senha</label>
+            <input type="text" name="senhaFunc" id="senhaFunc" class="form-control">
+         </div>
          <button type="submit" class="btn btn-primary">Cadastrar</button>
       </form>
   </div>
