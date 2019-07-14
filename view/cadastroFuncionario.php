@@ -86,12 +86,12 @@
                email: true
             },
             telefone:{
-               required: true;
+               required: true,
                maxlength: 10
             },
             cargo:{
-               required: true
-               maxlength: 100,
+               required: true,
+               maxlength: 100
             },
             setor:{
                required: true,
