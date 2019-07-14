@@ -42,8 +42,8 @@
 
   <div class="container" id="registro">
       <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <table class="table">
+        <div class="col">
+           <table class="table">
             <thead class="thead-dark">
               <tr>
                 <th scope="col">#</th>
@@ -70,8 +70,10 @@
             </tbody>
           </table>
         </div>
-        <div class="col-lg-6 col-md-12">
-          <div class="row">
+        <div class="col">
+          <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="row">
             <button type="button" class="btn btn-primary btn-lg">Entrada 1</button>
             <button type="button" class="btn btn-primary btn-lg">Saida 1</button>
           </div>
@@ -83,6 +85,9 @@
             <button type="button" class="btn btn-primary btn-lg">Entrada 3</button>
             <button type="button" class="btn btn-primary btn-lg">Saida 3</button>
           </div>
+            </div>
+          </div>
+           
         </div>
     </div>
   </div>
