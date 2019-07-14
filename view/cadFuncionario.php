@@ -19,6 +19,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--tag meta viewport responsiva-->
     <script type="text/javascript" src="../resources/js/spa.js"></script>
+
+    <script type="text/javascript">
+   $(document).ready(function(){
+      $("#cadFuncionario").validate({
+         rules:{
+            nome: {
+               required: true,
+               maxlength: 100
+
+            },
+            cpf: {
+               cpfBR: true,
+               required: true
+            }, 
+            rg:{
+               required: true
+            },
+            dtNasc:{
+               required: true,
+               date: true
+            },
+            email:{
+               required: true,
+               email: true
+            },
+            telefone:{
+               required: true,
+               maxlength: 10
+            },
+            cargo:{
+               required: true,
+               maxlength: 100
+            },
+            setor:{
+               required: true,
+               maxlength: 100
+            }
+         }
+      })
+   });
+</script>
+
 </head>
 <body>
 <div class="container">
@@ -71,5 +113,4 @@
 <script type="text/javascript" src="../resources/js/request_api.js"></script>
 <script type="text/javascript" src="../resources/js_page/cadastroAdm.js"></script>
 </body>
-
 </html>

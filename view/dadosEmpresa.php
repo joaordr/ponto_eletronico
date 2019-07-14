@@ -29,7 +29,7 @@
                 <h5 class="modal-title" id="exampleModalLabel">Alterar empresa</h5>
             </div>
             <div class="modal-body">
-                <form name="cadEmpresa" id="updateEmpresa" method="POST">
+                <form name="updateEmpresa" id="updateEmpresa" method="POST">
                         <div class="form-group">
                             <label for="nome">Nome da empresa</label>
                             <input type="text" name="nome" id="nome" class="form-control">
@@ -76,3 +76,32 @@
 
 <script type="text/javascript" src="../resources/js_page/dadosEmpresa.js"></script>
 
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#updateEmpresa").validate({
+      rules: {
+        nome: {
+              maxlength: 50,
+              maxWords: 5
+            },
+            razaoSocial: {
+              required: true,
+              maxlength: 80,
+              maxWords: 5
+            },
+            cnpj: {
+              required: true,
+              cnpjBR: true
+            }, 
+            ramo: {
+              maxlength: 100,
+              maxWords: 20
+            },
+            telefone: {
+              required: true,
+              maxlength: 10
+            }
+      }
+    })
+  })
+</script>
