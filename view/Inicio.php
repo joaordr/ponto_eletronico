@@ -70,23 +70,21 @@
                 <h5 class="modal-title" id="exampleModalLabel">Login</h5>
             </div>
             <div class="modal-body">
-                <form name="formEntrar" id="formEntrar" method="POST">
+                <form name="formEntrarAdm" id="formEntrarAdm">
                     <div class="form-group">
                         <label>Email</label>
-                        <input type="text" name="emailLogin" id="emailLogin" class="form-control">
+                        <input type="text" name="userLogin" id="userLogin" class="form-control">
                     </div>
                     <div class="form-group">
                         <label>Senha</label>
                         <input type="password" name="senhaLogin" id="senhaLogin" class="form-control">
                     </div>
+                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modalRegistrarAdm"
+                            data-dismiss="modal">Registrar-se
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="submit" class="btn btn-primary">Log in</button>
                 </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modalRegistrarAdm"
-                        data-dismiss="modal">Registrar-se
-                </button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                <button type="button" class="btn btn-primary">Log in</button>
             </div>
         </div>
     </div>
@@ -129,7 +127,7 @@
                 <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
             </div>
             <div class="modal-body">
-                <form name="formEntrar" id="formEntrar" method="POST">
+                <form name="formNovoUsuario" id="formNovoUsuario">
                     <div class="form-group">
                         <label for="userLogin">Nome de usuario</label>
                         <input type="text" name="userLogin" id="userLogin" class="form-control">
@@ -146,17 +144,20 @@
                     <div class="form-group">
                         <label>Confirmar Senha</label>
                         <input type="password" name="senhaLoginCon" id="senhaLoginCon" class="form-control">
+                        <small style="color: red; display: none;" id="senhasDiferentesMsg">As senhas devem ser iguais!
+                        </small>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="submit" class="btn btn-success">Registrar</button>
                     </div>
                 </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                <button type="button" class="btn btn-success">Registrar</button>
             </div>
         </div>
     </div>
 </div>
 
+<script type="text/javascript" src="resources/js/request_api.js"></script>
 <script type="text/javascript" src="resources/js_page/inicio.js"></script>
 
 </body>
