@@ -30,21 +30,19 @@
   			</button>
   			<div class="collapse navbar-collapse" id="navbarNavDropdown">
     			<ul class="navbar-nav">
-      				<li class="nav-item active" data-page="empresa">
+      				<li class="nav-item active">
         				<a class="nav-link" href="#" id="empresa">Empresa <span class="sr-only">(current)</span></a>
       				</li>
-      				<li class="nav-item dropdown active">
-        				<a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          				Funcionários
-        				</a>
-        				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          					<a class="dropdown-item" data-page="cadFuncionario" href="#" id="cadFuncionario">Cadastro de Funcionário</a>
-          					<a class="dropdown-item" data-page="regFuncionario" href="#" id="regFuncionario">Funcionários registrados</a>
-        				</div>
-      				</li>
-      				<li class="nav-item active" data-page="registros">
-        				<a class="nav-link" href="#" id="registros">Registros <span class="sr-only">(current)</span></a>
-      				</li>
+              <li class="nav-item active">
+                <a class="nav-link" data-page="cadFuncionario" href="#" id="cadFuncionario">Cadastro de Funcionário</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" data-page="regFuncionario" href="#" id="regFuncionario">Funcionários registrados</a>
+              </li>
+              <li class="nav-item" id="sair">
+                <a class="nav-link" href="#" id="sair">Encerrar seção</a>
+              </li>
+
     			</ul>
   			</div>
 		</nav>
