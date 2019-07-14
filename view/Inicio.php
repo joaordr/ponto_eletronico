@@ -140,7 +140,7 @@
                     </div>
                     <div class="form-group">
                         <label>Senha</label>
-                        <input type="password" name="senhaLogin" id="senhaLogin" class="form-control">
+                        <input type="password" name="senhaLogin" id="senhaLoginCad" class="form-control">
                         <span class="badge badge-secondary">Senha de até 10 caracteres.</span>
                     </div>
                     <div class="form-group">

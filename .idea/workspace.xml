@@ -45,16 +45,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/js_page/inicio.js">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="54" lean-forward="true" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/Inicio.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="159" column="63" selection-start-line="159" selection-start-column="63" selection-end-line="159" selection-end-column="63" />
+            <state relative-caret-position="328">
+              <caret line="142" column="82" selection-start-line="142" selection-start-column="69" selection-end-line="142" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -87,8 +91,8 @@
         <option value="$PROJECT_DIR$/api/route/Usuario.php" />
         <option value="$PROJECT_DIR$/api/route/usuario.php" />
         <option value="$PROJECT_DIR$/api/dao/UsuarioDao.php" />
-        <option value="$PROJECT_DIR$/resources/js_page/inicio.js" />
         <option value="$PROJECT_DIR$/view/Inicio.php" />
+        <option value="$PROJECT_DIR$/resources/js_page/inicio.js" />
       </list>
     </option>
   </component>
@@ -201,12 +205,12 @@
       <option name="presentableId" value="Default" />
       <updated>1563054416328</updated>
       <workItem from="1563054419351" duration="271000" />
-      <workItem from="1563054718565" duration="7162000" />
+      <workItem from="1563054718565" duration="8202000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7433000" />
+    <option name="totallyTimeSpent" value="8473000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -347,13 +351,17 @@
     <entry file="file://$PROJECT_DIR$/resources/css/Inicio.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js_page/inicio.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/Inicio.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="159" column="63" selection-start-line="159" selection-start-column="63" selection-end-line="159" selection-end-column="63" />
+        <state relative-caret-position="328">
+          <caret line="142" column="82" selection-start-line="142" selection-start-column="69" selection-end-line="142" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js_page/inicio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="54" lean-forward="true" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
         </state>
       </provider>
     </entry>
