@@ -14,6 +14,11 @@ class Funcionario
     private $setor;
     private $empresa;
 
+    public function __construct()
+    {
+        $this->id = 0;
+    }
+
     /**
      * @return mixed
      */
@@ -173,5 +178,5 @@ class Funcionario
     {
         $this->empresa = $empresa;
     }
-    
+
 }

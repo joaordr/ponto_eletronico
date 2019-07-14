@@ -35,7 +35,7 @@ class FuncionarioDao
     /**
      * @param Funcionario $funcionario
      * @param int $empresaId
-     * @return bool|string
+     * @return array
      * @throws Exception
      */
     public function createFunc(Funcionario $funcionario, $empresaId)
@@ -57,10 +57,14 @@ class FuncionarioDao
             $token = password_hash($funcionario->getEmail(), PASSWORD_DEFAULT);
             $stmt->bindValue(0, $token);
             $stmt->execute();
-            return $token;
+            return [$token, $funcionario->getEmail()];
         } catch (Exception $ex) {
             throw $ex;
         }
+    }
+
+    public function update(Funcionario $funcionario){
+
     }
 
     public function listarFuncionarios($empresaId)

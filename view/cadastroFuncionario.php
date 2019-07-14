@@ -1,4 +1,3 @@
-
 <div class="panel panel-default">
   <div class="panel-body">
    	<form name="cadFuncionario" id="cadFuncionario" method="POST">
@@ -34,8 +33,10 @@
    			<label for="setor">Setor</label>
    			<input type="text" name="setor" id="setor" class="form-control">
    		</div>
-   		<button type="button" class="btn btn-primary">Cadastrar</button>
+   		<button type="submit" class="btn btn-primary">Cadastrar</button>
    	</form>
   </div>
 </div>
+<script type="text/javascript" src="../resources/js_page/cadastroFuncionario.js"></script>
+
 
