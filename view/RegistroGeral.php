@@ -22,6 +22,5 @@
       <td>17:00</td>
       <td>18:00</td>
     </tr>
-    
   </tbody>
 </table>
