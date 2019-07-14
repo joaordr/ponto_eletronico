@@ -1,11 +1,16 @@
-function request(function_file, dados, sincrono = false) {
+function request(function_file, dados, inicio_url = false, sincrono = false) {
     try {
         let retorno = false;
-
+        let url = '';
+        if (inicio_url) {
+            url = "api/route/";
+        } else {
+            url = "../api/route/";
+        }
         $.ajax({
             // parametros
             type: "POST",
-            url: "api/route/" + function_file + ".php",
+            url: url + function_file + ".php",
             data: dados,
             dataType: "json",
             async: sincrono,

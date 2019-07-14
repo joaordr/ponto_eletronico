@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $("#formEntrarFunc").submit(function (e) {
         let dados = $(this).serialize() + "&login_func=true";
-        let retorno = request("login", dados);
+        let retorno = request("login", dados, true);
         if (retorno) {
             alert("ok!");
             $("#formEntrarFunc input").val("");
@@ -14,11 +14,17 @@ $(document).ready(function () {
 
     $("#formEntrarAdm").submit(function (e) {
         let dados = $(this).serialize() + "&login_adm=true";
-        let retorno = request("login", dados);
+        let retorno = request("login", dados, true);
         if (retorno) {
-            let retorno = request("login", "load_adm_info=true");
+            let retorno = request("login", "load_adm_info=true", true);
+            if (retorno == "cadFunc") {
+                window.location.replace("view/cadFuncionario.php");
+            } else if (retorno == "cadEmpresa") {
+                window.location.replace("view/cadastroEmpresa.php");
+            } else if (retorno == "menu") {
+                window.location.replace("view/MenuAdm.php");
+            }
             console.log(retorno);
-            // window.location.replace("view/MenuAdm.php");
         } else {
             alert("Erro ao realizar login!");
         }
@@ -28,7 +34,7 @@ $(document).ready(function () {
 
     $("#formNovoUsuario").submit(function (e) {
         let dados = $(this).serialize() + "&create_adm=true";
-        let retorno = request("usuario", dados);
+        let retorno = request("usuario", dados, true);
         if (retorno) {
             alert("Salvo com sucesso!");
             $("#formNovoUsuario input").val("");

@@ -6,13 +6,14 @@ class EmpresaDao
 
     /**
      * @param Empresa $empresa
+     * @param Funcionario $adm
      * @throws Exception
      */
-    public function create(Empresa $empresa)
+    public function create(Empresa $empresa, Funcionario $adm)
     {
         try {
             $conexao = Conexao::get_conexao();
-
+            $conexao->beginTransaction();
             $sql = 'INSERT INTO empresa (nome_fantasia, razao_social, cnpj, ramo_atividade, telefone)VALUES(?,?,?,?,?)';
             $stmt = $conexao->prepare($sql);
             $stmt->bindValue(1, $empresa->getNome());
@@ -20,8 +21,20 @@ class EmpresaDao
             $stmt->bindValue(3, $empresa->getCnpj());
             $stmt->bindValue(4, $empresa->getRamoAtividade());
             $stmt->bindValue(5, $empresa->getTelefone());
+            if ($stmt->execute()) {
+                $empresaId = $conexao->LastInsertId();
+            }
+
+            $sql = 'UPDATE funcionario SET empresa_id = ? WHERE id = ?;';
+            $stmt = $conexao->prepare($sql);
+            $stmt->bindValue(1, $empresaId);
+            $stmt->bindValue(2, $adm->getId());
             $stmt->execute();
+            $conexao->commit();
+
+            return $empresaId;
         } catch (Exception $ex) {
+            $conexao->rollback();
             throw $ex;
         }
     }
