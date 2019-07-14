@@ -10,12 +10,29 @@ class FuncionarioControle
         $this->dao = new FuncionarioDao();
     }
 
+    /**
+     * @param Funcionario $funcionario
+     * @param Usuario $usuario
+     * @param $empresaId
+     * @throws Exception
+     */
     public function saveAdm(Funcionario $funcionario, Usuario $usuario, $empresaId)
     {
         if ($funcionario->getId() == 0) {
             $this->dao->createAdm($funcionario, $usuario, $empresaId);
         } else {
             $this->dao->update($funcionario);
+        }
+    }
+
+    public function loadAdmInfo($userId)
+    {
+        $retorno = $this->dao->loadAdmInfo($userId);
+        if ($retorno != null) {
+            $_SESSION['funcionarioLogadoAdmin'] = serialize($retorno);// salva funcionario em sessão
+            return true;
+        } else {
+            return false;
         }
     }
 

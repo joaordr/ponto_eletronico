@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <table class="table" id="tabela1">
   <thead class="thead-dark">
     <tr>
@@ -21,7 +20,7 @@
       <td>@mdo</td>
       <td>@mdo</td>
       <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTabela"><i class="fa fa-eye"></i></button></td>
-      <td><button type="button" class="btn btn-danger">Excluir</button></td>
+      <td><button type="button" class="btn btn-danger"><i class="fas fa-trash"></i> Excluir</button></td>
     </tr>
   </tbody>
 </table>

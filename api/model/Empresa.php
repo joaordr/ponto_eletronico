@@ -1,7 +1,7 @@
 <?php
 
 
-class Empresa
+class Empresa extends AbstractEntity
 {
     private $id;
     private $nome;

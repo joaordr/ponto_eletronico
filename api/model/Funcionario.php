@@ -1,7 +1,7 @@
 <?php
 
 
-class Funcionario
+class Funcionario extends AbstractEntity
 {
     private $id;
     private $nome;

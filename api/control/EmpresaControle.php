@@ -30,7 +30,8 @@ class EmpresaControle
      */
     public function load($id)
     {
-        return $this->dao->load($id);
+        $retorno = $this->dao->load($id);
+        $_SESSION['empresaLogadoAdmin'] = serialize($retorno);// salva usuario em sessão
     }
 
 }
