@@ -40,7 +40,7 @@
                 <a class="nav-link" data-page="regFuncionario" href="#" id="regFuncionario">Funcionários registrados</a>
               </li>
               <li class="nav-item" id="sair">
-                <a class="nav-link" href="#" id="sair">Encerrar seção</a>
+                <a class="nav-link" href="#" onclick="logout();" id="sair">Encerrar seção</a>
               </li>
 
     			</ul>
@@ -51,6 +51,9 @@
   <div class="container" id="carregaDados">
     
   </div>
+
+    <script type="text/javascript" src="../resources/js/request_api.js"></script>
+    <script type="text/javascript" src="../resources/js_page/menuAdm.js"></script>
 </body>
 
 </html>

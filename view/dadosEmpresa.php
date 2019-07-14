@@ -1,23 +1,33 @@
 <div class="row">
+<<<<<<< HEAD
   <div class="col"></div>
   <div class="col">
     <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalUpdateEmpresa">Alterar</button>
   </div>
   <div class="col"></div>
+=======
+    <div class="col"></div>
+    <div class="col">
+        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalCadEmpresa">Alterar
+        </button>
+    </div>
+    <div class="col"></div>
+>>>>>>> 6aa05250e86b14ee9314d73e8252a6f2e7cab753
 </div>
 <div class="row">
-  <div class="col"></div>
-  <div class="col">
-      <div class="panel panel-default jumbotron">
-        <div class="panel-body">
-            <h4 id="nomeEmpresa">Nome da Empresa</h4>
-            <h5 id="cnpj">41.168.726/0001-15</h5>
+    <div class="col"></div>
+    <div class="col">
+        <div class="panel panel-default jumbotron">
+            <div class="panel-body">
+                <h4 id="nomeEmpresa"></h4>
+                <h5 id="cnpj"></h5>
+            </div>
         </div>
-      </div>
-  </div>
-  <div class="col"></div>
+    </div>
+    <div class="col"></div>
 </div>
 
+<<<<<<< HEAD
 <!-- Modal update empresa -->
 <div class="modal fade" id="modalUpdateEmpresa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
@@ -70,3 +80,23 @@
      }
   </style>
 </div>
+=======
+<style type="text/css">
+    .panel {
+        margin-top: 15px;
+        border: 1px solid #D3D3D3;
+        width: 500px
+    }
+
+    button {
+        margin-top: 20px;
+        margin-left: 130px;
+    }
+
+    h4, h5 {
+        text-align: justify;
+    }
+</style>
+
+<script type="text/javascript" src="../resources/js_page/dadosEmpresa.js"></script>
+>>>>>>> 6aa05250e86b14ee9314d73e8252a6f2e7cab753

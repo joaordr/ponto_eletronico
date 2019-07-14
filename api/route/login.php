@@ -4,7 +4,6 @@ include_once '../autoloader.php';
 
 try {
     $controle = new LoginControle();
-
     // faz login no usuario adm
     if (isset($_POST['login_adm'])) {
         $userName = filter_input(INPUT_POST, 'userLogin', FILTER_SANITIZE_STRING);
