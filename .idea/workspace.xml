@@ -45,29 +45,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/cadastroFuncionario.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js_page/cadastroFuncionario.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="37" selection-start-line="6" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/route/funcionario.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+            <state relative-caret-position="17">
+              <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -125,9 +107,9 @@
         <option value="$PROJECT_DIR$/api/control/FuncionarioControle.php" />
         <option value="$PROJECT_DIR$/api/dao/FuncionarioDao.php" />
         <option value="$PROJECT_DIR$/resources/js_page/inicio.js" />
+        <option value="$PROJECT_DIR$/api/route/funcionario.php" />
         <option value="$PROJECT_DIR$/view/cadastroFuncionario.php" />
         <option value="$PROJECT_DIR$/resources/js_page/cadastroFuncionario.js" />
-        <option value="$PROJECT_DIR$/api/route/funcionario.php" />
       </list>
     </option>
   </component>
@@ -249,12 +231,12 @@
       <updated>1563054416328</updated>
       <workItem from="1563054419351" duration="271000" />
       <workItem from="1563054718565" duration="18977000" />
-      <workItem from="1563118916162" duration="16007000" />
+      <workItem from="1563118916162" duration="16245000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35255000" />
+    <option name="totallyTimeSpent" value="35493000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -299,13 +281,6 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/49d80988-56f3-407d-ba11-fad1f84a0005/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/autoloader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/control/RegistroControle.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -536,24 +511,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/cadastroFuncionario.php">
+    <entry file="file://$PROJECT_DIR$/api/route/funcionario.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        <state relative-caret-position="359">
+          <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/autoloader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js_page/cadastroFuncionario.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="37" selection-start-line="6" selection-end-line="7" />
+        <state relative-caret-position="51">
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/route/funcionario.php">
+    <entry file="file://$PROJECT_DIR$/view/cadastroFuncionario.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+        <state relative-caret-position="17">
+          <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
         </state>
       </provider>
     </entry>
