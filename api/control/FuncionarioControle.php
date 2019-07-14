@@ -13,18 +13,24 @@ class FuncionarioControle
     /**
      * @param Funcionario $funcionario
      * @param Usuario $usuario
-     * @param $empresaId
      * @throws Exception
      */
-    public function saveAdm(Funcionario $funcionario, Usuario $usuario, $empresaId)
+    public function saveAdm(Funcionario $funcionario, Usuario $usuario)
     {
         if ($funcionario->getId() == 0) {
-            $this->dao->createAdm($funcionario, $usuario, $empresaId);
+            $this->dao->createAdm($funcionario, $usuario);
         } else {
             $this->dao->update($funcionario);
         }
+
+//        $this->loadAdmInfo($usuario->getId());
     }
 
+    /**
+     * @param int $userId
+     * @return bool
+     * @throws Exception
+     */
     public function loadAdmInfo($userId)
     {
         $retorno = $this->dao->loadAdmInfo($userId);

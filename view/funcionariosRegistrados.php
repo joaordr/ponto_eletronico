@@ -20,7 +20,7 @@
       <td>@mdo</td>
       <td>@mdo</td>
       <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTabela"><i class="fa fa-eye"></i></button></td>
-      <td><button type="button" class="btn btn-danger"><i class="fas fa-trash"></i> Excluir</button></td>
+      <td><button type="button" class="btn btn-danger"><i class="fa fa-trash"></i> Excluir</button></td>
     </tr>
   </tbody>
 </table>

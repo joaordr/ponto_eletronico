@@ -25,7 +25,7 @@ class EmpresaControle
 
     /**
      * @param int $id
-     * @return Empresa|null
+     * @return void
      * @throws Exception
      */
     public function load($id)
