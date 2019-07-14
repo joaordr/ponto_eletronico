@@ -4,10 +4,10 @@
 <head>
     <title>Inicio</title>
     <link rel="icon" type="imagem/png" href="resources/img/icone.png"/>
-    <!-- Required meta tags -->
+    <!-- meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- jQuery primeiro, then Popper.js, then Bootstrap JS -->
+    <!-- jQuery primeiro, Bootstrap JS -->
     <script type="text/javascript" src="resources/js/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="resources/js/jquery.validate.min.js"></script>
     <script type="text/javascript" src="resources/js/localization/messages_pt_BR.js"></script>
