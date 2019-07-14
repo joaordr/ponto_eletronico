@@ -33,7 +33,7 @@
         				<a class="nav-link" href="#" id="ponto">Registrar Ponto <span class="sr-only">(current)</span></a>
       				</li>
               <li class="nav-item">
-                <a class="nav-link" href="#" id="sair">Encerrar seção<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#" onclick="logout();" id="sair">Encerrar seção<span class="sr-only">(current)</span></a>
               </li>
     			</ul>
   			</div>
@@ -101,5 +101,5 @@
 
   </style>
 </body>
-
+<script type="text/javascript" src="../resources/js_page/menuFunc.js"></script>
 </html>
