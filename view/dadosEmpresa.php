@@ -48,7 +48,7 @@
                             <label for="telefone">Telefone</label>
                             <input type="text" name="telefone" id="telefone" class="form-control">
                         </div>
-                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                        <button type="submit" class="btn btn-primary">Alterar</button>
                     </form>
             </div>
         </div>
