@@ -39,11 +39,11 @@
         				</a>
         				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           					<a class="dropdown-item" data-page="cadFuncionario" href="#" id="cadFuncionario">Cadastro de Funcionário</a>
-          					<a class="dropdown-item" data-page="regFuncionario" href="#">Funcionários registrados</a>
+          					<a class="dropdown-item" data-page="regFuncionario" href="#" id="regFuncionario">Funcionários registrados</a>
         				</div>
       				</li>
       				<li class="nav-item" data-page="registros">
-        				<a class="nav-link" href="">Registros <span class="sr-only">(current)</span></a>
+        				<a class="nav-link" href="#" id="registros">Registros <span class="sr-only">(current)</span></a>
       				</li>
     			</ul>
   			</div>
@@ -54,15 +54,5 @@
     
   </div>
 </body>
-<script type="text/javascript">
-$(document).ready(function(){
-  $("#empresa").click(function(){
-      $('#carregaDados').load('dadosEmpresa.php');
-  })
-  $("#cadFuncionario").click(function(){
-      $('#carregaDados').load('cadastroFuncionario.php');
-  })
 
-})
-</script>
 </html>
