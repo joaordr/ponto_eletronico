@@ -5,14 +5,6 @@
     <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalUpdateEmpresa">Alterar</button>
   </div>
   <div class="col"></div>
-
-    <div class="col"></div>
-    <div class="col">
-        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalCadEmpresa">Alterar
-        </button>
-    </div>
-    <div class="col"></div>
-
 </div>
 <div class="row">
     <div class="col"></div>

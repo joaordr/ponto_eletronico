@@ -80,7 +80,9 @@
           maxlength: 100,
           maxWords: 20
         }
-        te
+        telefone: {
+          minlength: 
+        }
       }
     })
   })
