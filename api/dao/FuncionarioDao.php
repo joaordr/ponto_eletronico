@@ -31,4 +31,40 @@ class FuncionarioDao
             throw $ex;
         }
     }
+
+    /**
+     * @param Funcionario $funcionario
+     * @param int $empresaId
+     * @return bool|string
+     * @throws Exception
+     */
+    public function createFunc(Funcionario $funcionario, $empresaId)
+    {
+        try {
+            $conexao = Conexao::get_conexao();
+
+            $sql = 'INSERT INTO funcionario (nome, cpf, rg, data_nascimento, email, telefone, cargo, setor, empresa_id, token)VALUES(?,?,?,?,?,?,?,?,?,?)';
+            $stmt = $conexao->prepare($sql);
+            $stmt->bindValue(1, $funcionario->getNome());
+            $stmt->bindValue(2, $funcionario->getCpf());
+            $stmt->bindValue(3, $funcionario->getRg());
+            $stmt->bindValue(4, $funcionario->getDataNascimento());
+            $stmt->bindValue(5, $funcionario->getEmail());
+            $stmt->bindValue(6, $funcionario->getTelefone());
+            $stmt->bindValue(7, $funcionario->getCargo());
+            $stmt->bindValue(8, $funcionario->getSetor());
+            $stmt->bindValue(9, $empresaId);
+            $token = password_hash($funcionario->getEmail(), PASSWORD_DEFAULT);
+            $stmt->bindValue(0, $token);
+            $stmt->execute();
+            return $token;
+        } catch (Exception $ex) {
+            throw $ex;
+        }
+    }
+
+    public function listarFuncionarios($empresaId)
+    {
+
+    }
 }
