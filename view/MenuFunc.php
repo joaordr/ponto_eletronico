@@ -14,6 +14,7 @@
     <script type="text/javascript" src="../resources/bootstrap/js/bootstrap.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../resources/bootstrap/css/bootstrap.min.css"  type="text/css">
+    <link href="../recursos/css/floating-labels.css" rel="stylesheet" type="text/css">
     <meta  name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!--tag meta viewport responsiva-->
     <script type="text/javascript" src="../resources/js/spa.js"></script>
 </head>
@@ -30,28 +31,66 @@
   			<div class="collapse navbar-collapse" id="navbarNavDropdown">
     			<ul class="navbar-nav">
       				<li class="nav-item active" data-page="empresa">
-        				<a class="nav-link" href="#" id="empresa">Empresa <span class="sr-only">(current)</span></a>
+        				<a class="nav-link" href="#" id="ponto">Registrar Ponto <span class="sr-only">(current)</span></a>
       				</li>
-      				<li class="nav-item dropdown active">
-        				<a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          				Funcionários
-        				</a>
-        				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          					<a class="dropdown-item" data-page="cadFuncionario" href="#" id="cadFuncionario">Cadastro de Funcionário</a>
-          					<a class="dropdown-item" data-page="regFuncionario" href="#" id="regFuncionario">Funcionários registrados</a>
-        				</div>
-      				</li>
-      				<li class="nav-item active" data-page="registros">
-        				<a class="nav-link" href="#" id="registros">Registros <span class="sr-only">(current)</span></a>
-      				</li>
+      				
     			</ul>
   			</div>
 		</nav>
 	</header>
 
   <div class="container" id="carregaDados">
-    
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Dia do Mês</th>
+                <th scope="col">Entrada 1</th>
+                <th scope="col">Saida 1</th>
+                <th scope="col">Entrada 2</th>
+                <th scope="col">Saida 2</th>
+                <th scope="col">Entrada 3</th>
+                <th scope="col">Saida 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                  <td>1 de Julho</td>
+                  <td>08:00</td>
+                  <td>12:00</td>
+                  <td>13:00</td>
+                  <td>17:00</td>
+                  <td>17:00</td>
+                  <td>18:30</td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="row">
+            <button type="button" class="btn btn-primary btn-lg">Entrada 1</button>
+            <button type="button" class="btn btn-primary btn-lg">Saida 1</button>
+          </div>
+          <div class="row">
+            <button type="button" class="btn btn-primary btn-lg">Entrada 2</button>
+            <button type="button" class="btn btn-primary btn-lg">Saida 2</button>
+          </div>
+          <div class="row">
+            <button type="button" class="btn btn-primary btn-lg">Entrada 3</button>
+            <button type="button" class="btn btn-primary btn-lg">Saida 3</button>
+          </div>
+        </div>
+    </div>
   </div>
+  <style type="text/css">
+    button{
+      margin: 20px;
+    }
+
+  </style>
 </body>
 
 </html>
