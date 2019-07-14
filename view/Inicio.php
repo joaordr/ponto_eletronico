@@ -74,6 +74,7 @@
         				</form>
       				</div>
       				<div class="modal-footer">
+      					<button type="button" class="btn btn-secondary"data-toggle="modal" data-target="#modalRegistrarAdm" data-dismiss="modal" >Registrar-se</button>
         				<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
         				<button type="button" class="btn btn-primary">Log in</button>
       				</div>
@@ -108,6 +109,41 @@
   			</div>
 		</div>
 
+		<!-- Modal login Registrar adm -->
+		<div class="modal fade" id="modalRegistrarAdm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  			<div class="modal-dialog" role="document">
+    			<div class="modal-content">
+      				<div class="modal-header">
+        				<h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+      				</div>
+      				<div class="modal-body">
+        				<form name="formEntrar" id="formEntrar" method="POST">
+        					<div class="form-group">
+        						<label>Nome de usuario</label>
+        						<input type="text" name="emailLogin" id="emailLogin" class="form-control">
+        					</div>
+        					<div class="form-group">
+        						<label>Email</label>
+        						<input type="text" name="emailLogin" id="emailLogin" class="form-control">
+        					</div>
+        					<div class="form-group">
+        						<label>Senha</label>
+        						<input type="password" name="senhaLogin" id="senhaLogin" class="form-control">
+        						<span class="badge badge-secondary">Senha de até 10 caracteres.</span>
+        					</div>
+        					<div class="form-group">
+        						<label>Confirmar Senha</label>
+        						<input type="password" name="senhaLoginCon" id="senhaLoginCon" class="form-control">
+        					</div>
+        				</form>
+      				</div>
+      				<div class="modal-footer">
+        				<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        				<button type="button" class="btn btn-success">Registrar</button>
+      				</div>
+    			</div>
+  			</div>
+		</div>
 		
 	</div>
 </body>
