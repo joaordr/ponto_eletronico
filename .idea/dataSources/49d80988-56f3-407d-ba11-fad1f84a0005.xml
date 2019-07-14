@@ -936,6 +936,7 @@
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="235" parent="224" name="nome">
@@ -981,7 +982,6 @@
     <column id="243" parent="224" name="empresa_id">
       <Position>10</Position>
       <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="244" parent="224" name="user_id">

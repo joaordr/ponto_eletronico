@@ -44,18 +44,16 @@ class FuncionarioControle
 
     /**
      * @param Funcionario $funcionario
+     * @param Usuario $usuario
      * @param int $empresaId
      * @throws Exception
      */
-    public function saveFunc(Funcionario $funcionario, $empresaId)
+    public function saveFunc(Funcionario $funcionario, Usuario $usuario, $empresaId)
     {
         if ($funcionario->getId() == 0) {
-            $retorno = $this->dao->createFunc($funcionario, $empresaId);
-            $token = $retorno[0];
-            $email = $retorno[1];
-            $msg = '<b>Acesse o link para criar seu usuário de acesso</b><br>
-                    http://localhost/ponto_eletronico/index.php?token=' . $token . '<br>';
-            Email::Enviar($email, $msg, 'Criação de usuário SPE');
+            $usuarioDao = new UsuarioDao();
+            $userId = $usuarioDao->create($usuario);
+            $this->dao->createFunc($funcionario, $userId, $empresaId);
         } else {
             $this->dao->update($funcionario);
         }
