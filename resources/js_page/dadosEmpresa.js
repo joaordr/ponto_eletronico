@@ -1,7 +1,11 @@
 var empresa;
 
 function load_modal() {
-    $("#").val(empresa.nome);
+    $("#nome").val(empresa.nome);
+    $("#razaoSocial").val(empresa.razaoSocial);
+    $("#cnpj").val(empresa.cnpj);
+    $("#ramo").val(empresa.ramoAtividade);
+    $("#telefone").val(empresa.telefone);
 }
 
 function load_info() {
@@ -16,6 +20,6 @@ function load_info() {
 }
 
 $(document).ready(function () {
-
+    load_info();
 
 });
