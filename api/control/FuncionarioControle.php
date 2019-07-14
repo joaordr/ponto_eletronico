@@ -23,7 +23,7 @@ class FuncionarioControle
             $this->dao->update($funcionario);
         }
 
-//        $this->loadAdmInfo($usuario->getId());
+        $this->loadAdmInfo($usuario->getId());
     }
 
     /**

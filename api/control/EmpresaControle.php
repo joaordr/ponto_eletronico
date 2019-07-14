@@ -12,15 +12,18 @@ class EmpresaControle
 
     /**
      * @param Empresa $empresa
+     * @param Funcionario $adm
      * @throws Exception
      */
-    public function save(Empresa $empresa)
+    public function save(Empresa $empresa, Funcionario $adm)
     {
         if ($empresa->getId() == 0) {
-            $this->dao->create($empresa);
+            $empresaId = $this->dao->create($empresa, $adm);
         } else {
             $this->dao->update($empresa);
+            $empresaId = $empresa->getId();
         }
+        $this->load($empresaId);
     }
 
     /**

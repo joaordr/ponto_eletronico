@@ -5,8 +5,12 @@ include_once '../autoloader.php';
 try {
     $controle = new EmpresaControle();
     if (isset($_POST['create'])) {
-        $emrpesa = new Empresa();
-
+        $empresa = new Empresa();
+        $empresa->setNome(filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING));
+        $empresa->setRazaoSocial(filter_input(INPUT_POST, 'razaoSocial', FILTER_SANITIZE_STRING));
+        $empresa->setCnpj(filter_input(INPUT_POST, 'cnpj', FILTER_SANITIZE_STRING));
+        $empresa->setRamoAtividade(filter_input(INPUT_POST, 'ramo', FILTER_SANITIZE_STRING));
+        $empresa->setTelefone(filter_input(INPUT_POST, 'telefone', FILTER_SANITIZE_STRING));
 
         http_response_code(200);
         die();

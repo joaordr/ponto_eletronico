@@ -17,9 +17,6 @@ try {
         $funcionario->setSetor(filter_input(INPUT_POST, 'setor', FILTER_SANITIZE_STRING));
 
         $usuario = unserialize($_SESSION['usuarioLogadoAdmin']);
-
-//        echo json_encode('teste');
-//        die();
         $controle->saveAdm($funcionario, $usuario);
 
         http_response_code(200);
