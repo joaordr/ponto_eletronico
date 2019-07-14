@@ -14,7 +14,6 @@
     <script type="text/javascript" src="../resources/bootstrap/js/bootstrap.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../resources/bootstrap/css/bootstrap.min.css"  type="text/css">
-    <link href="../recursos/css/floating-labels.css" rel="stylesheet" type="text/css">
     <meta  name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!--tag meta viewport responsiva-->
     <script type="text/javascript" src="../resources/js/spa.js"></script>
 </head>
