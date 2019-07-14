@@ -22,7 +22,7 @@ class Email
         self::$mail->SMTPSecure = 'tsl';                            // Enable TLS encryption, `ssl` also accepted
         self::$mail->Port = 587;                                    // TCP port to connect to
         //Recipients
-        self::$mail->setFrom('suporte@baconware.com.br', 'Suporte BaconWare');
+        self::$mail->setFrom('suporte@baconware.com.br', 'SPE');
         //Content
         self::$mail->isHTML(true);
     }
