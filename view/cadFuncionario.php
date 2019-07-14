@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Administrador</title>
+	<title>Cadastro de Funcionário</title>
 	<link rel="icon" type="imagem/png" href="../resources/img/icone.png" />
     <!-- Required meta tags -->
     <meta charset="utf-8">

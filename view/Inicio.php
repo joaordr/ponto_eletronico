@@ -20,9 +20,10 @@
 </head>
 <body>
 <div class="container">
-    <div class="col-lg-3"></div>
-    <div class="col-lg-6 col-md-12">
-        <div class="card" style="width: 18rem;">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
             <div class="card-body">
                 <img src="resources/img/icone.png" id="icone">
                 <h5 class="card-title" id="title">Login</h5>
@@ -30,13 +31,16 @@
                         data-target="#modalLoginAdm">Administrador
                 </button>
                 <button type="button" class="btn btn-success btn-lg button" data-toggle="modal"
-                        data-target="#modalLoginFunc">Funcionario
+                        data-target="#modalLoginFunc">Funcionário
                 </button>
                 <style type="text/css">
                     body {
                         background-color: #DCDCDC;
                     }
 
+                    .card{
+                        margin-top: 20px;
+                    }
                     .button {
                         width: 160px;
                         margin-top: 10px;
@@ -57,8 +61,9 @@
 
             </div>
         </div>
-    </div>
-    <div class="col-lg-3"></div>
+        </div>
+        <div class="col"></div>
+    </div>    
 </div>
 
 <!-- Modal login Adm -->
@@ -79,7 +84,7 @@
                         <label>Senha</label>
                         <input type="password" name="senhaLogin" id="senhaLogin" class="form-control">
                     </div>
-                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modalRegistrarAdm"
+                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalRegistrarAdm"
                             data-dismiss="modal">Registrar-se
                     </button>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
