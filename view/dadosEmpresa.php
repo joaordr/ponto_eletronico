@@ -11,8 +11,8 @@
     <div class="col">
         <div class="panel panel-default jumbotron">
             <div class="panel-body">
-                <h4 id="nomeEmpresa">Nome da Empresa</h4>
-                <h5 id="cnpj">41.168.726/0001-15</h5>
+                <h4 id="nomeEmpresa"></h4>
+                <h5 id="cnpj"></h5>
             </div>
         </div>
     </div>

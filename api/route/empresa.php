@@ -19,6 +19,12 @@ try {
         die();
     }
 
+    if (isset($_POST['load'])) {
+        $empresa = unserialize($_SESSION['empresaLogadoAdmin']);
+        echo json_encode($empresa->toArray());
+        die();
+    }
+
     http_response_code(404);
 } catch (Exception $ex) {
     http_response_code(500);
