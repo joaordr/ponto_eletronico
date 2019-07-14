@@ -16,8 +16,7 @@ $(document).ready(function () {
         let dados = $(this).serialize() + "&login_adm=true";
         let retorno = request("login", dados);
         if (retorno) {
-            alert("ok!");
-            $("#formEntrarAdm input").val("");
+            window.location.replace("view/MenuAdm.php");
         } else {
             alert("Erro ao realizar login!");
         }
