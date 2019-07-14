@@ -9,9 +9,13 @@
      .panel{
       margin-top: 15px;
       border: 1px solid #808080;
+      width: 500px
      }
      button{
       margin-top: 20px;
+     }
+     h4, h5{
+      text-align: justify;
      }
   </style>
 </div>

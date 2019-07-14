@@ -14,7 +14,6 @@
     <script type="text/javascript" src="../resources/bootstrap/js/bootstrap.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../resources/bootstrap/css/bootstrap.min.css"  type="text/css">
-    <link href="../recursos/css/floating-labels.css" rel="stylesheet" type="text/css">
     <meta  name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!--tag meta viewport responsiva-->
     <script type="text/javascript" src="../resources/js/spa.js"></script>
 </head>
@@ -30,16 +29,18 @@
   			</button>
   			<div class="collapse navbar-collapse" id="navbarNavDropdown">
     			<ul class="navbar-nav">
-      				<li class="nav-item active" data-page="empresa">
+      				<li class="nav-item active">
         				<a class="nav-link" href="#" id="ponto">Registrar Ponto <span class="sr-only">(current)</span></a>
       				</li>
-      				
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="sair">Encerrar seção<span class="sr-only">(current)</span></a>
+              </li>
     			</ul>
   			</div>
 		</nav>
 	</header>
 
-  <div class="container" id="carregaDados">
+  <div class="container" id="registro">
       <div class="row">
         <div class="col-lg-6 col-md-12">
           <table class="table">
@@ -88,6 +89,9 @@
   <style type="text/css">
     button{
       margin: 20px;
+    }
+    #registro{
+      margin-top: 20px;
     }
 
   </style>

@@ -1,6 +1,5 @@
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<table class="table">
+<table class="table" id="tabela1">
   <thead class="thead-dark">
     <tr>
       <th scope="col">#</th>
@@ -68,5 +67,11 @@
     </div>
 </div>
 <style type="text/css">
-  
+  #tabela1{
+    margin-top: 50px;
+  }
+  #modalTabela{
+    width: 1000px;
+    margin-left: 200px;
+  }
 </style>
