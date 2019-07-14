@@ -34,6 +34,16 @@ try {
         $funcionario->setCargo(filter_input(INPUT_POST, 'cargo', FILTER_SANITIZE_STRING));
         $funcionario->setSetor(filter_input(INPUT_POST, 'setor', FILTER_SANITIZE_STRING));
 
+        $usuario = new Usuario();
+        $usuario->setEmail(filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING));
+        $usuario->setUser(filter_input(INPUT_POST, 'nomeUsuario', FILTER_SANITIZE_STRING));
+        $usuario->setSenha(filter_input(INPUT_POST, 'senhaFunc', FILTER_SANITIZE_STRING));
+        $usuario->setTipo(2);
+
+        $empresa = unserialize($_SESSION['empresaLogadoAdmin']);
+
+        $controle->saveFunc($funcionario, $usuario, $empresa->getId());
+
         http_response_code(200);
         die();
     }

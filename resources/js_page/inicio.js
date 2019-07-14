@@ -4,7 +4,7 @@ $(document).ready(function () {
         let retorno = request("login", dados, true);
         if (retorno) {
             alert("ok!");
-            $("#formEntrarFunc input").val("");
+            window.location.replace("view/MenuFunc.php");
         } else {
             alert("Erro ao realizar login!");
         }

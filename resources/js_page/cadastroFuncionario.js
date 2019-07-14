@@ -1,10 +1,10 @@
 $(document).ready(function () {
-    $("#cadFuncionario").submit(function (e) {
+    $("#cadFuncionario1").submit(function (e) {
         let dados = $(this).serialize() + "&create_func=true";
         let retorno = request("funcionario", dados);
         if (retorno) {
             alert("ok!");
-            window.location.replace("cadastroEmpresa.php");
+            $("#cadFuncionario1 input").val("");
         } else {
             alert("Erro ao realizar login!");
         }

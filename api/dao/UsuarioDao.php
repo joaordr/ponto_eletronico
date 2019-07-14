@@ -5,6 +5,7 @@ class UsuarioDao
 {
     /**
      * @param Usuario $usuario
+     * @return string
      * @throws Exception
      */
     public function create(Usuario $usuario)
@@ -18,7 +19,10 @@ class UsuarioDao
             $stmt->bindValue(2, password_hash($usuario->getSenha(), PASSWORD_DEFAULT));
             $stmt->bindValue(3, $usuario->getTipo());
             $stmt->bindValue(4, $usuario->getEmail());
-            $stmt->execute();
+            if ($stmt->execute()) {
+                $id = $conexao->LastInsertId();
+            }
+            return $id;
         } catch (Exception $ex) {
             throw $ex;
         }
