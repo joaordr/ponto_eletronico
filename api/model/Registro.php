@@ -1,7 +1,7 @@
 <?php
 
 
-class Registro
+class Registro  extends AbstractEntity
 {
     private $data;
     private $hora;

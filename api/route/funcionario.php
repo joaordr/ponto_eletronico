@@ -6,11 +6,15 @@ try {
     $controle = new FuncionarioControle();
     if (isset($_POST['create_func'])) {
         $funcionario = new Funcionario();
-        $funcionario->set(filter_input(INPUT_POST, 'userLogin', FILTER_SANITIZE_STRING));
-        $usuario->setSenha(filter_input(INPUT_POST, 'senhaLogin', FILTER_SANITIZE_STRING));
-        $usuario->setEmail(filter_input(INPUT_POST, 'emailLogin', FILTER_SANITIZE_STRING));
-        $usuario->setTipo(1);
-        $controle->save($usuario);
+        $funcionario->setNome(filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING));
+        $funcionario->setcpf(filter_input(INPUT_POST, 'cpf', FILTER_SANITIZE_STRING));
+        $funcionario->setRg(filter_input(INPUT_POST, 'rg', FILTER_SANITIZE_STRING));
+        $funcionario->setDataNascimento(filter_input(INPUT_POST, 'dtNasc', FILTER_SANITIZE_STRING));
+        $funcionario->setEmail(filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING));
+        $funcionario->setTelefone(filter_input(INPUT_POST, 'telefone', FILTER_SANITIZE_STRING));
+        $funcionario->setCargo(filter_input(INPUT_POST, 'cargo', FILTER_SANITIZE_STRING));
+        $funcionario->setSetor(filter_input(INPUT_POST, 'setor', FILTER_SANITIZE_STRING));
+
         http_response_code(200);
         die();
     }

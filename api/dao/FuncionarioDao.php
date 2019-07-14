@@ -63,7 +63,44 @@ class FuncionarioDao
         }
     }
 
-    public function update(Funcionario $funcionario){
+    /**
+     * @param $userId
+     * @return Funcionario
+     * @throws Exception
+     */
+    public function loadAdmInfo($userId)
+    {
+        try {
+            $conexao = Conexao::get_conexao();
+            $sql = 'SELECT * FROM funcionario WHERE user_id = ?;';
+            $stmt = $conexao->prepare($sql);
+            $stmt->bindValue(1, $userId);
+            $stmt->execute();
+            if ($stmt->setFetchMode(PDO::FETCH_ASSOC)) {
+                $result = $stmt->fetchAll();
+                foreach ($result as $key => $row) {
+                    $funcionario = new Funcionario();
+                    $funcionario->setId($row['id']);
+                    $funcionario->setNome($row['nome']);
+                    $funcionario->setCpf($row['cpf']);
+                    $funcionario->setRg($row['rg']);
+                    $funcionario->setEmail($row['email']);
+                    $funcionario->setDataNascimento($row['data_nascimento']);
+                    $funcionario->setTelefone($row['telefone']);
+                    $funcionario->setCargo($row['cargo']);
+                    $funcionario->setSetor($row['setor']);
+                    $funcionario->setEmpresa($row['empresa_id']);
+                    return $funcionario;
+                }
+            }
+            return null;
+        } catch (Exception $ex) {
+            throw $ex;
+        }
+    }
+
+    public function update(Funcionario $funcionario)
+    {
 
     }
 
