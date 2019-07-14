@@ -1,12 +1,12 @@
 $(document).ready(function () {
-    $("#cadFuncionario").submit(function (e) {
-        let dados = $(this).serialize() + "&create_adm=true";
-        let retorno = request("funcionario", dados);
+    $("#cadEmpresa").submit(function (e) {
+        let dados = $(this).serialize() + "&create=true";
+        let retorno = request("empresa", dados);
         if (retorno) {
             alert("ok!");
-            window.location.replace("cadastroEmpresa.php");
+            window.location.replace("MenuAdm.php");
         } else {
-            alert("Erro ao realizar login!");
+            alert("Erro ao cadastrar empresa!");
         }
         e.preventDefault();
         return false;

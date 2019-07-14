@@ -7,6 +7,7 @@ class EmpresaDao
     /**
      * @param Empresa $empresa
      * @param Funcionario $adm
+     * @return string
      * @throws Exception
      */
     public function create(Empresa $empresa, Funcionario $adm)

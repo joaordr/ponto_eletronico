@@ -6,7 +6,7 @@ $(document).ready(function () {
             alert("ok!");
             $("#formEntrarFunc input").val("");
         } else {
-            alert("Erro ao realizar login!");
+            alert("Erro ao cadastra adm!");
         }
         e.preventDefault();
         return false;
