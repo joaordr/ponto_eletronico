@@ -68,7 +68,7 @@
       margin-left: 130px;
      }
      h4, h5{
-      text-align: justify;
+      text-align: center;
      }
   </style>
 

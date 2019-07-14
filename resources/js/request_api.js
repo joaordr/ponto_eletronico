@@ -1,4 +1,4 @@
-function request(function_file, dados, inicio_url = false, sincrono = false) {
+ function request(function_file, dados, inicio_url = false, sincrono = false) {
     try {
         let retorno = false;
         let url = '';
