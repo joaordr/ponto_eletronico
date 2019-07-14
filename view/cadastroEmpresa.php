@@ -17,6 +17,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--tag meta viewport responsiva-->
     <script type="text/javascript" src="../resources/js/spa.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#cadEmpresa").validate({
+          rules: {
+            nome: {
+              maxlength: 50,
+              maxWords: 5
+            },
+            razaoSocial: {
+              required: true,
+              maxlength: 80,
+              maxWords: 5
+            },
+            cnpj: {
+              required: true,
+              cnpjBR: true
+            }, 
+            ramo: {
+              maxlength: 100,
+              maxWords: 20
+            },
+            telefone: {
+              required: true,
+              maxlength: 10
+            }
+          }
+        })
+      });
+    </script>
 </head>
 <body>
 <div class="container">
@@ -59,32 +88,5 @@
     <script type="text/javascript" src="../resources/js/request_api.js"></script>
     <script type="text/javascript" src="../resources/js_page/cadastroEmpresa.js"></script>
 </body>
-<script type="text/javascript">
-  $(document).ready(function(){
-    $("#cadEmpresa").validate({
-      rules: {
-        nome: {
-          maxlength: 50,
-          maxWords: 5
-        },
-        razaoSocial: {
-          required: true,
-          maxlength: 80,
-          maxWords: 5
-        },
-        cnpj: {
-          required: true,
-          cnpjBR: true
-        }, 
-        ramo: {
-          maxlength: 100,
-          maxWords: 20
-        }
-        telefone: {
-          minlength: 
-        }
-      }
-    })
-  })
-</script>
+
 </html>

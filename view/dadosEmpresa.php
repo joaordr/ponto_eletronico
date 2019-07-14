@@ -70,7 +70,7 @@
       text-align: justify;
      }
   </style>
-</div>
+
 
 
 <script type="text/javascript" src="../resources/js_page/dadosEmpresa.js"></script>
