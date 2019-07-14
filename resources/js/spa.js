@@ -9,7 +9,7 @@ $(document).ready(function(){
       $('#carregaDados').load('funcionariosRegistrados.php');
   })
   $("#registros").click(function(){
-      $('#carregaDados').load('');
+      $('#carregaDados').load('RegistroGeral.php');
   })
 })
 

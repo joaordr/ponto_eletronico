@@ -1,5 +1,4 @@
-<button type="button" class="btn btn-success" data-toggle="modal"
-                        data-target="#modalCadEmpresa">Adicionar Empresa</button>
+<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalCadEmpresa">+ Adicionar Empresa</button>
 <table class="table">
   <thead class="thead-dark">
     <tr>

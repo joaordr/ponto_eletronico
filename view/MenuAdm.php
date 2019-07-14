@@ -33,7 +33,7 @@
       				<li class="nav-item active" data-page="empresa">
         				<a class="nav-link" href="#" id="empresa">Empresa <span class="sr-only">(current)</span></a>
       				</li>
-      				<li class="nav-item dropdown">
+      				<li class="nav-item dropdown active">
         				<a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           				Funcionários
         				</a>
@@ -42,7 +42,7 @@
           					<a class="dropdown-item" data-page="regFuncionario" href="#" id="regFuncionario">Funcionários registrados</a>
         				</div>
       				</li>
-      				<li class="nav-item" data-page="registros">
+      				<li class="nav-item active" data-page="registros">
         				<a class="nav-link" href="#" id="registros">Registros <span class="sr-only">(current)</span></a>
       				</li>
     			</ul>
