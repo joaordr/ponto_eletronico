@@ -46,37 +46,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/route/empresa.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="28" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="28" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/resources/js_page/menuAdm.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js_page/cadastroEmpresa.js">
+        <entry file="file://$PROJECT_DIR$/view/cadastroEmpresa.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+            <state relative-caret-position="376">
+              <caret line="58" selection-start-line="58" selection-end-line="59" selection-end-column="90" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/view/cadastroEmpresa.php">
+        <entry file="file://$PROJECT_DIR$/view/MenuAdm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="59" column="76" selection-start-line="59" selection-start-column="76" selection-end-line="59" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/cadFuncionario.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="70" selection-start-line="70" selection-end-line="74" selection-end-column="7" />
+            <state relative-caret-position="413">
+              <caret line="54" column="81" lean-forward="true" selection-start-line="54" selection-start-column="81" selection-end-line="54" selection-end-column="81" />
             </state>
           </provider>
         </entry>
@@ -112,12 +99,10 @@
         <option value="$PROJECT_DIR$/api/model/Funcionario.php" />
         <option value="$PROJECT_DIR$/api/model/Registro.php" />
         <option value="$PROJECT_DIR$/api/model/Usuario.php" />
-        <option value="$PROJECT_DIR$/view/MenuAdm.php" />
         <option value="$PROJECT_DIR$/view/funcionariosRegistrados.php" />
         <option value="$PROJECT_DIR$/api/dao/FuncionarioDao.php" />
         <option value="$PROJECT_DIR$/resources/js/request_api.js" />
         <option value="$PROJECT_DIR$/resources/js_page/inicio.js" />
-        <option value="$PROJECT_DIR$/api/route/login.php" />
         <option value="$PROJECT_DIR$/api/route/usuario.php" />
         <option value="$PROJECT_DIR$/view/cadFuncionario.php" />
         <option value="$PROJECT_DIR$/api/route/funcionario.php" />
@@ -129,6 +114,9 @@
         <option value="$PROJECT_DIR$/resources/js_page/cadastroFuncionario.js" />
         <option value="$PROJECT_DIR$/resources/js_page/cadastroEmpresa.js" />
         <option value="$PROJECT_DIR$/view/cadastroEmpresa.php" />
+        <option value="$PROJECT_DIR$/api/route/login.php" />
+        <option value="$PROJECT_DIR$/resources/js_page/menuAdm.js" />
+        <option value="$PROJECT_DIR$/view/MenuAdm.php" />
       </list>
     </option>
   </component>
@@ -250,12 +238,12 @@
       <updated>1563054416328</updated>
       <workItem from="1563054419351" duration="271000" />
       <workItem from="1563054718565" duration="18977000" />
-      <workItem from="1563118916162" duration="10644000" />
+      <workItem from="1563118916162" duration="11163000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29892000" />
+    <option name="totallyTimeSpent" value="30411000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -402,13 +390,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/MenuAdm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="117" selection-start-line="16" selection-start-column="117" selection-end-line="16" selection-end-column="117" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/control/LoginControle.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -434,13 +415,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js_page/inicio.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -493,31 +467,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/route/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/route/empresa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js_page/cadastroFuncionario.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js_page/cadastroEmpresa.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -528,10 +481,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js_page/cadastroEmpresa.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/route/empresa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/route/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js_page/inicio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js_page/menuAdm.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/view/cadastroEmpresa.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="59" column="76" selection-start-line="59" selection-start-column="76" selection-end-line="59" selection-end-column="76" />
+        <state relative-caret-position="376">
+          <caret line="58" selection-start-line="58" selection-end-line="59" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/MenuAdm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="54" column="81" lean-forward="true" selection-start-line="54" selection-start-column="81" selection-end-line="54" selection-end-column="81" />
         </state>
       </provider>
     </entry>

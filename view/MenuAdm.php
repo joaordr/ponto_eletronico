@@ -51,6 +51,9 @@
   <div class="container" id="carregaDados">
     
   </div>
+
+    <script type="text/javascript" src="../resources/js/request_api.js"></script>
+    <script type="text/javascript" src="../resources/js_page/menuAdm.js"></script>
 </body>
 
 </html>
