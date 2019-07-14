@@ -19,6 +19,25 @@ try {
         die();
     }
 
+    if (isset($_POST['update'])) {
+        $empresa = new Empresa();
+        $empresa->setNome(filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING));
+        $empresa->setRazaoSocial(filter_input(INPUT_POST, 'razaoSocial', FILTER_SANITIZE_STRING));
+        $empresa->setCnpj(filter_input(INPUT_POST, 'cnpj', FILTER_SANITIZE_STRING));
+        $empresa->setRamoAtividade(filter_input(INPUT_POST, 'ramo', FILTER_SANITIZE_STRING));
+        $empresa->setTelefone(filter_input(INPUT_POST, 'telefone', FILTER_SANITIZE_STRING));
+
+        $oldEmpresa = unserialize($_SESSION['empresaLogadoAdmin']);
+
+        $empresa->setId($oldEmpresa->getId());
+
+        $funcionario = unserialize($_SESSION['funcionarioLogadoAdmin']);
+        $controle->save($empresa, $funcionario);
+
+        http_response_code(200);
+        die();
+    }
+
     if (isset($_POST['load'])) {
         $empresa = unserialize($_SESSION['empresaLogadoAdmin']);
         echo json_encode($empresa->toArray());

@@ -55,7 +55,7 @@ class EmpresaDao
             $stmt->bindValue(3, $empresa->getCnpj());
             $stmt->bindValue(4, $empresa->getRamoAtividade());
             $stmt->bindValue(5, $empresa->getTelefone());
-            $stmt->bindValue(5, $empresa->getId());
+            $stmt->bindValue(6, $empresa->getId());
             $stmt->execute();
         } catch (Exception $ex) {
             throw $ex;

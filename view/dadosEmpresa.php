@@ -10,7 +10,7 @@
         <div class="panel panel-default jumbotron">
             <div class="panel-body">
                 <h4 id="nomeEmpresa"></h4>
-                <h5 id="cnpj"></h5>
+                <h5 id="cnpj_value"></h5>
             </div>
         </div>
     </div>
@@ -26,7 +26,7 @@
                 <h5 class="modal-title" id="exampleModalLabel">Alterar empresa</h5>
             </div>
             <div class="modal-body">
-                <form name="cadEmpresa" id="updateEmpresa" method="POST">
+                <form name="cadEmpresa" id="updateEmpresa">
                     <div class="form-group">
                         <label for="nome">Nome da empresa</label>
                         <input type="text" name="nome" id="nome" class="form-control">
@@ -36,8 +36,8 @@
                         <input type="text" name="razaoSocial" id="razaoSocial" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label for="cnpj1">CNPJ</label>
-                        <input type="text" name="cnpj1" id="cnpj1" class="form-control">
+                        <label for="cnpj">CNPJ</label>
+                        <input type="text" name="cnpj" id="cnpj" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="ramo">Ramo de atividade</label>
