@@ -48,7 +48,7 @@ class FuncionarioControle
      * @param int $empresaId
      * @throws Exception
      */
-    public function saveFunc(Funcionario $funcionario, Usuario $usuario, $empresaId)
+    public function saveFunc(Funcionario $funcionario, $usuario, $empresaId)
     {
         if ($funcionario->getId() == 0) {
             $usuarioDao = new UsuarioDao();

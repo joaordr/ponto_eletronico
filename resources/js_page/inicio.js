@@ -3,7 +3,6 @@ $(document).ready(function () {
         let dados = $(this).serialize() + "&login_func=true";
         let retorno = request("login", dados, true);
         if (retorno) {
-            alert("ok!");
             window.location.replace("view/MenuFunc.php");
         } else {
             alert("Erro ao realizar login!");

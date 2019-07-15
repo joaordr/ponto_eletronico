@@ -48,7 +48,7 @@ try {
         die();
     }
 
-    if (isset($_POST['create_func'])) {
+    if (isset($_POST['update'])) {
         $funcionario = new Funcionario();
         $funcionario->setNome(filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING));
         $funcionario->setcpf(filter_input(INPUT_POST, 'cpf', FILTER_SANITIZE_STRING));
@@ -58,16 +58,17 @@ try {
         $funcionario->setTelefone(filter_input(INPUT_POST, 'telefone', FILTER_SANITIZE_STRING));
         $funcionario->setCargo(filter_input(INPUT_POST, 'cargo', FILTER_SANITIZE_STRING));
         $funcionario->setSetor(filter_input(INPUT_POST, 'setor', FILTER_SANITIZE_STRING));
+        $funcionario->setId(filter_input(INPUT_POST, 'id', FILTER_SANITIZE_NUMBER_INT));
 
-        $usuario = new Usuario();
-        $usuario->setEmail(filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING));
-        $usuario->setUser(filter_input(INPUT_POST, 'nomeUsuario', FILTER_SANITIZE_STRING));
-        $usuario->setSenha(filter_input(INPUT_POST, 'senhaFunc', FILTER_SANITIZE_STRING));
-        $usuario->setTipo(2);
+        $controle->saveFunc($funcionario, null, null);
 
-        $empresa = unserialize($_SESSION['empresaLogadoAdmin']);
+        http_response_code(200);
+        die();
+    }
 
-        $controle->saveFunc($funcionario, $usuario, $empresa->getId());
+    if (isset($_POST['delete'])) {
+        $userId = filter_input(INPUT_POST, 'userId', FILTER_SANITIZE_NUMBER_INT);
+        $controle->delete($userId);
 
         http_response_code(200);
         die();

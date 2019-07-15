@@ -45,20 +45,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/dao/FuncionarioDao.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/control/FuncionarioControle.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="164" column="45" selection-start-line="164" selection-start-column="45" selection-end-line="164" selection-end-column="45" />
+            <state relative-caret-position="187">
+              <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/control/FuncionarioControle.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/js_page/inicio.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="75" column="5" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -66,17 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/route/funcionario.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js_page/funcionariosRegistrados.js">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+              <caret line="69" column="50" selection-start-line="69" selection-start-column="44" selection-end-line="69" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -138,15 +129,15 @@
         <option value="$PROJECT_DIR$/resources/js_page/dadosEmpresa.js" />
         <option value="$PROJECT_DIR$/view/dadosEmpresa.php" />
         <option value="$PROJECT_DIR$/api/dao/UsuarioDao.php" />
-        <option value="$PROJECT_DIR$/resources/js_page/inicio.js" />
         <option value="$PROJECT_DIR$/view/cadastroFuncionario.php" />
         <option value="$PROJECT_DIR$/resources/js_page/cadastroFuncionario.js" />
-        <option value="$PROJECT_DIR$/resources/js_page/funcionariosRegistrados.js" />
         <option value="$PROJECT_DIR$/view/funcionariosRegistrados.php" />
         <option value="$PROJECT_DIR$/api/model/Funcionario.php" />
+        <option value="$PROJECT_DIR$/api/dao/FuncionarioDao.php" />
         <option value="$PROJECT_DIR$/api/control/FuncionarioControle.php" />
         <option value="$PROJECT_DIR$/api/route/funcionario.php" />
-        <option value="$PROJECT_DIR$/api/dao/FuncionarioDao.php" />
+        <option value="$PROJECT_DIR$/resources/js_page/funcionariosRegistrados.js" />
+        <option value="$PROJECT_DIR$/resources/js_page/inicio.js" />
       </list>
     </option>
   </component>
@@ -262,12 +253,12 @@
       <updated>1563054416328</updated>
       <workItem from="1563054419351" duration="271000" />
       <workItem from="1563054718565" duration="18977000" />
-      <workItem from="1563118916162" duration="20033000" />
+      <workItem from="1563118916162" duration="22663000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39281000" />
+    <option name="totallyTimeSpent" value="41911000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -472,13 +463,6 @@
         <state relative-caret-position="-153" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js_page/inicio.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/cadFuncionario.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
@@ -542,6 +526,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/dao/FuncionarioDao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="157" column="54" lean-forward="true" selection-start-line="157" selection-start-column="54" selection-end-line="157" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/view/funcionariosRegistrados.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -549,31 +540,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/control/FuncionarioControle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js_page/funcionariosRegistrados.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+        <state relative-caret-position="226">
+          <caret line="34" column="85" lean-forward="true" selection-start-line="34" selection-start-column="85" selection-end-line="34" selection-end-column="85" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/route/funcionario.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+        <state relative-caret-position="306">
+          <caret line="69" column="50" selection-start-line="69" selection-start-column="44" selection-end-line="69" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/control/FuncionarioControle.php">
+    <entry file="file://$PROJECT_DIR$/resources/js_page/inicio.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="75" column="5" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/dao/FuncionarioDao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="164" column="45" selection-start-line="164" selection-start-column="45" selection-end-line="164" selection-end-column="45" />
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
