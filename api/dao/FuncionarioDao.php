@@ -94,11 +94,47 @@ class FuncionarioDao
         }
     }
 
+    /**
+     * @param Funcionario $funcionario
+     * @throws Exception
+     */
     public function update(Funcionario $funcionario)
     {
-
+        try {
+            $conexao = Conexao::get_conexao();
+            $sql = 'UPDATE funcionario SET nome = ?, cpf = ?, rg = ?, data_nascimento = ?, email = ?, telefone = ?, cargo = ?, setor = ? WHERE id = ?;';
+            $stmt = $conexao->prepare($sql);
+            $stmt->bindValue(1, $funcionario->getNome());
+            $stmt->bindValue(2, $funcionario->getCpf());
+            $stmt->bindValue(3, $funcionario->getRg());
+            $stmt->bindValue(4, $funcionario->getDataNascimento());
+            $stmt->bindValue(5, $funcionario->getEmail());
+            $stmt->bindValue(6, $funcionario->getTelefone());
+            $stmt->bindValue(7, $funcionario->getCargo());
+            $stmt->bindValue(8, $funcionario->getSetor());
+            $stmt->bindValue(9, $funcionario->getId());
+            $stmt->execute();
+        } catch (Exception $ex) {
+            throw $ex;
+        }
     }
 
+    /**
+     * @param int $id
+     * @throws Exception
+     */
+    public function delete($id)
+    {
+        try {
+            $conexao = Conexao::get_conexao();
+            $sql = 'DELETE FROM usuario WHERE id = ?;';
+            $stmt = $conexao->prepare($sql);
+            $stmt->bindValue(1, $id);
+            $stmt->execute();
+        } catch (Exception $ex) {
+            throw $ex;
+        }
+    }
 
     /**
      * @param $empresaId
@@ -126,7 +162,7 @@ class FuncionarioDao
                     $funcionario->setTelefone($row['telefone']);
                     $funcionario->setCargo($row['cargo']);
                     $funcionario->setSetor($row['setor']);
-                    $funcionario->setSetor($row['user_id']);
+                    $funcionario->setUsuario($row['user_id']);
                     $lista[] = $funcionario;
                 }
             }

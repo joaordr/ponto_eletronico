@@ -60,6 +60,24 @@ class FuncionarioControle
     }
 
     /**
+     * @param Funcionario $funcionario
+     * @throws Exception
+     */
+    public function update(Funcionario $funcionario)
+    {
+        $this->dao->update($funcionario);
+    }
+
+    /**
+     * @param int $id
+     * @throws Exception
+     */
+    public function delete($id)
+    {
+        $this->dao->delete($id);
+    }
+
+    /**
      * @param $empresaId
      * @return array|null
      * @throws Exception
