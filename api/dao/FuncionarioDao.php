@@ -63,7 +63,7 @@ class FuncionarioDao
      * @return Funcionario
      * @throws Exception
      */
-    public function loadAdmInfo($userId)
+    public function loadInfo($userId)
     {
         try {
             $conexao = Conexao::get_conexao();

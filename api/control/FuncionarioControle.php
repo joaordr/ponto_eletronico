@@ -33,13 +33,23 @@ class FuncionarioControle
      */
     public function loadAdmInfo($userId)
     {
-        $retorno = $this->dao->loadAdmInfo($userId);
+        $retorno = $this->dao->loadInfo($userId);
         if ($retorno != null) {
             $_SESSION['funcionarioLogadoAdmin'] = serialize($retorno);// salva funcionario em sessão
             return true;
         } else {
             return false;
         }
+    }
+
+    /**
+     * @param int $userId
+     * @throws Exception
+     */
+    public function loadFuncInfo($userId)
+    {
+        $retorno = $this->dao->loadInfo($userId);
+        $_SESSION['funcionarioLogadoFunc'] = serialize($retorno);// salva funcionario em sessão
     }
 
     /**

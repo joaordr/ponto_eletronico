@@ -51,6 +51,16 @@ try {
         die();
     }
 
+    if (isset($_POST['load_func_info'])) {
+        $usuario = unserialize($_SESSION['usuarioLogadoFunc']);
+        $controleFuncionario = new FuncionarioControle();
+        $controleFuncionario->loadFuncInfo($usuario->getId());
+
+        http_response_code(200);
+        die();
+    }
+
+
     http_response_code(404);
 } catch (Exception $ex) {
     http_response_code(500);
