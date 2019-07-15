@@ -8,8 +8,12 @@ try {
         $tipo = filter_input(INPUT_POST, 'tipo', FILTER_SANITIZE_NUMBER_INT);
         $funcionario = unserialize($_SESSION['funcionarioLogadoFunc']);
 
-        $controle->create($tipo, $funcionario);
-        http_response_code(200);
+        $retorno = $controle->create($tipo, $funcionario);
+        if ($retorno != null) {
+            echo json_encode($retorno);
+        } else {
+            http_response_code(200);
+        }
         die();
     }
 

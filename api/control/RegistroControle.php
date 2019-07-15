@@ -11,13 +11,15 @@ class RegistroControle
     }
 
     /**
-     * @param int $tipo
+     * @param int         $tipo
      * @param Funcionario $funcionario
+     *
+     * @return string
      * @throws Exception
      */
     public function create($tipo, Funcionario $funcionario)
     {
-        $this->dao->create($tipo, $funcionario);
+        return $this->dao->create($tipo, $funcionario);
     }
 
     /**

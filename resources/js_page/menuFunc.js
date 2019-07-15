@@ -15,8 +15,12 @@ function select_button(button, numero) {
 function gravar_registro() {
     let retorno = request("registro", ("tipo=" + numero_registro + "&create=true"));
     if (retorno) {
+        if (retorno == "not allowed") {
+            alert("Horário ja registrado!")
+        } else {
+            load_registros();
+        }
         $(".btn").removeAttr('style');
-        load_registros();
     } else {
         alert("Erro ao gravar registro!")
     }
@@ -25,6 +29,10 @@ function gravar_registro() {
 function load_registros() {
     let retorno = request("registro", "load=true");
     if (retorno) {
+        if (retorno == true) {
+            return;
+        }
+
         $("#tabela1>tbody>tr").remove(); // limpa a tabela
 
         $.each(retorno, function (index, value) {
@@ -40,7 +48,6 @@ function load_registros() {
         });
 
     }
-    console.log(retorno);
 }
 
 $(document).ready(function () {

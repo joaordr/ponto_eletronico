@@ -4,10 +4,9 @@ var table = $("#tabela1");
 
 function load_funcionarios() {
     let retorno = request("funcionario", "list_func=true");
+    $("#tabela1>tbody>tr").remove(); // limpa a tabela
     if (retorno) {
         funcionarios = retorno;
-        $("#tabela1>tbody>tr").remove(); // limpa a tabela
-
         $.each(funcionarios, function (index, value) {
             var newRow = $("<tr>");
             var cols = "";
