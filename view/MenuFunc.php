@@ -57,10 +57,9 @@
 <div class="container" id="registro">
     <div class="row">
         <div class="col-md-7 col-sm-12">
-            <table class="table">
+            <table class="table" id="tabela1">
                 <thead class="thead-dark">
                 <tr>
-                    <th scope="col">#</th>
                     <th scope="col">Dia do Mês</th>
                     <th scope="col">Entrada 1</th>
                     <th scope="col">Saida 1</th>
@@ -71,16 +70,6 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>1 de Julho</td>
-                    <td>08:00</td>
-                    <td>12:00</td>
-                    <td>13:00</td>
-                    <td>17:00</td>
-                    <td>17:00</td>
-                    <td>18:30</td>
-                </tr>
                 </tbody>
             </table>
         </div>
@@ -89,35 +78,50 @@
                 <div class="panel-body">
                     <div class="row">
                         <div class="col">
-                            <button type="button" onclick="select_button($(this))" id="ent1" class="btn btn-primary btn-lg btn-block">Entrada 1</button>
+                            <button type="button" onclick="select_button($(this), 1)" id="ent1"
+                                    class="btn btn-primary btn-lg btn-block">Entrada 1
+                            </button>
                         </div>
                         <div class="col">
-                            <button type="button" onclick="select_button($(this))" id="sai1" class="btn btn-primary btn-lg btn-block">Saida 1</button>
+                            <button type="button" onclick="select_button($(this), 2)" id="sai1"
+                                    class="btn btn-primary btn-lg btn-block">Saida 1
+                            </button>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <button type="button" onclick="select_button($(this))" id="ent2" class="btn btn-primary btn-lg btn-block">Entrada 2</button>
+                            <button type="button" onclick="select_button($(this), 3)" id="ent2"
+                                    class="btn btn-primary btn-lg btn-block">Entrada 2
+                            </button>
                         </div>
                         <div class="col">
-                            <button type="button" onclick="select_button($(this))" id="sai2" class="btn btn-primary btn-lg btn-block">Saida 2</button>
+                            <button type="button" onclick="select_button($(this), 4)" id="sai2"
+                                    class="btn btn-primary btn-lg btn-block">Saida 2
+                            </button>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <button type="button" onclick="select_button($(this))" id="ent3" class="btn btn-primary btn-lg btn-block">Entrada 3</button>
+                            <button type="button" onclick="select_button($(this), 5)" id="ent3"
+                                    class="btn btn-primary btn-lg btn-block">Entrada 3
+                            </button>
                         </div>
                         <div class="col">
-                            <button type="button" onclick="select_button($(this))" id="sai3" class="btn btn-primary btn-lg btn-block">Saida 3</button>
+                            <button type="button" onclick="select_button($(this), 6)" id="sai3"
+                                    class="btn btn-primary btn-lg btn-block">Saida 3
+                            </button>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-primary btn-lg btn-block">Registrar</button>
+                    <button type="button" onclick="gravar_registro();" class="btn btn-primary btn-lg btn-block">
+                        Registrar
+                    </button>
                 </div>
             </div>
 
         </div>
     </div>
 </div>
+<script type="text/javascript" src="../resources/js/request_api.js"></script>
 <script type="text/javascript" src="../resources/js_page/menuFunc.js"></script>
 </body>
 </html>
