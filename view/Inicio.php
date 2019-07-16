@@ -40,6 +40,7 @@
 
                     .card{
                         margin-top: 20px;
+                        box-shadow: 20px 20px 50px #808080;
                     }
                     .button {
                         width: 160px;

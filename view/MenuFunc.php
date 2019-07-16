@@ -51,7 +51,7 @@
 <div class="container-fluid" id="registro">
     <div class="row">
         <div class="col-md-7 col-sm-12">
-            <div class="alert alert-info" role="alert">Bem vindo, Juliane da Silva Bernardino</div>
+            <div class="alert alert-info" role="alert" id="nomeFunc">Bem vindo(a), </div>
         </div>
         <div class="col">
                 <button type="button" class="btn btn-info btn-lg btn-block float-lg-right" id="quadro" data-toggle="modal"
@@ -160,7 +160,7 @@
     #sair:hover{
         color: red;
     }
-    
+
     .panel-body{
         border: 1px solid  #87CEEB;
         border-radius: 20px;
