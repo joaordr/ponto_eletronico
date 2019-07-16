@@ -17,7 +17,7 @@ function load_funcionarios() {
             cols += '<td>' + value.cargo + '</td>';
             cols += '<td>' + value.setor + '</td>';
             cols += '<td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTabela"><i class="fa fa-eye"></i></button></td>';
-            cols += '<td><button type="button" class="btn btn-primary"><i class="fa fa-pencil"></i> Editar</button></td>';
+            cols += '<td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalUpdateFunc" onclick="load_modal_editar('+ index +');"><i class="fa fa-pencil"></i> Editar</button></td>';
             cols += '<td><button type="button" onclick="delete_func(' + index + ')" class="btn btn-danger"><i class="fa fa-trash"></i> Excluir</button></td>';
 
             newRow.append(cols);
@@ -40,9 +40,41 @@ function delete_func(index) {
     }
 }
 
-function load_modal_editar(index) {
-
+function load_modal_editar(funcionario) {
+    let func = funcionarios;
+    let retorno = request("funcionario", ("funcionario=" + func + "&update=true"));
+    if (retorno) {
+        $("#nome").val(funcionarios.nome);
+        $("#cpf").val(funcionarios.cpf);
+        $("#rg").val(funcionarios.rg);
+        $("#dtNasc").val(funcionarios.dataNascimento);
+        $("#email").val(funcionarios.email);
+        $("#telefone").val(funcionarios.telefone);
+        $("#cargo").val(funcionarios.cargo);
+        $("#setor").val(funcionarios.setor);
+    } else {
+        alert("Deu Errado");
+    }
+   
 }
+
+
+$(document).ready(function () {
+    $("#updateFuncionario").submit(function (f) {
+        let dados = $(this).serialize() + "&update=true";
+        let retorno = request("funcionario", dados);
+        if (retorno) {
+            $("#modalUpdateFunc").modal("hide");
+        } else {
+            alert("Erro ao editar funcionario!");
+        }
+        e.preventDefault();
+        return false;
+    });
+
+});
+
+
 
 function load_modal_registros(index) {
 
