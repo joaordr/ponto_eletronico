@@ -64,7 +64,7 @@
         </div>
         </div>
         <div class="col"></div>
-    </div>    
+    </div>  
 </div>
 
 <!-- Modal login Adm -->

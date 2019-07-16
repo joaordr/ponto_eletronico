@@ -48,7 +48,7 @@
 		</nav>
 	</header>
 
-  <div class="container" id="carregaDados">
+  <div class="container-fluid jumbotron" id="carregaDados">
     
   </div>
 
