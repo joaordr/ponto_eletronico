@@ -49,11 +49,11 @@
     </script>
 </head>
 <body>
-<div class="container">
+<div class="container-fluid jumbotron">
     <div class="row">
         <div class="col"></div>
         <div class="col-lg-6">
-            <div class="panel panel-default jumbotron">
+            <div class="panel panel-default">
                 <div class="panel-heading">
                     <h5>Cadastre a empresa aqui:</h5>
                 </div>
@@ -114,5 +114,21 @@
     <script type="text/javascript" src="../resources/js/request_api.js"></script>
     <script type="text/javascript" src="../resources/js_page/cadastroEmpresa.js"></script>
 </body>
+<style type="text/css">
+    .panel{
+        box-shadow: 20px 30px 50px #808080;
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    .panel-heading{
+        background-color: #333;
+        color: #fff;
+        padding: 15px;
+        margin: -15px -15px 10px -15px; /*superior, direita, inferior, esquerda*/
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
 
+</style>
 </html>
