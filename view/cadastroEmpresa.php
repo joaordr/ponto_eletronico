@@ -14,6 +14,7 @@
     <script type="text/javascript" src="../resources/bootstrap/js/bootstrap.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../resources/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--tag meta viewport responsiva-->
     <script type="text/javascript" src="../resources/js/spa.js"></script>
@@ -60,23 +61,48 @@
                     <form name="cadEmpresa" id="cadEmpresa" method="POST">
                         <div class="form-group">
                             <label for="nome">Nome da empresa</label>
-                            <input type="text" name="nome" id="nome" class="form-control">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-building"></i></div>
+                                </div>
+                                <input type="text" name="nome" id="nome" class="form-control">
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="razaoSocial">Razão Social</label>
-                            <input type="text" name="razaoSocial" id="razaoSocial" class="form-control">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-building"></i></div>
+                                </div>
+                                <input type="text" name="razaoSocial" id="razaoSocial" class="form-control">
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="cnpj">CNPJ</label>
-                            <input type="text" name="cnpj" id="cnpj" class="form-control">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-address-card"></i></div>
+                                </div>
+                                <input type="text" name="cnpj" id="cnpj" class="form-control">
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="ramo">Ramo de atividade</label>
-                            <input type="text" name="ramo" id="ramo" class="form-control">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-bookmark"></i></div>
+                                </div>
+                                <input type="text" name="ramo" id="ramo" class="form-control">
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="telefone">Telefone</label>
-                            <input type="text" name="telefone" id="telefone" class="form-control">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-phone"></i></div>
+                                </div>
+                                <input type="text" name="telefone" id="telefone" class="form-control">
+                            </div>
                         </div>
                         <button type="submit" class="btn btn-primary">Cadastrar</button>
                     </form>

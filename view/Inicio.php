@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-<!DOCTYPE html>
 <html>
 <head>
     <title>Inicio</title>
@@ -15,8 +14,8 @@
     <script type="text/javascript" src="resources/bootstrap/js/bootstrap.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--tag meta viewport responsiva-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!--tag meta viewport responsiva-->
     
 </head>
 <body>
@@ -68,27 +67,38 @@
 </div>
 
 <!-- Modal login Adm -->
-<div class="modal fade" id="modalLoginAdm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<div class="modal" id="modalLoginAdm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header ">
                 <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
             </div>
             <div class="modal-body">
                 <form name="formEntrarAdm" id="formEntrarAdm">
                     <div class="form-group">
                         <label>Email</label>
-                        <input type="text" name="userLogin" id="userLogin" class="form-control">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fa fa-envelope"></i></div>
+                            </div>
+                            <input type="text" name="userLogin" id="userLogin" class="form-control">
+                        </div>
                     </div>
                     <div class="form-group">
                         <label>Senha</label>
-                        <input type="password" name="senhaLogin" id="senhaLogin" class="form-control">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fa fa-lock"></i></div>
+                            </div>
+                            <input type="password" name="senhaLogin" id="senhaLogin" class="form-control">
+                        </div>
                     </div>
                     <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalRegistrarAdm"
                             data-dismiss="modal">Registrar-se
                     </button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                     <button type="submit" class="btn btn-primary">Log in</button>
                 </form>
             </div>
@@ -103,19 +113,30 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
             </div>
             <div class="modal-body">
                 <form name="formEntrarFunc" id="formEntrarFunc">
                     <div class="form-group">
                         <label>Email</label>
-                        <input type="text" name="userLogin" id="userLogin" class="form-control">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fa fa-envelope"></i></div>
+                            </div>
+                            <input type="text" name="userLogin" id="userLogin" class="form-control">
+                        </div>
                     </div>
                     <div class="form-group">
                         <label>Senha</label>
-                        <input type="password" name="senhaLogin" id="senhaLogin" class="form-control">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fa fa-lock"></i></div>
+                            </div>
+                            <input type="password" name="senhaLogin" id="senhaLogin" class="form-control">
+                        </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                         <button type="submit" class="btn btn-success">Log in</button>
                     </div>
                 </form>
@@ -130,31 +151,52 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Registro de Administrador</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
             </div>
             <div class="modal-body">
                 <form name="formNovoUsuario" id="formNovoUsuario">
                     <div class="form-group">
                         <label for="userLogin">Nome de usuario</label>
-                        <input type="text" name="userLogin" id="userLogin" class="form-control">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fa fa-user"></i></div>
+                            </div>
+                            <input type="text" name="userLogin" id="userLogin" class="form-control">
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="emailLogin">Email</label>
-                        <input type="text" name="emailLogin" id="emailLogin" class="form-control">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fa fa-envelope"></i></div>
+                            </div>
+                            <input type="text" name="emailLogin" id="emailLogin" class="form-control">
+                        </div>
                     </div>
                     <div class="form-group">
                         <label>Senha</label>
-                        <input type="password" name="senhaLoginCad" id="senhaLoginCad" class="form-control">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fa fa-lock"></i></div>
+                            </div>
+                            <input type="password" name="senhaLoginCad" id="senhaLoginCad" class="form-control">
+                        </div>
                         <span class="badge badge-secondary">Senha de até 10 caracteres.</span>
                     </div>
                     <div class="form-group">
                         <label>Confirmar Senha</label>
-                        <input type="password" name="senhaLoginCon" id="senhaLoginCon" class="form-control">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fa fa-lock"></i></div>
+                            </div>
+                            <input type="password" name="senhaLoginCon" id="senhaLoginCon" class="form-control">
+                        </div>
                         <small style="color: red; display: none;" id="senhasDiferentesMsg">As senhas devem ser iguais!
                         </small>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                         <button type="submit" class="btn btn-success" >Registrar</button>
                     </div>
                 </form>
