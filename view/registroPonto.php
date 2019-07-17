@@ -92,14 +92,7 @@
         #quadro{
             margin-top: -1px;
         }
-        #sair{
-            margin-left: 100px;
-        }
     }
-    #sair:hover{
-        color: red;
-    }
-
     .panel{
         padding: 8px 5px 8px 25px;
         background-color: #fff;
@@ -113,5 +106,9 @@
     button {
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+
+    #tabela1{
+        background-color: #fff;
     }
 </style>

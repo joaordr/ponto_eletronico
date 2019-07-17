@@ -1,4 +1,6 @@
 $(document).ready(function(){
+  $("#carregaDados").load('dadosEmpresa.php');
+
   $("#empresa").click(function(){
       $('#carregaDados').load('dadosEmpresa.php');
   })

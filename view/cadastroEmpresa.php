@@ -48,7 +48,7 @@
       });
     </script>
 </head>
-<body>
+<body style="background-color: #F7F5FE;">
 <div class="container-fluid jumbotron">
     <div class="row">
         <div class="col"></div>

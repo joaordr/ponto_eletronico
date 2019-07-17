@@ -62,7 +62,7 @@
 </script>
 
 </head>
-<body>
+<body style="background-color: #F7F5FE;">
 <div class="container">
     <div class="row">
         <div class="col"></div>

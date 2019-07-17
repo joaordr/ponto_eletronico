@@ -6,7 +6,7 @@ var table = $("#tabela1");
 
 function load_funcionarios() {
     let retorno = request("funcionario", "list_func=true");
-    $("#tabela1>tbody>tr").remove(); // limpa a tabela
+    $("#tabela1>tbody>tr").remove();  // limpa a tabela
     if (retorno) {
         funcionarios = retorno;
         $.each(funcionarios, function (index, value) {
@@ -19,7 +19,7 @@ function load_funcionarios() {
             cols += '<td>' + value.cargo + '</td>';
             cols += '<td>' + value.setor + '</td>';
             cols += '<td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTabela" onclick="load_modal_registros();"><i class="fa fa-eye"></i></button></td>';
-            cols += '<td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalUpdateFunc" onclick="load_modal_editar('+ index +');"><i class="fa fa-pencil"></i> Editar</button></td>';
+            cols += '<td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalUpdateFunc" onclick=""><i class="fa fa-edit"></i> Editar</button></td>';
             cols += '<td><button type="button" onclick="delete_func(' + index + ')" class="btn btn-danger"><i class="fa fa-trash"></i> Excluir</button></td>';
 
             newRow.append(cols);

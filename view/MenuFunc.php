@@ -17,18 +17,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--tag meta viewport responsiva-->
     <script type="text/javascript" src="../resources/js/spaFunc.js"></script>
-
-    <style type="text/css">
-        @media (min-width: 992px) {
-        
-    }
-        #registro {
-        margin-top: 20px;
-    }
-
-    </style>
-
 </head>
+
 <body style="background-color: #F7F5FE;">
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -68,22 +58,20 @@
 
 <style type="text/css">
     @media (min-width: 992px) {
-        #quadro{
-            margin-top: -1px;
-        }
         #sair{
-            margin-left: 790px;
+            margin-left: 680px;
         }
     }
-    #sair:hover{
-        color: red;
+    li.nav-item #sair:hover{
+        background-color: #990000;
+        border-radius: 5px;
+        color: #fff
     }
-
-    
-    button {
+    #registro {
         margin-top: 20px;
-        margin-bottom: 20px;
     }
+    
+    
 </style>
 </body>
 </html>

@@ -1,22 +1,29 @@
 <div class="row">
-
-  <div class="col"></div>
-  <div class="col">
-    <button type="button" onclick="load_modal();" class="btn btn-warning" data-toggle="modal" data-target="#modalUpdateEmpresa">Alterar</button>
-  </div>
-  <div class="col"></div>
-</div>
-<div class="row">
     <div class="col"></div>
-    <div class="col">
-        <div class="panel panel-default jumbotron">
+    <div class="col-lg-6">
+        <div class="panel panel-default ">
             <div class="panel-body">
-                <h4 id="nomeEmpresa"></h4>
-                <h5 id="cnpj_value"></h5>
+              <div class="row">
+                 <h4>Nome Fantasia:</h4><h4 id="nomeEmpresa"></h4>
+              </div>
+              <div class="row">
+                 <h4>Razão Social:</h4><h4 id="razaoSocialEmp"></h4>
+              </div>
+              <div class="row">
+                 <h4>CNPJ: </h4><h4 id="cnpj_value"></h4>
+              </div>
             </div>
         </div>
     </div>
     <div class="col"></div>
+</div>
+<div class="row">
+  <div class="col"></div>
+  <div class="col">
+    <button type="button" onclick="load_modal();" class="btn btn-warning btn-lg btn-block" data-toggle="modal" data-target="#modalUpdateEmpresa"><h5>Alterar dados da empresa</h5></button>
+  </div>
+  <div class="col"></div>
+  <div class="col"></div>
 </div>
 
 
@@ -50,7 +57,7 @@
                             <label for="telefone">Telefone</label>
                             <input type="text" name="telefone" id="telefone" class="form-control">
                         </div>
-                        <button type="submit" class="btn btn-primary">Alterar</button>
+                        <button type="submit" class="btn btn-primary btn-lg">Alterar</button>
                     </form>
             </div>
         </div>
@@ -59,17 +66,19 @@
 
   <style type="text/css">
      .panel{
+      box-shadow: 20px 30px 50px #808080;
       margin-top: 15px;
-      border: 1px solid #D3D3D3;
-      width: 500px
+      background-color: #fff;
+      padding: 25px;
      }
      button{
       margin-top: 20px;
       margin-left: 130px;
      }
-     h4, h5{
-      text-align: center;
+     h4{
+       margin-right: 10px;
      }
+
   </style>
 
 

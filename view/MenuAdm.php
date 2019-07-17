@@ -55,12 +55,20 @@
   <style type="text/css">
       @media (min-width: 992px) {
           #sair{
-            margin-left: 450px;
+            margin-left: 440px;
           }
       }
       #sair:hover{
             color: red;
-          }
+      }
+      .container-fluid{
+        margin-top: 20px;
+      }
+      li.nav-item #sair:hover{
+        background-color: #990000;
+        border-radius: 5px;
+        color: #fff
+    }
   </style>
 
     <script type="text/javascript" src="../resources/js/request_api.js"></script>

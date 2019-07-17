@@ -12,6 +12,7 @@ function load_info() {
     let retorno = request("empresa", 'load=true');
     if (retorno) {
         $("#nomeEmpresa").text(retorno.nome);
+        $("#razaoSocialEmp").text(retorno.razaoSocial);
         $("#cnpj_value").text(retorno.cnpj);
         empresa = retorno;
     } else {

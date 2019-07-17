@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!--tag meta viewport responsiva-->
     
 </head>
-<body>
+<body style="background-color: #F7F5FE;">
 <div class="container">
     <div class="row">
         <div class="col"></div>
@@ -60,6 +60,7 @@
                     }
                 </style>
 
+
             </div>
         </div>
         </div>
@@ -80,10 +81,10 @@
             <div class="modal-body">
                 <form name="formEntrarAdm" id="formEntrarAdm">
                     <div class="form-group">
-                        <label>Email</label>
+                        <label>Nome de usuário</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
-                              <div class="input-group-text"><i class="fa fa-envelope"></i></div>
+                              <div class="input-group-text"><i class="fa fa-user"></i></div>
                             </div>
                             <input type="text" name="userLogin" id="userLogin" class="form-control">
                         </div>
@@ -97,10 +98,9 @@
                             <input type="password" name="senhaLogin" id="senhaLogin" class="form-control">
                         </div>
                     </div>
-                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalRegistrarAdm"
-                            data-dismiss="modal">Registrar-se
+                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalRegistrarAdm" data-dismiss="modal">Registrar-se
                     </button>
-                    <button type="submit" class="btn btn-primary">Log in</button>
+                    <button type="submit" class="btn btn-primary">Entrar</button>
                 </form>
             </div>
         </div>
@@ -120,10 +120,10 @@
             <div class="modal-body">
                 <form name="formEntrarFunc" id="formEntrarFunc">
                     <div class="form-group">
-                        <label>Email</label>
+                        <label>Nome de usuário</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
-                              <div class="input-group-text"><i class="fa fa-envelope"></i></div>
+                              <div class="input-group-text"><i class="fa fa-user"></i></div>
                             </div>
                             <input type="text" name="userLogin" id="userLogin" class="form-control">
                         </div>
@@ -138,7 +138,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-success">Log in</button>
+                        <button type="submit" class="btn btn-success">Entrar</button>
                     </div>
                 </form>
             </div>
@@ -214,8 +214,6 @@
                 rules:{
                     userLogin: {
                         required: true,
-                        email: true,
-                        maxWords: 1,
                         maxlength: 100
                     },
                     senhaLogin: {
@@ -229,8 +227,6 @@
                 rules:{
                     userLogin: {
                         required: true,
-                        email: true,
-                        maxWords: 1,
                         maxlength: 100
                     },
                     senhaLogin: {
