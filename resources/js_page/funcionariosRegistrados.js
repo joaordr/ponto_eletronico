@@ -60,13 +60,15 @@ function load_modal_editar(index) {
 }
 
 function load_modal_registros(index) {
-    let retorno = request("registro", "load_registro_func=true");
+    let func = funcionarios[index];
+    let retorno = request("registro", ("funcionario=" + func + "load_registro_func=true"));
     if (retorno) {
         if (retorno == true) {
+            alert(retorno);
             return;
         }
 
-        $("#tabela1>tbody>tr").remove(); 
+        $("#tableReg>tbody>tr").remove(); 
 
         $.each(retorno, function (index, value) {
             var newRow = $("<tr>");
