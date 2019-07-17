@@ -28,7 +28,15 @@ function lista_dados(){
     }
 }
 
+function lista_nome_logado(){
+	let retorno = request("funcionario", "list_dados=true");
+	if(retorno){
+		$("#nomeFunc").text(retorno.nome);
+	}
+}
+
 $(document).ready(function(){
+    lista_nome_logado();
     lista_dados();
 
     $("#updateFuncionario").submit(function (e) {

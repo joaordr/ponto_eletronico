@@ -1,9 +1,11 @@
 $(document).ready(function(){
-    $("#ponto").click(function(){
+	$('#registro').load('registroPonto.php');
+
+	$("#ponto").click(function(){
         $('#registro').load('registroPonto.php');
     })
-
-    $("#editarCadastro").click(function(){
+   $("#editarCadastro").click(function(){
+   		$("#registro").removeAttr();
         $('#registro').load('EditarFuncionario.php');
     })
 });

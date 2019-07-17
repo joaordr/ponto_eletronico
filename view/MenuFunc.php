@@ -19,6 +19,9 @@
     <script type="text/javascript" src="../resources/js/spaFunc.js"></script>
 
     <style type="text/css">
+        @media (min-width: 992px) {
+        
+    }
         #registro {
         margin-top: 20px;
     }
@@ -26,7 +29,7 @@
     </style>
 
 </head>
-<body>
+<body style="background-color: #F7F5FE;">
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">
@@ -45,7 +48,7 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="#" id="editarCadastro">Editar dados<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item float-lg-right">
+                <li class="nav-item">
                     <a class="nav-link" href="#" onclick="logout();" id="sair">Encerrar seção<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
@@ -55,8 +58,32 @@
 
 <div class="container-fluid" id="registro">
     
+
 </div>
+
+
+
 <script type="text/javascript" src="../resources/js/request_api.js"></script>
 <script type="text/javascript" src="../resources/js_page/menuFunc.js"></script>
+
+<style type="text/css">
+    @media (min-width: 992px) {
+        #quadro{
+            margin-top: -1px;
+        }
+        #sair{
+            margin-left: 790px;
+        }
+    }
+    #sair:hover{
+        color: red;
+    }
+
+    
+    button {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+</style>
 </body>
 </html>

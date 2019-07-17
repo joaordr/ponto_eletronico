@@ -1,9 +1,15 @@
 <div class="row">
     <div class="col-md-7 col-sm-12">
-        <div class="alert alert-info" role="alert" id="nomeFunc">Bem vindo(a), </div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="row">
+                <h5>Bem vindo(a), </h5><h5 id="nomeFunc"></h5>
+            </div>
+            </div>
+        </div>
     </div>
     <div class="col">
-        <button type="button" class="btn btn-info btn-lg btn-block float-lg-right" id="quadro" data-toggle="modal"data-target="#modalQuadro">Quadro de Horários</button>
+        <button type="button" class="btn btn-lg btn-block float-lg-right" id="quadro" data-toggle="modal"data-target="#modalQuadro">Quadro de Horários</button>
     </div>
 </div>
 
@@ -64,8 +70,6 @@
         </div>
     </div>
 </div>
-<script type="text/javascript" src="../resources/js/request_api.js"></script>
-<script type="text/javascript" src="../resources/js_page/menuFunc.js"></script>
 
 <!-- Modal quadro de horarios -->
 <div class="modal fade" id="modalQuadro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -81,25 +85,30 @@
         </div>
     </div>
 </div>
-
+<script type="text/javascript" src="../resources/js_page/menuFunc.js"></script>
+<script type="text/javascript" src="../resources/js_page/updateFuncionario.js"></script>
 <style type="text/css">
     @media (min-width: 992px) {
         #quadro{
             margin-top: -1px;
         }
         #sair{
-            margin-left: 790px;
+            margin-left: 100px;
         }
     }
     #sair:hover{
         color: red;
     }
 
-    .panel-body{
-        border: 1px solid  #87CEEB;
-        border-radius: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
+    .panel{
+        padding: 8px 5px 8px 25px;
+        background-color: #fff;
+        box-shadow: 20px 30px 50px #808080;
+        border-left: 5px solid #0066CC;
+    }
+    #quadro{
+        background-color: #0066CC;
+        color: #fff;
     }
     button {
         margin-top: 20px;

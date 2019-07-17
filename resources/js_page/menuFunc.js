@@ -52,5 +52,5 @@ function load_registros() {
 
 
 $(document).ready(function () {
-    
+    load_registros();
 });
