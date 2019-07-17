@@ -13,12 +13,13 @@ class RegistroDao {
         try {
             $conexao = Conexao::get_conexao();
 
-            $sql = 'SELECT * FROM registros WHERE MONTH(data) = ? AND YEAR(data) = ? AND funcionario_id = ? AND tipo = ?;';
+            $sql = 'SELECT * FROM registros WHERE MONTH(data) = ? AND YEAR(data) = ? AND DAY(data) = ? AND funcionario_id = ? AND tipo = ?;';
             $stmt = $conexao->prepare($sql);
             $stmt->bindValue(1, date('m'));
             $stmt->bindValue(2, date('Y'));
-            $stmt->bindValue(3, $funcionario->getId());
-            $stmt->bindValue(4, $tipo);
+            $stmt->bindValue(3, date('d'));
+            $stmt->bindValue(4, $funcionario->getId());
+            $stmt->bindValue(5, $tipo);
             $stmt->execute();
             if ($stmt->setFetchMode(PDO::FETCH_ASSOC) && count($stmt->fetchAll()) > 0) {
                 return 'not allowed';

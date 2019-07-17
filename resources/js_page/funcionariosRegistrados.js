@@ -1,6 +1,9 @@
 var funcionarios;
 var table = $("#tabela1");
+var table_registros = $("#tableReg");
 var funcionario;
+
+var funcionarioEdicao;
 
 
 function load_funcionarios() {
@@ -42,33 +45,34 @@ function delete_func(index) {
 }
 
 function load_modal_editar(index) {
-        //alert(index);
-        let func = funcionarios[index];
-        $("#nome").val(func.nome);
-        $("#cpf").val(func.cpf);
-        $("#rg").val(func.rg);
-        $("#dtNasc").val(func.dataNascimento);
-        $("#email").val(func.email);
-        $("#telefone").val(func.telefone);
-        $("#cargo").val(func.cargo);
-        $("#setor").val(func.setor);
-        //usuario = func.usuario;
-        //alert(usuario);
-        //$("#nomeUsuario").val(usuario.user);
-        //$("#senhaFunc").val(usuario.senha);
-    
+    funcionarioEdicao = funcionarios[index];
+    //alert(index);
+    let func = funcionarios[index];
+    $("#nome").val(func.nome);
+    $("#cpf").val(func.cpf);
+    $("#rg").val(func.rg);
+    $("#dtNasc").val(func.dataNascimento);
+    $("#email").val(func.email);
+    $("#telefone").val(func.telefone);
+    $("#cargo").val(func.cargo);
+    $("#setor").val(func.setor);
+    //usuario = func.usuario;
+    //alert(usuario);
+    //$("#nomeUsuario").val(usuario.user);
+    //$("#senhaFunc").val(usuario.senha);
+
 }
 
 function load_modal_registros(index) {
-    let func = funcionarios[index];
-    let retorno = request("registro", ("funcionario=" + func + "load_registro_func=true"));
+    let id = funcionarios[index].id;
+    let retorno = request("registro", ("id=" + id + "&load_registro_func=true"));
+    console.log(retorno);
     if (retorno) {
         if (retorno == true) {
-            alert(retorno);
             return;
         }
 
-        $("#tableReg>tbody>tr").remove(); 
+        $("#tableReg>tbody>tr").remove();
 
         $.each(retorno, function (index, value) {
             var newRow = $("<tr>");
@@ -79,7 +83,7 @@ function load_modal_registros(index) {
             }
 
             newRow.append(cols);
-            table.append(newRow);
+            table_registros.append(newRow);
         });
 
     }
@@ -88,10 +92,10 @@ function load_modal_registros(index) {
 
 $(document).ready(function () {
     $("#updateFuncionario").submit(function (f) {
-        let dados = $(this).serialize() + "&update=true";
+        let dados = $(this).serialize() + "&id=" + funcionarioEdicao.id + "&update=true";
         let retorno = request("funcionario", dados);
-        alert(retorno);
         if (retorno) {
+            load_funcionarios();
             $("#modalUpdate").modal("hide");
             alert("Alterado com sucesso");
         } else {

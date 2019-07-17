@@ -26,7 +26,9 @@ try {
     }
 
     if (isset($_POST['load_registro_func'])) {
-        $empresa = unserialize($_SESSION['empresaLogadoAdmin']);
+        $id = filter_input(INPUT_POST, 'id', FILTER_SANITIZE_NUMBER_INT);
+        $funcionario = new Funcionario();
+        $funcionario->setId($id);
         $retorno = $controle->load($funcionario);
         echo json_encode($retorno);
         die();
