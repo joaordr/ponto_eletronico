@@ -3,7 +3,7 @@ function logout() {
 }
 
 var table = $("#tabela1");
-
+var funcionario;
 var numero_registro;
 
 function select_button(button, numero) {
@@ -50,6 +50,7 @@ function load_registros() {
     }
 }
 
+
 $(document).ready(function () {
-    load_registros();
+    
 });

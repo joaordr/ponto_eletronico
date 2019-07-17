@@ -17,8 +17,7 @@ class RegistroControle
      * @return string
      * @throws Exception
      */
-    public function create($tipo, Funcionario $funcionario)
-    {
+    public function create($tipo, Funcionario $funcionario){
         return $this->dao->create($tipo, $funcionario);
     }
 
@@ -27,9 +26,10 @@ class RegistroControle
      * @return array|null
      * @throws Exception
      */
-    public function load(Funcionario $funcionario)
-    {
+    public function load(Funcionario $funcionario){
         return $this->dao->load($funcionario);
     }
+    
+
 
 }

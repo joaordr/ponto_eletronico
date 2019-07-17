@@ -85,6 +85,11 @@ try {
         echo json_encode((isset($lista_convertida) ? $lista_convertida : null));
         die();
     }
+    if (isset($_POST['list_dados'])) {
+        $funcionario = unserialize($_SESSION['funcionarioLogadoFunc']);
+        echo json_encode($funcionario->toArray());
+        die();
+    }
 
     http_response_code(404);
 } catch (Exception $ex) {

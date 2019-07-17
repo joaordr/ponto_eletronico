@@ -25,6 +25,13 @@ try {
         die();
     }
 
+    if (isset($_POST['load_registro_func'])) {
+        $empresa = unserialize($_SESSION['empresaLogadoAdmin']);
+        $retorno = $controle->load($funcionario);
+        echo json_encode($retorno);
+        die();
+    }
+
     http_response_code(404);
 } catch (Exception $ex) {
     http_response_code(500);

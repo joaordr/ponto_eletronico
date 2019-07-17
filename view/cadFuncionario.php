@@ -18,9 +18,9 @@
     <link rel="stylesheet" href="../resources/bootstrap/css/bootstrap.min.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--tag meta viewport responsiva-->
-    <script type="text/javascript" src="../resources/js/spa.js"></script>
+    <script type="text/javascript" src="../resources/js/spaFunc.js"></script>
 
-    <script type="text/javascript">
+  <script type="text/javascript">
    $(document).ready(function(){
       $("#cadFuncionario").validate({
          rules:{
@@ -102,7 +102,7 @@
                             <label for="setor">Setor</label>
                             <input type="text" name="setor" id="setor" class="form-control">
                         </div>
-                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                        <button type="submit" class="btn btn-primary" id="trocaNome">Cadastrar</button>
                     </form>
                 </div>
             </div>

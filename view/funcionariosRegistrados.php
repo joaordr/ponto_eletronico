@@ -27,10 +27,9 @@
                 <span aria-hidden="true">&times;</span>
             </div>
             <div class="modal-body">
-                <table class="table">
+                <table class="table" id="tableReg">
                     <thead class="thead-dark">
                     <tr>
-                        <th scope="col">#</th>
                         <th scope="col">Dia/Mês</th>
                         <th scope="col">Entrada 1</th>
                         <th scope="col">Saida 1</th>
@@ -41,16 +40,6 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>1 de Julho</td>
-                        <td>08:00</td>
-                        <td>12:00</td>
-                        <td>13:00</td>
-                        <td>17:00</td>
-                        <td>17:00</td>
-                        <td>17:30</td>
-                    </tr>
                     </tbody>
                 </table>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>

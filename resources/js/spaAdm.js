@@ -8,8 +8,5 @@ $(document).ready(function(){
   $("#regFuncionario").click(function(){
       $('#carregaDados').load('funcionariosRegistrados.php');
   })
-  $("#registros").click(function(){
-      $('#carregaDados').load('RegistroGeral.php');
-  })
 })
 
