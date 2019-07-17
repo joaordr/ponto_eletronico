@@ -28,6 +28,7 @@ $(document).ready(function () {
         let retorno = request("empresa", dados);
         if (retorno) {
             load_info();
+            alert("Alterado com sucesso");
             $("#modalUpdateEmpresa").modal("hide");
         } else {
             alert("Erro ao editar empresa!");

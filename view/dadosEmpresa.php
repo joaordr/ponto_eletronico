@@ -34,6 +34,8 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Alterar empresa</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
             </div>
             <div class="modal-body">
                 <form name="updateEmpresa" id="updateEmpresa" method="POST">

@@ -36,14 +36,12 @@ function lista_nome_logado(){
 }
 
 $(document).ready(function(){
-    lista_nome_logado();
-    lista_dados();
-
     $("#updateFuncionario").submit(function (e) {
         let dados = $(this).serialize() + "&update=true";
         let retorno = request("funcionario", dados);
         if (retorno) {
             lista_dados();
+            alert("Alterado com sucesso")
             $("#modalUpdate").modal("hide");
         } else {
             alert("Erro ao editar funcionário!");
@@ -51,4 +49,6 @@ $(document).ready(function(){
         e.preventDefault();
         return false;
     });
+    lista_nome_logado();
+    lista_dados();
 });

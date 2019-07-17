@@ -1,7 +1,6 @@
 var funcionarios;
-
 var table = $("#tabela1");
-
+var funcionario;
 
 
 function load_funcionarios() {
@@ -18,8 +17,8 @@ function load_funcionarios() {
             cols += '<td>' + value.telefone + '</td>';
             cols += '<td>' + value.cargo + '</td>';
             cols += '<td>' + value.setor + '</td>';
-            cols += '<td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTabela" onclick="load_modal_registros();"><i class="fa fa-eye"></i></button></td>';
-            cols += '<td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalUpdateFunc" onclick=""><i class="fa fa-edit"></i> Editar</button></td>';
+            cols += '<td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTabela" onclick="load_modal_registros(' + index + ');"><i class="fa fa-eye"></i></button></td>';
+            cols += '<td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalUpdate" onclick="load_modal_editar(' + index + ');"><i class="fa fa-edit"></i> Editar</button></td>';
             cols += '<td><button type="button" onclick="delete_func(' + index + ')" class="btn btn-danger"><i class="fa fa-trash"></i> Excluir</button></td>';
 
             newRow.append(cols);
@@ -42,22 +41,46 @@ function delete_func(index) {
     }
 }
 
-function load_modal_editar(funcionario) {
-    let func = funcionarios;
-    let retorno = request("funcionario", ("funcionario=" + func + "&update=true"));
+function load_modal_editar(index) {
+        //alert(index);
+        let func = funcionarios[index];
+        $("#nome").val(func.nome);
+        $("#cpf").val(func.cpf);
+        $("#rg").val(func.rg);
+        $("#dtNasc").val(func.dataNascimento);
+        $("#email").val(func.email);
+        $("#telefone").val(func.telefone);
+        $("#cargo").val(func.cargo);
+        $("#setor").val(func.setor);
+        //usuario = func.usuario;
+        //alert(usuario);
+        //$("#nomeUsuario").val(usuario.user);
+        //$("#senhaFunc").val(usuario.senha);
+    
+}
+
+function load_modal_registros(index) {
+    let retorno = request("registro", "load_registro_func=true");
     if (retorno) {
-        $("#nome").val(funcionarios.nome);
-        $("#cpf").val(funcionarios.cpf);
-        $("#rg").val(funcionarios.rg);
-        $("#dtNasc").val(funcionarios.dataNascimento);
-        $("#email").val(funcionarios.email);
-        $("#telefone").val(funcionarios.telefone);
-        $("#cargo").val(funcionarios.cargo);
-        $("#setor").val(funcionarios.setor);
-    } else {
-        alert("Deu Errado");
+        if (retorno == true) {
+            return;
+        }
+
+        $("#tabela1>tbody>tr").remove(); 
+
+        $.each(retorno, function (index, value) {
+            var newRow = $("<tr>");
+            var cols = "";
+            cols += '<td>' + value[0].data + '</td>';
+            for (i = 0; i < value.length; i++) {
+                cols += '<td>' + value[i].hora + '</td>';
+            }
+
+            newRow.append(cols);
+            table.append(newRow);
+        });
+
     }
-   
 }
 
 
@@ -65,29 +88,17 @@ $(document).ready(function () {
     $("#updateFuncionario").submit(function (f) {
         let dados = $(this).serialize() + "&update=true";
         let retorno = request("funcionario", dados);
+        alert(retorno);
         if (retorno) {
-            $("#modalUpdateFunc").modal("hide");
+            $("#modalUpdate").modal("hide");
+            alert("Alterado com sucesso");
         } else {
             alert("Erro ao editar funcionario!");
         }
-        e.preventDefault();
+        f.preventDefault();
         return false;
     });
-
-});
-
-
-
-function load_modal_registros(index) {
-    let id = funcionarios[index];
-    let retorno = request("registro.funcionario->getId()", "load_registro_func=true");
-    if (retorno == true) {
-        alert("deu certo");
-    }
-}
-
-
-$(document).ready(function () {
     load_funcionarios();
-
 });
+
+

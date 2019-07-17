@@ -49,7 +49,7 @@
 </div>
 
 <!--modal update funcionario-->
-<div class="modal fade" id="modalUpdateFunc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<div class="modal fade" id="modalUpdate" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -151,7 +151,7 @@
                             <input type="text" name="senhaFunc" id="senhaFunc" class="form-control">
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                    <button type="submit" class="btn btn-primary">Alterar</button>
                 </form>
             </div>
         </div>
