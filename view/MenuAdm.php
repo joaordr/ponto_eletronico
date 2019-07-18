@@ -57,7 +57,7 @@
   <style type="text/css">
       @media (min-width: 992px) {
           #sair{
-            margin-left: 460px;
+            margin-left: 445px;
           }
       }
       #sair:hover{

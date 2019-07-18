@@ -7,28 +7,28 @@
             </div>
             <div class="panel-body">
                 <div class="row">
-                    <h5>Nome completo:</h5> <p id="dadoNome"></p>
+                    <h5>Nome completo:</h5> <h5 id="dadoNome"></h5>
                 </div>
                 <div class="row">
-                    <h5>CPF:</h5> <p id="dadoCpf"></p>
+                    <h5>CPF:</h5> <h5 id="dadoCpf"></h5>
                 </div>
                 <div class="row">
-                    <h5>RG</h5> <p id="dadoRg"></p>
+                    <h5>RG</h5> <h5 id="dadoRg"></h5>
                 </div>
                 <div class="row">
-                    <h5>Data de nascimento:</h5> <p id="dadoDtNasc"></p>
+                    <h5>Data de nascimento:</h5> <h5 id="dadoDtNasc"></h5>
                 </div>
                 <div class="row">
-                    <h5>Email:</h5> <p id="dadoEmail"></p>
+                    <h5>Email:</h5> <h5 id="dadoEmail"></h5>
                 </div>
                 <div class="row">
-                    <h5>Telefone:</h5> <p id="dadoTelefone"></p>
+                    <h5>Telefone:</h5> <h5 id="dadoTelefone"></h5>
                 </div>
                 <div class="row">
-                    <h5>Cargo:</h5> <p id="dadoCargo"></p>
+                    <h5>Cargo:</h5> <h5 id="dadoCargo"></h5>
                 </div>
                 <div class="row">
-                    <h5>Setor de atuação:</h5> <p id="dadoSetor"></p>
+                    <h5>Setor de atuação:</h5> <h5 id="dadoSetor"></h5>
                 </div>
             </div>
         </div>
@@ -109,5 +109,9 @@
     h5{
         padding-left: 10px;
     }
-
+    #dadoNome, #dadoCpf, #dadoRg, #dadoDtNasc, 
+    #dadoEmail, #dadoTelefone, #dadoCargo, #dadoSetor{
+        font-weight: normal;
+        margin-left: 5px;
+    }
 </style>

@@ -10,14 +10,14 @@
                     <div class="row">
                         <div class="col">
                             <div class="form-group">
-                        <label for="nome">Nome completo</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                              <div class="input-group-text"><i class="fa fa-user"></i></div>
+                                <label for="nome">Nome completo</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                       <div class="input-group-text" id="iconUser"><i class="fa fa-user"></i></div>
+                                    </div>
+                                    <input type="text" name="nome" id="nome" class="form-control">
+                                </div>
                             </div>
-                            <input type="text" name="nome" id="nome" class="form-control">
-                        </div>
-                    </div>
                         </div>
                     </div>
                     <div class="row">
@@ -160,5 +160,9 @@
         margin: -20px -20px 20px -20px; /*superior, direita, inferior, esquerda*/
         border-top-right-radius: 5px;
         border-top-left-radius: 5px;
+    }
+    #iconUser{
+        padding-left: 16px;
+        padding-right: 16px;
     }
 </style>

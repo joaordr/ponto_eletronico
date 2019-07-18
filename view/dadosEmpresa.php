@@ -17,7 +17,7 @@
             </div>
             <div class="panel-body">
               <div class="row info">
-                 <h4>Nome Fantasia:</h4><h4 id="nomeEmpresa"></h4>
+                 <h4>Nome da empresa:</h4><h4 id="nomeEmpresa"></h4>
               </div>
               <div class="row info">
                  <h4>Razão Social:</h4><h4 id="razaoSocialEmp"></h4>
@@ -44,28 +44,73 @@
             </div>
             <div class="modal-body">
                 <form name="updateEmpresa" id="updateEmpresa" method="POST">
-                        <div class="form-group">
+                    <div class="row">
+                      <div class="col-lg-12 col-md-12">
+                          <div class="form-group">
                             <label for="nome">Nome da empresa</label>
-                            <input type="text" name="nome" id="nome" class="form-control">
-                        </div>
-                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-briefcase"></i></div>
+                                </div>
+                                <input type="text" name="nome" id="nome" class="form-control">
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                       <div class="col-lg-12 col-md-12">
+                          <div class="form-group">
                             <label for="razaoSocial">Razão Social</label>
-                            <input type="text" name="razaoSocial" id="razaoSocial" class="form-control">
-                        </div>
-                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-briefcase"></i></div>
+                                </div>
+                                <input type="text" name="razaoSocial" id="razaoSocial" class="form-control">
+                            </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="row">
+                       <div class="col-lg-12 col-md-12">
+                          <div class="form-group">
                             <label for="cnpj">CNPJ</label>
-                            <input type="text" name="cnpj" id="cnpj" class="form-control">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-address-card"></i></div>
+                                </div>
+                                <input type="text" name="cnpj" id="cnpj" class="form-control">
+                            </div>
                         </div>
-                        <div class="form-group">
+                       </div>
+                    </div>
+                    <div class="row">
+                       <div class="col-lg-6 col-md-12">
+                          <div class="form-group">
                             <label for="ramo">Ramo de atividade</label>
-                            <input type="text" name="ramo" id="ramo" class="form-control">
-                        </div>
-                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-cubes"></i></div>
+                                </div>
+                                <input type="text" name="ramo" id="ramo" class="form-control">
+                            </div>
+                          </div>
+                       </div>
+                       <div class="col-lg-6 col-md-12">
+                          <div class="form-group">
                             <label for="telefone">Telefone</label>
-                            <input type="text" name="telefone" id="telefone" class="form-control">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-phone"></i></div>
+                                </div>
+                                <input type="text" name="telefone" id="telefone" class="form-control">
+                            </div>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-lg">Alterar</button>
-                    </form>
+                       </div>
+                    </div>
+                    <div class="row">
+                        <button type="submit" class="btn btn-primary btn-block">Alterar dados</button>
+                    </div>   
+                  </form>
             </div>
         </div>
     </div>

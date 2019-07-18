@@ -3,7 +3,7 @@
         <div class="panel panel-default">
             <div class="panel-body">
                 <div class="row">
-                <h5>Bem vindo(a), </h5><h5 id="nomeFunc"></h5>
+                <h5>Bem vindo(a), </h5><h5 id="nomeFunc" style="margin-left: 10px;"></h5>
             </div>
             </div>
         </div>
