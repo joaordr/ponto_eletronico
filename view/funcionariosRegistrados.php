@@ -1,4 +1,4 @@
-<table class="table" id="tabela1">
+<table class="table table-hover rounded" id="tabela1">
     <thead class="thead-dark">
     <tr>
         <th scope="col">#</th>
@@ -176,10 +176,16 @@
 <style type="text/css">
     #tabela1 {
         margin-top: 50px;
+        background-color: #fff;
+        box-shadow: 20px 30px 50px #808080;
     }
 
     #modalTabela {
         width: 1000px;
         margin-left: 200px;
     }
+    th, td{
+        text-align: center;
+    }
+
 </style>
