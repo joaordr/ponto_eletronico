@@ -174,21 +174,21 @@
                     <div class="row">
                         <div class="col">
                             <div class="form-group">
-                        <label for="senhaFunc">Senha</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                              <div class="input-group-text"><i class="fa fa-lock"></i></div>
+                                <label for="senhaFunc">Senha</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><i class="fa fa-lock"></i></div>
+                                    </div>
+                                    <input type="text" name="senhaFunc" id="senhaFunc" class="form-control">
+                                </div>
                             </div>
-                            <input type="text" name="senhaFunc" id="senhaFunc" class="form-control">
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col">
+                           <button type="submit" class="btn btn-primary">Alterar cadastro</button>  
                         </div>
                     </div>
-                    
-                    
-                    
-                    
-                    <button type="submit" class="btn btn-primary">Alterar</button>
                 </form>
             </div>
         </div>
