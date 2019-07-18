@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- jQuery primeiro, then Popper.js, then Bootstrap JS -->
     <script type="text/javascript" src="../resources/js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="../resources/jquery_confirm/jquery-confirm.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../resources/jquery_confirm/jquery-confirm.min.css">
     <script type="text/javascript" src="../resources/js/jquery.validate.min.js"></script>
     <script type="text/javascript" src="../resources/js/localization/messages_pt_BR.js"></script>
     <script type="text/javascript" src="../resources/js/additional-methods.min.js"></script>
@@ -15,6 +17,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../resources/bootstrap/css/bootstrap.min.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--tag meta viewport responsiva-->
     <script type="text/javascript" src="../resources/js/spaFunc.js"></script>
 </head>
@@ -36,7 +39,7 @@
                     <a class="nav-link" href="#" id="ponto">Registrar Ponto <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#" id="editarCadastro">Editar dados<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#" id="editarCadastro">Dados do funcionário<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" onclick="logout();" id="sair">Encerrar seção<span class="sr-only">(current)</span></a>

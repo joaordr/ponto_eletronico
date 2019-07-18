@@ -6,6 +6,6 @@ $(document).ready(function(){
     })
    $("#editarCadastro").click(function(){
    		$("#registro").removeAttr();
-        $('#registro').load('EditarFuncionario.php');
+        $('#registro').load('dadosFuncionario.php');
     })
 });

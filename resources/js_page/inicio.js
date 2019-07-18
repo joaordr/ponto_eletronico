@@ -38,10 +38,40 @@ $(document).ready(function () {
         let dados = $(this).serialize() + "&create_adm=true";
         let retorno = request("usuario", dados, true);
         if (retorno) {
-            alert("Salvo com sucesso!");
+            $.confirm({
+                columnClass: 'small',
+                title: 'Confirmação!',
+                icon: 'fa fa-check-circle',
+                content: 'Novo usuário cadastrado com sucesso',
+                type: 'green',
+                typeAnimated: true,
+                buttons: {
+                    ok: {
+                        text: 'Ok',
+                        btnClass: 'btn-green',
+                        action: function(){
+                        }
+                    }
+                }
+            });
             $("#formNovoUsuario input").val("");
         } else {
-            alert("Erro ao salvar!");
+            $.confirm({
+                columnClass: 'small',
+                title: 'Erro!',
+                icon: 'fa fa-exclamation',
+                content: 'Erro ao salvar novo usuário.',
+                type: 'red',
+                typeAnimated: true,
+                buttons: {
+                    ok: {
+                        text: 'Ok',
+                        btnClass: 'btn-red',
+                        action: function(){
+                        }
+                    }
+                }
+            });
         }
         e.preventDefault();
         return false;

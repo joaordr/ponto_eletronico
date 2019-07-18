@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- jQuery primeiro, Bootstrap JS -->
     <script type="text/javascript" src="resources/js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="../resources/jquery_confirm/jquery-confirm.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../resources/jquery_confirm/jquery-confirm.min.css">
     <script type="text/javascript" src="resources/js/jquery.validate.min.js"></script>
     <script type="text/javascript" src="resources/js/localization/messages_pt_BR.js"></script>
     <script type="text/javascript" src="resources/js/additional-methods.min.js"></script>

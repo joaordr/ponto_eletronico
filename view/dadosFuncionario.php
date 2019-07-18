@@ -1,44 +1,3 @@
-<script type="text/javascript">
-   $(document).ready(function(){
-      $("#cadFuncionario").validate({
-         rules:{
-            nome: {
-               required: true,
-               maxlength: 100
-
-            },
-            cpf: {
-               cpfBR: true,
-               required: true
-            }, 
-            rg:{
-               required: true
-            },
-            dtNasc:{
-               required: true,
-               date: true
-            },
-            email:{
-               required: true,
-               email: true
-            },
-            telefone:{
-               required: true,
-               maxlength: 10
-            },
-            cargo:{
-               required: true,
-               maxlength: 100
-            },
-            setor:{
-               required: true,
-               maxlength: 100
-            }
-         }
-      })
-   });
-</script>
-
 <div class="row">
     <div class="col"></div>
     <div class="col-lg-6">
@@ -73,13 +32,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="col"></div>
-</div>
-<div class="row">
-    <div class="col"></div>
-    <div class="col-lg-6">
-        <button type="button" class="btn btn-warning btn-lg btn-block" data-toggle="modal"data-target="#modalUpdate" onclick="load_modal_editar();">Alterar dados</button>
     </div>
     <div class="col"></div>
 </div>

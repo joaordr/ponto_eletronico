@@ -1,5 +1,22 @@
 function logout() {
-    window.location.replace("../index.php");
+    $.confirm({
+            columnClass: 'small',
+            title: 'Deseja mesmo encerrar seção??',
+            icon: 'fa fa-sign-out alt',
+            content: 'Se sim, clique no botão encerrar.',
+            buttons: {
+                encerrar: {
+                    text: 'Encerrar',
+                    action: function () {
+                        window.location.replace("../index.php");
+                    }
+                },
+                cancelar: {
+                    text: 'Cancelar',
+                    action: function(){}
+                }
+            }
+        });
 }
 
 var table = $("#tabela1");
@@ -16,13 +33,59 @@ function gravar_registro() {
     let retorno = request("registro", ("tipo=" + numero_registro + "&create=true"));
     if (retorno) {
         if (retorno == "not allowed") {
-            alert("Horário ja registrado!")
+            $.confirm({
+                columnClass: 'small',
+                title: 'ERRO!',
+                icon: 'fa fa-exclamation-triangle',
+                content: 'Horário já registrado.',
+                type: 'red',
+                typeAnimated: true,
+                buttons: {
+                    ok: {
+                        text: 'Ok',
+                        btnClass: 'btn-red',
+                        action: function(){
+                        }
+                    }
+                }
+            });
         } else {
+            $.confirm({
+                columnClass: 'small',
+                title: 'Confirmação!',
+                icon: 'fa fa-check-double',
+                content: 'Registro gravado com sucesso',
+                type: 'green',
+                typeAnimated: true,
+                buttons: {
+                    ok: {
+                        text: 'Ok',
+                        btnClass: 'btn-green',
+                        action: function(){
+                        }
+                    }
+                }
+            });
             load_registros();
+            $(".btn").removeAttr('style');
         }
-        $(".btn").removeAttr('style');
     } else {
-        alert("Erro ao gravar registro!")
+        $.confirm({
+            title: 'ERRO!',
+            content: 'Erro ao gravar registro. Informe ao administrador.',
+            type: 'red',
+            typeAnimated: true,
+            buttons: {
+                ok: {
+                    text: 'Ok',
+                    btnClass: 'btn-red',
+                    action: function(){
+                    }
+                },
+                close: function () {
+                }
+            }
+        });
     }
 }
 

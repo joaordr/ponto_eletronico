@@ -28,10 +28,40 @@ $(document).ready(function () {
         let retorno = request("empresa", dados);
         if (retorno) {
             load_info();
-            alert("Alterado com sucesso");
+            $.confirm({
+                columnClass: 'small',
+                title: 'Confirmação!',
+                icon: 'fa fa-check-circle',
+                content: 'Alterado com sucesso',
+                type: 'green',
+                typeAnimated: true,
+                buttons: {
+                    ok: {
+                        text: 'Ok',
+                        btnClass: 'btn-green',
+                        action: function(){
+                        }
+                    }
+                }
+            });
             $("#modalUpdateEmpresa").modal("hide");
         } else {
-            alert("Erro ao editar empresa!");
+            $.confirm({
+                columnClass: 'small',
+                title: 'Erro!',
+                icon: 'fa fa-exclamation',
+                content: 'Erro ao alterar dados',
+                type: 'red',
+                typeAnimated: true,
+                buttons: {
+                    ok: {
+                        text: 'Ok',
+                        btnClass: 'btn-red',
+                        action: function(){
+                        }
+                    }
+                }
+            });
         }
         e.preventDefault();
         return false;

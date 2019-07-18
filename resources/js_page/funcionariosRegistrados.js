@@ -33,15 +33,71 @@ function load_funcionarios() {
 }
 
 function delete_func(index) {
-    if (confirm("Tem certeza que deseja excluir esse funcionário?")) {
-        let user_id = funcionarios[index].usuario;
-        let retorno = request("funcionario", ("userId=" + user_id + "&delete=true"));
-        if (retorno) {
-            load_funcionarios();
-        } else {
-            alert("Erro ao excluir funcionario!");
+    $.confirm({
+        icon: 'fa fa-trash',
+        title: 'Deseja mesmo excluir este funcionário?',
+        content: 'Você tem certeza? clique no botão excluir.',
+        type: 'red',
+        buttons: {
+            deleteUser: {
+                text: 'Excluir',
+                btnClass: 'btn-red',
+                action: function () {
+                    let user_id = funcionarios[index].usuario;
+                    let retorno = request("funcionario", ("userId=" + user_id + "&delete=true"));
+                    if (retorno) {
+                        load_funcionarios();
+                    } else {
+                        $.confirm({
+                            columnClass: 'small',
+                            title: 'Erro!',
+                            icon: 'fa fa-exclamation-triangle',
+                            content: 'Erro ao excluir.',
+                            type: 'red',
+                            typeAnimated: true,
+                            buttons: {
+                                ok: {
+                                    text: 'Ok',
+                                    btnClass: 'btn-red',
+                                    action: function(){
+                                    }
+                                }
+                            }
+                        });
+                    }
+                    $.confirm({
+                        columnClass: 'small',
+                        title: 'Funcionário excluido!',
+                        icon: 'fa fa-check-circle',
+                        buttons:{
+                            confirm: {
+                                btnClass: 'btn-success',
+                                action: function(){}
+                            }
+                        }
+                    });
+                }
+            },
+            cancelar: {
+                action: function(){
+                    $.confirm({
+                    columnClass: 'small',
+                    title: 'Operação cancelada!',
+                    content: '',
+                    icon: 'fa fa-exclamation',
+                    buttons:{
+                        confirm: {
+                            text: 'Ok',
+                            btnClass: 'btn-warning',
+                            action: function(){}
+                        }
+                    }
+                });
+                }
+            }
         }
-    }
+    });
+    
 }
 
 function load_modal_editar(index) {
@@ -96,10 +152,41 @@ $(document).ready(function () {
         let retorno = request("funcionario", dados);
         if (retorno) {
             load_funcionarios();
+            $.confirm({
+                columnClass: 'small',
+                title: 'Confirmação!',
+                icon: 'fa fa-check-circle',
+                content: 'Alterado com sucesso',
+                type: 'green',
+                typeAnimated: true,
+                buttons: {
+                    ok: {
+                        text: 'Ok',
+                        btnClass: 'btn-green',
+                        action: function(){
+                        }
+                    }
+                }
+            });
             $("#modalUpdate").modal("hide");
-            alert("Alterado com sucesso");
+
         } else {
-            alert("Erro ao editar funcionario!");
+            $.confirm({
+                columnClass: 'small',
+                title: 'Erro!',
+                icon: 'fa fa-exclamation',
+                content: 'Erro ao editar funcionario.',
+                type: 'red',
+                typeAnimated: true,
+                buttons: {
+                    ok: {
+                        text: 'Ok',
+                        btnClass: 'btn-red',
+                        action: function(){
+                        }
+                    }
+                }
+            });
         }
         f.preventDefault();
         return false;
