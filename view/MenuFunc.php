@@ -62,7 +62,7 @@
 <style type="text/css">
     @media (min-width: 992px) {
         #sair{
-            margin-left: 680px;
+            margin-left: 620px;
         }
     }
     li.nav-item #sair:hover{

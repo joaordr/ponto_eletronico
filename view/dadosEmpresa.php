@@ -2,28 +2,33 @@
     <div class="col"></div>
     <div class="col-lg-6">
         <div class="panel panel-default ">
-            <div class="panel-body">
+            <div class="panel-heading">
               <div class="row">
+                <div class="col">
+                  <h4 id="title">Dados da empresa</h4>
+                </div>
+                
+                <div class="col">
+                   <button type="button" id="alteraEmpresa" onclick="load_modal();" class="btn btn-warning" data-toggle="modal" data-target="#modalUpdateEmpresa" style="margin-top: -3px;"><i class="fa fa-edit"></i> Editar</button>
+                </div>
+              </div>
+               
+
+            </div>
+            <div class="panel-body">
+              <div class="row info">
                  <h4>Nome Fantasia:</h4><h4 id="nomeEmpresa"></h4>
               </div>
-              <div class="row">
+              <div class="row info">
                  <h4>Razão Social:</h4><h4 id="razaoSocialEmp"></h4>
               </div>
-              <div class="row">
+              <div class="row info">
                  <h4>CNPJ: </h4><h4 id="cnpj_value"></h4>
               </div>
             </div>
         </div>
     </div>
     <div class="col"></div>
-</div>
-<div class="row">
-  <div class="col"></div>
-  <div class="col">
-    <button type="button" onclick="load_modal();" class="btn btn-warning btn-lg btn-block" data-toggle="modal" data-target="#modalUpdateEmpresa"><h5>Alterar dados da empresa</h5></button>
-  </div>
-  <div class="col"></div>
-  <div class="col"></div>
 </div>
 
 
@@ -67,11 +72,17 @@
 </div>
 
   <style type="text/css">
+      @media (min-width: 992px) {
+         #alteraEmpresa{
+          margin-left: 210px;
+         }
+      }
      .panel{
       box-shadow: 20px 30px 50px #808080;
       margin-top: 15px;
       background-color: #fff;
-      padding: 25px;
+      padding: 10px 0px 10px 25px;
+      border-radius: 5px;
      }
      button{
       margin-top: 20px;
@@ -80,6 +91,27 @@
      h4{
        margin-right: 10px;
      }
+
+     .panel-heading{
+        background-color: #333;
+        padding: 10px;
+        margin-top: -10px;
+        margin-left: -25px;
+        margin-bottom: 20px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+     }
+     .panel-heading h4{
+        color: #fff;
+     }
+     .info{
+        margin-top: 5px;
+        margin-bottom: 5px;
+     }
+     #nomeEmpresa, #razaoSocialEmp, #cnpj_value{
+        font-weight: normal;
+     }
+
 
   </style>
 

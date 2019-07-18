@@ -160,7 +160,7 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                           <button type="submit" class="btn btn-primary">Alterar cadastro</button>  
+                           <button type="submit" class="btn btn-primary btn-block">Alterar cadastro</button>  
                         </div>
                     </div>
                 </form>
