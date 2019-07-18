@@ -1,20 +1,23 @@
-<table class="table table-hover rounded" id="tabela1">
-    <thead class="thead-dark">
-    <tr>
-        <th scope="col">#</th>
-        <th scope="col">Nome</th>
-        <th scope="col">CPF</th>
-        <th scope="col">Telefone</th>
-        <th scope="col">Cargo</th>
-        <th scope="col">Setor</th>
-        <th scope="col"></th> <!--visualizar-->
-        <th scope="col"></th> <!--editar-->
-        <th scope="col"></th> <!--excluir-->
-    </tr>
-    </thead>
-    <tbody>
-    </tbody>
-</table>
+<div class="table-responsive">
+    <table class="table table-hover rounded" id="tabela1">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">CPF</th>
+                <th scope="col">Telefone</th>
+                <th scope="col">Cargo</th>
+                <th scope="col">Setor</th>
+                <th scope="col"></th> <!--visualizar-->
+                <th scope="col"></th> <!--editar-->
+                <th scope="col"></th> <!--excluir-->
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
 
 <!-- Modal Tabela de Registros do funcionario -->
 <div class="modal fade" id="modalTabela" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
