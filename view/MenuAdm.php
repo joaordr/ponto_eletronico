@@ -20,7 +20,7 @@
     <meta  name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!--tag meta viewport responsiva-->
     <script type="text/javascript" src="../resources/js/spaAdm.js"></script>
 </head>
-<body style="background-color: #F7F5FE;">
+<body>
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   			<a class="navbar-brand" href="#">
@@ -51,14 +51,21 @@
 	</header>
 
   <div class="container-fluid" id="carregaDados">
+
+
+      
+    </div> 
+ 
     
-  </div>
 
   <style type="text/css">
       @media (min-width: 992px) {
           #sair{
             margin-left: 445px;
           }
+      }
+      body{
+         background-color: #F7F5FE;
       }
       #sair:hover{
             color: red;

@@ -20,54 +20,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!--tag meta viewport responsiva-->
     
 </head>
-<body style="background-color: #F7F5FE;">
-<div class="container">
+<body>
+<div class="container-fluid">
     <div class="row">
-        <div class="col"></div>
-        <div class="col">
-            <div class="card" style="width: 18rem;">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+            <div class="card" >
             <div class="card-body">
+                <h4 id="title">Bem vindo</h4>
                 <img src="resources/img/icone.png" id="icone">
-                <h5 class="card-title" id="title">Login</h5>
+                <h5 class="card-title" id="aviso">Selecione o modo de acesso</h5>
                 <button type="button" class="btn btn-primary btn-lg button" data-toggle="modal"
-                        data-target="#modalLoginAdm">Administrador
+                        data-target="#modalLoginAdm"><i class="fa fa-users" aria-hidden="true"></i>  Administrador
                 </button>
                 <button type="button" class="btn btn-success btn-lg button" data-toggle="modal"
-                        data-target="#modalLoginFunc">Funcionário
+                        data-target="#modalLoginFunc"><i class="fa fa-user" aria-hidden="true"></i>  Funcionário
                 </button>
-                <style type="text/css">
-                    body {
-                        background-color: #DCDCDC;
-                    }
-
-                    .card{
-                        margin-top: 20px;
-                        box-shadow: 20px 20px 50px #808080;
-                    }
-                    .button {
-                        width: 160px;
-                        margin-top: 10px;
-                        margin-bottom: 10px;
-                        margin-left: 40px;
-                    }
-
-                    #icone {
-                        width: 50px;
-                        height: 50px;
-                        margin-left: 95px;
-                    }
-
-                    #title {
-                        text-align: center;
-                    }
-                </style>
-
-
             </div>
         </div>
         </div>
-        <div class="col"></div>
-    </div>  
+        <div class="col-lg-4"></div>
+    </div> 
+    <div class="row">
+        <div class="footer">
+            <h6>SPE - Sistema de Ponto Eletrônico | 2019&copy;</h6>
+        </div>
+    </div> 
 </div>
 
 <!-- Modal login Adm -->
@@ -82,27 +60,43 @@
             </div>
             <div class="modal-body">
                 <form name="formEntrarAdm" id="formEntrarAdm">
-                    <div class="form-group">
-                        <label>Nome de usuário</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                              <div class="input-group-text"><i class="fa fa-user"></i></div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label>Nome de usuário</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><i class="fa fa-user"></i></div>
+                                    </div>
+                                    <input type="text" name="userLogin" id="userLogin" class="form-control">
+                                </div>
                             </div>
-                            <input type="text" name="userLogin" id="userLogin" class="form-control">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label>Senha</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                              <div class="input-group-text"><i class="fa fa-lock"></i></div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label>Senha</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><i class="fa fa-lock"></i></div>
+                                    </div>
+                                    <input type="password" name="senhaLogin" id="senhaLogin" class="form-control">
+                                </div>
                             </div>
-                            <input type="password" name="senhaLogin" id="senhaLogin" class="form-control">
                         </div>
                     </div>
-                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalRegistrarAdm" data-dismiss="modal">Registrar-se
-                    </button>
-                    <button type="submit" class="btn btn-primary">Entrar</button>
+                    <div class="row">
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block" id="btnEntrar">Entrar</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-warning btn-lg btn-block" data-toggle="modal" data-target="#modalRegistrarAdm" data-dismiss="modal" id="btnRegistrar">Registrar-se</button>
+                        </div>
+                    </div>
+                    
                 </form>
             </div>
         </div>
@@ -121,26 +115,36 @@
             </div>
             <div class="modal-body">
                 <form name="formEntrarFunc" id="formEntrarFunc">
-                    <div class="form-group">
-                        <label>Nome de usuário</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                              <div class="input-group-text"><i class="fa fa-user"></i></div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label>Nome de usuário</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><i class="fa fa-user"></i></div>
+                                    </div>
+                                    <input type="text" name="userLogin" id="userLogin" class="form-control">
+                                </div>
                             </div>
-                            <input type="text" name="userLogin" id="userLogin" class="form-control">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label>Senha</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                              <div class="input-group-text"><i class="fa fa-lock"></i></div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label>Senha</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><i class="fa fa-lock"></i></div>
+                                    </div>
+                                    <input type="password" name="senhaLogin" id="senhaLogin" class="form-control">
+                                </div>
                             </div>
-                            <input type="password" name="senhaLogin" id="senhaLogin" class="form-control">
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="submit" class="btn btn-success">Entrar</button>
+                    <div class="row">
+                        <div class="col">
+                            <button type="submit" class="btn btn-success btn-lg btn-block" id="btnEntrarFunc">Entrar</button>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -160,47 +164,65 @@
             </div>
             <div class="modal-body">
                 <form name="formNovoUsuario" id="formNovoUsuario">
-                    <div class="form-group">
-                        <label for="userLogin">Nome de usuario</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                              <div class="input-group-text"><i class="fa fa-user"></i></div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="userLogin">Nome de usuario</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><i class="fa fa-user"></i></div>
+                                    </div>
+                                    <input type="text" name="userLogin" id="userLogin" class="form-control">
+                                </div>
                             </div>
-                            <input type="text" name="userLogin" id="userLogin" class="form-control">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label for="emailLogin">Email</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                              <div class="input-group-text"><i class="fa fa-envelope"></i></div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="userLogin">Nome de usuário</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><i class="fa fa-user"></i></div>
+                                    </div>
+                                    <input type="text" name="userLogin" id="userLogin" class="form-control">
+                                </div>
                             </div>
-                            <input type="text" name="emailLogin" id="emailLogin" class="form-control">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label>Senha</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                              <div class="input-group-text"><i class="fa fa-lock"></i></div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label>Senha</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><i class="fa fa-lock"></i></div>
+                                    </div>
+                                    <input type="password" name="senhaLoginCad" id="senhaLoginCad" class="form-control">
+                                </div>
+                                <span class="badge badge-secondary">Senha de até 10 caracteres.</span>
                             </div>
-                            <input type="password" name="senhaLoginCad" id="senhaLoginCad" class="form-control">
                         </div>
-                        <span class="badge badge-secondary">Senha de até 10 caracteres.</span>
                     </div>
-                    <div class="form-group">
-                        <label>Confirmar Senha</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                              <div class="input-group-text"><i class="fa fa-lock"></i></div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label>Confirmar Senha</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><i class="fa fa-lock"></i></div>
+                                    </div>
+                                    <input type="password" name="senhaLoginCon" id="senhaLoginCon" class="form-control">
+                                </div>
+                                <small style="color: red; display: none;" id="senhasDiferentesMsg">As senhas devem ser iguais!
+                                </small>
                             </div>
-                            <input type="password" name="senhaLoginCon" id="senhaLoginCon" class="form-control">
                         </div>
-                        <small style="color: red; display: none;" id="senhasDiferentesMsg">As senhas devem ser iguais!
-                        </small>
                     </div>
-                    <div class="modal-footer">
-                        <button type="submit" class="btn btn-success" >Registrar</button>
+                    <div class="row">
+                        <div class="col">
+                            <button type="submit" class="btn btn-success btn-lg btn-block" id="btnCadastro">Registrar</button>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -210,6 +232,74 @@
 
 <script type="text/javascript" src="resources/js/request_api.js"></script>
 <script type="text/javascript" src="resources/js_page/inicio.js"></script>
+<style type="text/css">
+
+                    body {
+                        background-color: #F7F5FE;
+                        height: 100%
+                    }
+                    .container{
+                        min-height: 100%;
+                        position: relative;
+                    }
+                    .card{
+                        margin-top: 50px;
+                        box-shadow: 20px 20px 50px #808080;
+                    }
+                    .button {
+                        width: 220px;
+                        margin-top: 20px;
+                        margin-bottom: 10px;
+                        margin-left: 80px;
+                        border-radius: 50px;
+                    }
+
+                    #icone {
+                        width: 100px;
+                        height: 100px;
+                        margin-left: 145px;
+                        margin-bottom: 20px;
+                    }
+
+                    #title {
+                        text-align: center;
+                    }
+                    #aviso{
+                        text-align: center;
+                        font-size: 13pt;
+                    }
+                    #btnEntrar, #btnEntrarFunc, #btnCadastro{
+                        margin-bottom: 20px;
+                        border-radius: 50px;
+                    }
+                    #btnRegistrar{
+                        border-radius: 50px;
+                        margin-top: 10px;
+                    }
+                    .modal-header{
+                        background-color: #333;
+                        color: #fff;
+                    }
+                    .close{
+                        color: #fff;
+                    }
+                    .close:hover{
+                        color: red;
+                    }
+                    .footer{
+                        position: absolute;
+                        bottom: 0;
+                        width: 100%;
+                        background-color: #333;
+                        
+                    }
+                    .footer h6{
+                        color: #fff;
+                        font-weight: normal;
+                        text-align: center;
+                    }
+
+                </style>
 <script type="text/javascript">
             $(document).ready(function(){
             $("#formEntrarAdm").validate({

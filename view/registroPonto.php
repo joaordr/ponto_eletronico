@@ -15,22 +15,24 @@
 
 <div class="row">
     <div class="col-md-7 col-sm-12">
-        <table class="table" id="tabela1">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col">Dia do Mês</th>
-                    <th scope="col">Entrada 1</th>
-                    <th scope="col">Saida 1</th>
-                    <th scope="col">Entrada 2</th>
-                    <th scope="col">Saida 2</th>
-                    <th scope="col">Entrada 3</th>
-                    <th scope="col">Saida 3</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table class="table table-hover rounded" id="tabela1">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Dia do Mês</th>
+                        <th scope="col">Entrada 1</th>
+                        <th scope="col">Saida 1</th>
+                        <th scope="col">Entrada 2</th>
+                        <th scope="col">Saida 2</th>
+                        <th scope="col">Entrada 3</th>
+                        <th scope="col">Saida 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
         </div>
+    </div>
     <div class="col-md-5 col-sm-12">
         <div class="panel panel-default">
             <div class="panel-body">
@@ -110,5 +112,10 @@
 
     #tabela1{
         background-color: #fff;
+        box-shadow: 20px 10px 50px #808080;
+        margin-right: 10px;
+    }
+    th, td{
+        text-align: center;
     }
 </style>
