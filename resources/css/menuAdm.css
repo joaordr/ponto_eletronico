@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@media (min-width: 992px) {
+    #sair{
+        margin-left: 445px;
+	}
+}
+
+body{
+    background-color: #F7F5FE;
+}
+
+#sair:hover{
+    color: red;
+}
+
+.container-fluid{
+    margin-top: 20px;
+}
+
+li.nav-item #sair:hover{
+    background-color: #990000;
+    border-radius: 5px;
+    color: #fff
+}
+

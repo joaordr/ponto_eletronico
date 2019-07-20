@@ -16,6 +16,7 @@
     <script type="text/javascript" src="../resources/bootstrap/js/bootstrap.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../resources/bootstrap/css/bootstrap.min.css"  type="text/css">
+    <link rel="stylesheet" type="text/css" href="../resources/css/menuAdm.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta  name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!--tag meta viewport responsiva-->
     <script type="text/javascript" src="../resources/js/spaAdm.js"></script>
@@ -55,31 +56,6 @@
 
       
     </div> 
- 
-    
-
-  <style type="text/css">
-      @media (min-width: 992px) {
-          #sair{
-            margin-left: 445px;
-          }
-      }
-      body{
-         background-color: #F7F5FE;
-      }
-      #sair:hover{
-            color: red;
-      }
-      .container-fluid{
-        margin-top: 20px;
-      }
-      li.nav-item #sair:hover{
-        background-color: #990000;
-        border-radius: 5px;
-        color: #fff
-    }
-  </style>
-
     <script type="text/javascript" src="../resources/js/request_api.js"></script>
     <script type="text/javascript" src="../resources/js_page/menuAdm.js"></script>
 </body>

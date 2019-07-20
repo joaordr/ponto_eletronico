@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="../resources/css/dadosEmpresa.css">
 <div class="row">
     <div class="col"></div>
     <div class="col-lg-6">
@@ -116,80 +117,5 @@
     </div>
 </div>
 
-  <style type="text/css">
-      @media (min-width: 992px) {
-         #alteraEmpresa{
-          margin-left: 210px;
-         }
-      }
-     .panel{
-      box-shadow: 20px 30px 50px #808080;
-      margin-top: 15px;
-      background-color: #fff;
-      padding: 10px 0px 10px 25px;
-      border-radius: 5px;
-     }
-     button{
-      margin-top: 20px;
-      margin-left: 130px;
-     }
-     h4{
-       margin-right: 10px;
-     }
-
-     .panel-heading{
-        background-color: #333;
-        padding: 10px;
-        margin-top: -10px;
-        margin-left: -25px;
-        margin-bottom: 20px;
-        border-top-right-radius: 5px;
-        border-top-left-radius: 5px;
-     }
-     .panel-heading h4{
-        color: #fff;
-     }
-     .info{
-        margin-top: 5px;
-        margin-bottom: 5px;
-     }
-     #nomeEmpresa, #razaoSocialEmp, #cnpj_value{
-        font-weight: normal;
-     }
-
-
-  </style>
-
-
-
 <script type="text/javascript" src="../resources/js_page/dadosEmpresa.js"></script>
-
-<script type="text/javascript">
-  $(document).ready(function(){
-    $("#updateEmpresa").validate({
-      rules: {
-        nome: {
-              maxlength: 50,
-              maxWords: 5
-            },
-            razaoSocial: {
-              required: true,
-              maxlength: 80,
-              maxWords: 5
-            },
-            cnpj: {
-              required: true,
-              cnpjBR: true
-            }, 
-            ramo: {
-              maxlength: 100,
-              maxWords: 20
-            },
-            telefone: {
-              required: true,
-              maxlength: 10
-            }
-      }
-    })
-  })
-</script>
+<script type="text/javascript" src="../resources/js/validacao/dadosEmpresa.js"></script>

@@ -16,6 +16,7 @@
     <script type="text/javascript" src="resources/bootstrap/js/bootstrap.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="resources/css/inicio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!--tag meta viewport responsiva-->
     
@@ -232,126 +233,6 @@
 
 <script type="text/javascript" src="resources/js/request_api.js"></script>
 <script type="text/javascript" src="resources/js_page/inicio.js"></script>
-<style type="text/css">
-
-                    body {
-                        background-color: #F7F5FE;
-                        height: 100%
-                    }
-                    .container{
-                        min-height: 100%;
-                        position: relative;
-                    }
-                    .card{
-                        margin-top: 50px;
-                        box-shadow: 20px 20px 50px #808080;
-                    }
-                    .button {
-                        width: 220px;
-                        margin-top: 20px;
-                        margin-bottom: 10px;
-                        margin-left: 80px;
-                        border-radius: 50px;
-                    }
-
-                    #icone {
-                        width: 100px;
-                        height: 100px;
-                        margin-left: 145px;
-                        margin-bottom: 20px;
-                    }
-
-                    #title {
-                        text-align: center;
-                    }
-                    #aviso{
-                        text-align: center;
-                        font-size: 13pt;
-                    }
-                    #btnEntrar, #btnEntrarFunc, #btnCadastro{
-                        margin-bottom: 20px;
-                        border-radius: 50px;
-                    }
-                    #btnRegistrar{
-                        border-radius: 50px;
-                        margin-top: 10px;
-                    }
-                    .modal-header{
-                        background-color: #333;
-                        color: #fff;
-                    }
-                    .close{
-                        color: #fff;
-                    }
-                    .close:hover{
-                        color: red;
-                    }
-                    .footer{
-                        position: absolute;
-                        bottom: 0;
-                        width: 100%;
-                        background-color: #333;
-                        
-                    }
-                    .footer h6{
-                        color: #fff;
-                        font-weight: normal;
-                        text-align: center;
-                    }
-
-                </style>
-<script type="text/javascript">
-            $(document).ready(function(){
-            $("#formEntrarAdm").validate({
-                rules:{
-                    userLogin: {
-                        required: true,
-                        maxlength: 100
-                    },
-                    senhaLogin: {
-                        required: true,
-                        maxlength: 10
-                    }
-                }
-            })
-
-            $("#formEntrarFunc").validate({
-                rules:{
-                    userLogin: {
-                        required: true,
-                        maxlength: 100
-                    },
-                    senhaLogin: {
-                        required: true,
-                        maxlength: 10
-                    }
-                }
-            })
-
-            $("#formNovoUsuario").validate({
-                rules:{
-                    userLogin: {
-                        required: true,
-                        maxWords: 1,
-                        maxlength: 25
-                    },
-                    emailLogin: {
-                        required: true,
-                        email: true,
-                        maxWords: 1
-                    },
-                    senhaLoginCad: {
-                        required: true,
-                        maxlength: 10,
-                    },
-                    senhaLoginCon: {
-                        required: true,
-                        maxlength: 10
-                    }
-                }
-            })
-    });
-</script>
-
+<script type="text/javascript" src="resources/js/validacao/inicio.js"></script>
 </body>
 </html>

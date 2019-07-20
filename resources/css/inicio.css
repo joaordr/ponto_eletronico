@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+body {
+    background-color: #F7F5FE;
+    height: 100%
+}
+
+.container{
+    min-height: 100%;
+    position: relative;
+}
+
+.card{
+    margin-top: 50px;
+    box-shadow: 20px 20px 50px #808080;
+}
+
+.button {
+    width: 220px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 80px;
+    border-radius: 50px;
+}
+
+#icone {
+    width: 100px;
+    height: 100px;
+    margin-left: 145px;
+    margin-bottom: 20px;
+}
+
+#title {
+    text-align: center;
+}
+
+#aviso{
+    text-align: center;
+    font-size: 13pt;
+}
+
+#btnEntrar, #btnEntrarFunc, #btnCadastro{
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+
+#btnRegistrar{
+    border-radius: 50px;
+    margin-top: 10px;
+} 
+
+.modal-header{
+    background-color: #333;
+    color: #fff;
+}
+
+.close{
+    color: #fff;
+}
+
+.close:hover{
+    color: red;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+}
+
+.footer h6{
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+}
