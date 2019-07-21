@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+#tabela1 {
+    margin-top: 50px;
+    background-color: #fff;
+    box-shadow: 20px 30px 50px #808080;
+}
+
+#modalTabela {
+    width: 1000px;
+    margin-left: 200px;
+}
+
+th, td{
+    text-align: center;
+}

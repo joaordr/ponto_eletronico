@@ -8,7 +8,21 @@ $(document).ready(function () {
                 window.location.replace("view/MenuFunc.php");
             }
         } else {
-            alert("Erro ao realizar login!");
+            $.confirm({
+                columnClass: 'small',
+                title: 'Erro ao realizar login',
+                content: 'Informe ao suporte técnico.',
+                type: 'red',
+                typeAnimated: true,
+                buttons: {
+                    Fechar: {
+                        text: 'Fechar',
+                        btnClass: 'btn-red',
+                        action: function(){
+                        }
+                    }
+                }
+            });
         }
         e.preventDefault();
         return false;
@@ -28,7 +42,20 @@ $(document).ready(function () {
             }
             console.log(retorno);
         } else {
-            alert("Erro ao realizar login!");
+            $.confirm({
+                columnClass: 'small',
+                title: 'Erro ao realizar login',
+                content: 'Informe ao suporte técnico.',
+                type: 'red',
+                typeAnimated: true,
+                buttons: {
+                    fechar: {
+                        text: 'Fechar',
+                        btnClass: 'btn-red',
+                        action: function(){}
+                    }
+                }
+            });
         }
         e.preventDefault();
         return false;
@@ -49,8 +76,7 @@ $(document).ready(function () {
                     ok: {
                         text: 'Ok',
                         btnClass: 'btn-green',
-                        action: function(){
-                        }
+                        action: function(){}
                     }
                 }
             });

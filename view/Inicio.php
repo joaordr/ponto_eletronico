@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- jQuery primeiro, Bootstrap JS -->
     <script type="text/javascript" src="resources/js/jquery-3.4.1.js"></script>
-    <script type="text/javascript" src="../resources/jquery_confirm/jquery-confirm.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../resources/jquery_confirm/jquery-confirm.min.css">
+    <script type="text/javascript" src="resources/jquery_confirm/jquery-confirm.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="resources/jquery_confirm/jquery-confirm.min.css">
     <script type="text/javascript" src="resources/js/jquery.validate.min.js"></script>
     <script type="text/javascript" src="resources/js/localization/messages_pt_BR.js"></script>
     <script type="text/javascript" src="resources/js/additional-methods.min.js"></script>
@@ -94,7 +94,7 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <button type="button" class="btn btn-warning btn-lg btn-block" data-toggle="modal" data-target="#modalRegistrarAdm" data-dismiss="modal" id="btnRegistrar">Registrar-se</button>
+                            <button type="button" class="btn btn-secondary btn-lg btn-block" data-toggle="modal" data-target="#modalRegistrarAdm" data-dismiss="modal" id="btnRegistrar">Registrar-se</button>
                         </div>
                     </div>
                     
@@ -222,7 +222,7 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <button type="submit" class="btn btn-success btn-lg btn-block" id="btnCadastro">Registrar</button>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block" id="btnCadastro">Registrar</button>
                         </div>
                     </div>
                 </form>

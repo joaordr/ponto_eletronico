@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="../resources/css/registroPonto.css">
 <div class="row">
     <div class="col-md-7 col-sm-12">
         <div class="panel panel-default">
@@ -89,33 +90,3 @@
 </div>
 <script type="text/javascript" src="../resources/js_page/menuFunc.js"></script>
 <script type="text/javascript" src="../resources/js_page/updateFuncionario.js"></script>
-<style type="text/css">
-    @media (min-width: 992px) {
-        #quadro{
-            margin-top: -1px;
-        }
-    }
-    .panel{
-        padding: 8px 5px 8px 25px;
-        background-color: #fff;
-        box-shadow: 20px 30px 50px #808080;
-        border-left: 5px solid #0066CC;
-    }
-    #quadro{
-        background-color: #0066CC;
-        color: #fff;
-    }
-    button {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    #tabela1{
-        background-color: #fff;
-        box-shadow: 20px 10px 50px #808080;
-        margin-right: 10px;
-    }
-    th, td{
-        text-align: center;
-    }
-</style>

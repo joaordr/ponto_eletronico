@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="../resources/css/funcionariosRegistrados.css">
 <div class="table-responsive">
     <table class="table table-hover rounded" id="tabela1">
         <thead class="thead-dark">
@@ -172,23 +173,4 @@
     </div>
 </div>
 
-
 <script type="text/javascript" src="../resources/js_page/funcionariosRegistrados.js"></script>
-
-
-<style type="text/css">
-    #tabela1 {
-        margin-top: 50px;
-        background-color: #fff;
-        box-shadow: 20px 30px 50px #808080;
-    }
-
-    #modalTabela {
-        width: 1000px;
-        margin-left: 200px;
-    }
-    th, td{
-        text-align: center;
-    }
-
-</style>

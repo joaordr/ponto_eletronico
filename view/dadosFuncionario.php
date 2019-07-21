@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="../resources/css/dadosFuncionario.css">
 <div class="row">
     <div class="col"></div>
     <div class="col-lg-6">
@@ -88,30 +89,3 @@
     </div>
 </div>
 <script type="text/javascript" src="../resources/js_page/updateFuncionario.js"></script>
-
-<style type="text/css">
-    .panel{
-        box-shadow: 20px 30px 50px #808080;
-        background-color: #fff;
-        padding: 15px;
-        border-radius: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .panel-heading{
-        background-color: #333;
-        color: #fff;
-        padding: 15px;
-        margin: -15px -15px 10px -15px; /*superior, direita, inferior, esquerda*/
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-    h5{
-        padding-left: 10px;
-    }
-    #dadoNome, #dadoCpf, #dadoRg, #dadoDtNasc, 
-    #dadoEmail, #dadoTelefone, #dadoCargo, #dadoSetor{
-        font-weight: normal;
-        margin-left: 5px;
-    }
-</style>

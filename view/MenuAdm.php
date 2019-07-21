@@ -51,11 +51,8 @@
 		</nav>
 	</header>
 
-  <div class="container-fluid" id="carregaDados">
-
-
-      
-    </div> 
+  <div class="container-fluid" id="carregaDados"></div>
+  
     <script type="text/javascript" src="../resources/js/request_api.js"></script>
     <script type="text/javascript" src="../resources/js_page/menuAdm.js"></script>
 </body>

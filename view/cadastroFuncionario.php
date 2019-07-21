@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="../resources/css/cadastroFuncionario.css">
 <div class="row">
     <div class="col"></div>
     <div class="col-lg-6">
@@ -143,26 +144,4 @@
     <div class="col"></div>
 </div>
 <script type="text/javascript" src="../resources/js_page/cadastroFuncionario.js"></script>
-
-<style type="text/css">
-    .panel {
-        margin-top: -10px;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 20px 20px 50px #808080;
-        border-radius: 5px;
-        margin-bottom: 30px;
-    }
-    .panel-heading{
-        background-color: #333;
-        color: #fff;
-        padding: 10px;
-        margin: -20px -20px 20px -20px; /*superior, direita, inferior, esquerda*/
-        border-top-right-radius: 5px;
-        border-top-left-radius: 5px;
-    }
-    #iconUser{
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-</style>
+<script type="text/javascript" src="..resources/js/validacao/cadastroFuncionario.js"></script>
