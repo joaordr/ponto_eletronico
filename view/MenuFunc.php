@@ -52,11 +52,7 @@
 <div class="container-fluid" id="registro">
     
     
-    <div class="row">
-        <div class="footer">
-            <h6>SPE - Sistema de Ponto Eletrônico | 2019&copy;</h6>
-        </div>
-    </div> 
+    
 </div>
 
 

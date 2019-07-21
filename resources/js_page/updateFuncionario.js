@@ -1,16 +1,3 @@
-var funcionario;
-
-function load_modal_editar() {
-    $("#nome").val(funcionario.nome);
-    $("#cpf").val(funcionario.cpf);
-    $("#rg").val(funcionario.cpf);
-    $("#dtNasc").val(funcionario.dataNascimento);
-    $("#email").val(funcionario.email);
-    $("#telefone").val(funcionario.telefone);
-    $("#cargo").val(funcionario.cargo);
-    $("#setor").val(funcionario.setor);
-}
-
 function lista_dados(){
 	let retorno = request("funcionario", 'list_dados=true');
     if (retorno) {
@@ -36,19 +23,6 @@ function lista_nome_logado(){
 }
 
 $(document).ready(function(){
-    $("#updateFuncionario").submit(function (e) {
-        let dados = $(this).serialize() + "&update=true";
-        let retorno = request("funcionario", dados);
-        if (retorno) {
-            lista_dados();
-            alert("Alterado com sucesso")
-            $("#modalUpdate").modal("hide");
-        } else {
-            alert("Erro ao editar funcionário!");
-        }
-        e.preventDefault();
-        return false;
-    });
     lista_nome_logado();
     lista_dados();
 });

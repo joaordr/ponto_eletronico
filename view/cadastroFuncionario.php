@@ -1,4 +1,8 @@
 <link rel="stylesheet" type="text/css" href="../resources/css/cadastroFuncionario.css">
+<script type="text/javascript" src="../resources/jquery_mask/jquery.mask.min.js"></script>
+
+<script type="text/javascript" src="../resources/js/validacao/cadastroFuncionario.js"></script>
+
 <div class="row">
     <div class="col"></div>
     <div class="col-lg-6">
@@ -16,7 +20,7 @@
                                     <div class="input-group-prepend">
                                        <div class="input-group-text" id="iconUser"><i class="fa fa-user"></i></div>
                                     </div>
-                                    <input type="text" name="nome" id="nome" class="form-control">
+                                    <input type="text" name="nome" id="nome" class="form-control"><br>
                                 </div>
                             </div>
                         </div>
@@ -29,7 +33,7 @@
                                     <div class="input-group-prepend">
                                       <div class="input-group-text"><i class="fa fa-id-card"></i></div>
                                     </div>
-                                    <input type="text" name="cpf" id="cpf" class="form-control">
+                                    <input type="text" name="cpf" id="cpf" class="form-control"><br>
                                 </div>
                             </div>
                         </div>
@@ -144,4 +148,3 @@
     <div class="col"></div>
 </div>
 <script type="text/javascript" src="../resources/js_page/cadastroFuncionario.js"></script>
-<script type="text/javascript" src="..resources/js/validacao/cadastroFuncionario.js"></script>

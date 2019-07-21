@@ -13,6 +13,8 @@
     <script type="text/javascript" src="../resources/js/jquery.validate.min.js"></script>
     <script type="text/javascript" src="../resources/js/localization/messages_pt_BR.js"></script>
     <script type="text/javascript" src="../resources/js/additional-methods.min.js"></script>
+    <script type="text/javascript" src="../resources/js/validacao/cadastroFuncionario.js"></script>
+    <script type="text/javascript" src="../resources/jquery_mask/jquery.mask.min.js"></script>
     <script type="text/javascript" src="../resources/bootstrap/js/bootstrap.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../resources/bootstrap/css/bootstrap.min.css"  type="text/css">
