@@ -20,9 +20,10 @@
                                     <div class="input-group-prepend">
                                        <div class="input-group-text" id="iconUser"><i class="fa fa-user"></i></div>
                                     </div>
-                                    <input type="text" name="nome" id="nome" class="form-control"><br>
+                                    <input type="text" name="nome" id="nome" class="form-control">                                
                                 </div>
                             </div>
+                            <small id="erroNome"></small>
                         </div>
                     </div>
                     <div class="row">
@@ -33,7 +34,7 @@
                                     <div class="input-group-prepend">
                                       <div class="input-group-text"><i class="fa fa-id-card"></i></div>
                                     </div>
-                                    <input type="text" name="cpf" id="cpf" class="form-control"><br>
+                                    <input type="text" name="cpf" id="cpf" class="form-control">
                                 </div>
                             </div>
                         </div>
