@@ -1,3 +1,5 @@
+<script type="text/javascript" src="../resources/js/pace.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../resources/css/pace.css">
 <link rel="stylesheet" type="text/css" href="../resources/css/registroPonto.css">
 <div class="row">
     <div class="col-md-7 col-sm-12">

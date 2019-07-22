@@ -72,6 +72,7 @@
                                     <input type="text" name="userLogin" id="userLogin" class="form-control">
                                 </div>
                             </div>
+                            <label for="userLogin" generated="true" class="error"></label>
                         </div>
                     </div>
                     <div class="row">
@@ -85,6 +86,7 @@
                                     <input type="password" name="senhaLogin" id="senhaLogin" class="form-control">
                                 </div>
                             </div>
+                            <label for="senhaLogin" generated="true" class="error"></label>
                         </div>
                     </div>
                     <div class="row">
@@ -127,6 +129,7 @@
                                     <input type="text" name="userLogin" id="userLogin" class="form-control">
                                 </div>
                             </div>
+                            <label for="userLogin" generated="true" class="error"></label>
                         </div>
                     </div>
                     <div class="row">
@@ -140,6 +143,7 @@
                                     <input type="password" name="senhaLogin" id="senhaLogin" class="form-control">
                                 </div>
                             </div>
+                            <label for="senhaLogin" generated="true" class="error"></label>
                         </div>
                     </div>
                     <div class="row">
@@ -176,17 +180,18 @@
                                     <input type="text" name="userLogin" id="userLogin" class="form-control">
                                 </div>
                             </div>
+                            <label for="userLogin" generated="true" class="error"></label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
                             <div class="form-group">
-                                <label for="userLogin">Nome de usuário</label>
+                                <label for="userLogin">Email do usuário</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
-                                      <div class="input-group-text"><i class="fa fa-user"></i></div>
+                                      <div class="input-group-text"><i class="fa fa-envelope"></i></div>
                                     </div>
-                                    <input type="text" name="userLogin" id="userLogin" class="form-control">
+                                    <input type="text" name="emailLogin" id="emailLogin" class="form-control">
                                 </div>
                             </div>
                         </div>

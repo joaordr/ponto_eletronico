@@ -31,7 +31,7 @@ $(document).ready(function(){
           },
           telefone: {
             required: true,
-            maxlength: 13,
+            maxlength: 14,
             depends: function(){
                 $("#telefone").css("border", "1px solid #8C1717"); }
           }

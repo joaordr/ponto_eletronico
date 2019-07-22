@@ -4,6 +4,7 @@ $(document).ready(function () {
         let retorno = request("funcionario", dados);
         if (retorno) {
             $("#cadFuncionario1 input").val("");
+            $(".form-control").removeAttr('style');
             $.confirm({
                 columnClass: 'small',
                 title: 'Confirmação!',

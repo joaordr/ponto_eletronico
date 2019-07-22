@@ -1,6 +1,10 @@
 <link rel="stylesheet" type="text/css" href="../resources/css/dadosEmpresa.css">
 <script type="text/javascript" src="../resources/jquery_mask/jquery.mask.min.js"></script>
 <script type="text/javascript" src="../resources/js/validacao/dadosEmpresa.js"></script>
+<script type="text/javascript" src="../resources/js/pace.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../resources/css/pace.css">
+
+
 <div class="row">
     <div class="col"></div>
     <div class="col-lg-6">
@@ -67,7 +71,7 @@
                             <label for="razaoSocial">Razão Social</label>
                             <div class="input-group">
                                 <div class="input-group-prepend">
-                                    <div class="input-group-text"><i class="fa fa-briefcase"></i></div>
+                                    <div class="input-group-text"><i class="fa fa-building"></i></div>
                                 </div>
                                 <input type="text" name="razaoSocial" id="razaoSocial" class="form-control">
                             </div>

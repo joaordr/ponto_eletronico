@@ -22,3 +22,9 @@
     padding-left: 16px;
     padding-right: 16px;
 }
+
+.error{
+    color: #8C1717;
+    font-size: 8pt;
+    text-align: left;
+}

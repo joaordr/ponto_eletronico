@@ -1,6 +1,7 @@
 <link rel="stylesheet" type="text/css" href="../resources/css/cadastroFuncionario.css">
 <script type="text/javascript" src="../resources/jquery_mask/jquery.mask.min.js"></script>
-
+<script type="text/javascript" src="../resources/js/pace.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../resources/css/pace.css">
 <script type="text/javascript" src="../resources/js/validacao/cadastroFuncionario.js"></script>
 
 <div class="row">

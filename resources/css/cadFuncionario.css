@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.panel{
+    box-shadow: 20px 30px 50px #808080;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}
+.panel-heading{
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    margin: -15px -15px 10px -15px; /*superior, direita, inferior, esquerda*/
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+label.error{
+    color: #8C1717;
+    font-size: 8pt;
+    text-align: left;
+}

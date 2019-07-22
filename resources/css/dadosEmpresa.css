@@ -45,3 +45,9 @@ h4{
 #nomeEmpresa, #razaoSocialEmp, #cnpj_value{
     font-weight: normal;
 }
+
+.error{
+    color: #8C1717;
+    font-size: 8pt;
+    text-align: left;
+}

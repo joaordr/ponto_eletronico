@@ -68,9 +68,11 @@ function delete_func(index) {
                     $.confirm({
                         columnClass: 'small',
                         title: 'Funcionário excluido!',
+                        content: 'Clique em Ok',
                         icon: 'fa fa-check-circle',
                         buttons:{
-                            confirm: {
+                            ok: {
+                                text: 'Ok',
                                 btnClass: 'btn-success',
                                 action: function(){}
                             }
