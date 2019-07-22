@@ -4,6 +4,7 @@ include_once '../autoloader.php';
 
 try {
     $controle = new RegistroControle();
+    //cria os registros
     if (isset($_POST['create'])) {
         $tipo = filter_input(INPUT_POST, 'tipo', FILTER_SANITIZE_NUMBER_INT);
         $funcionario = unserialize($_SESSION['funcionarioLogadoFunc']);
@@ -17,6 +18,7 @@ try {
         die();
     }
 
+    //carrega os registros
     if (isset($_POST['load'])) {
         $funcionario = unserialize($_SESSION['funcionarioLogadoFunc']);
 
@@ -25,6 +27,7 @@ try {
         die();
     }
 
+    //carrega os registros do funcionario selecionado
     if (isset($_POST['load_registro_func'])) {
         $id = filter_input(INPUT_POST, 'id', FILTER_SANITIZE_NUMBER_INT);
         $funcionario = new Funcionario();

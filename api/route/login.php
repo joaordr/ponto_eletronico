@@ -19,7 +19,7 @@ try {
         $usuario = unserialize($_SESSION['usuarioLogadoAdmin']);
         $controleFuncionario = new FuncionarioControle();
 
-        // load funcionario
+        // carrega funcionario
         $retorno = $controleFuncionario->loadAdmInfo($usuario->getId());
         if (!$retorno) {
             echo json_encode('cadFunc');
@@ -41,7 +41,7 @@ try {
         die();
     }
 
-
+    //login do funcionario
     if (isset($_POST['login_func'])) {
         $userName = filter_input(INPUT_POST, 'userLogin', FILTER_SANITIZE_STRING);
         $senha = filter_input(INPUT_POST, 'senhaLogin', FILTER_SANITIZE_STRING);
@@ -51,6 +51,7 @@ try {
         die();
     }
 
+    //carrega informacoes do funcionario
     if (isset($_POST['load_func_info'])) {
         $usuario = unserialize($_SESSION['usuarioLogadoFunc']);
         $controleFuncionario = new FuncionarioControle();

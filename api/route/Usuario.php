@@ -4,6 +4,7 @@ include_once '../autoloader.php';
 
 try {
     $controle = new UsuarioControle();
+    //cria adm
     if (isset($_POST['create_adm'])) {
         $usuario = new Usuario();
         $usuario->setUser(filter_input(INPUT_POST, 'userLogin', FILTER_SANITIZE_STRING));

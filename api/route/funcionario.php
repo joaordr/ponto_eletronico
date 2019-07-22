@@ -4,7 +4,7 @@ include_once '../autoloader.php';
 
 try {
     $controle = new FuncionarioControle();
-
+    //cria adm
     if (isset($_POST['create_adm'])) {
         $funcionario = new Funcionario();
         $funcionario->setNome(filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING));
@@ -22,7 +22,7 @@ try {
         http_response_code(200);
         die();
     }
-
+    //cria func
     if (isset($_POST['create_func'])) {
         $funcionario = new Funcionario();
         $funcionario->setNome(filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING));
@@ -47,7 +47,7 @@ try {
         http_response_code(200);
         die();
     }
-
+    //atualiza funcionario
     if (isset($_POST['update'])) {
         $funcionario = new Funcionario();
         $funcionario->setNome(filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING));
@@ -65,7 +65,7 @@ try {
         http_response_code(200);
         die();
     }
-
+    //exclui um funcionario
     if (isset($_POST['delete'])) {
         $userId = filter_input(INPUT_POST, 'userId', FILTER_SANITIZE_NUMBER_INT);
         $controle->delete($userId);
@@ -74,6 +74,7 @@ try {
         die();
     }
 
+    //lista os funcionarios
     if (isset($_POST['list_func'])) {
         $empresa = unserialize($_SESSION['empresaLogadoAdmin']);
         $retorno = $controle->listarFuncionarios($empresa->getId());
