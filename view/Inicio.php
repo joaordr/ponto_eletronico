@@ -14,6 +14,7 @@
     <script type="text/javascript" src="resources/js/localization/messages_pt_BR.js"></script>
     <script type="text/javascript" src="resources/js/additional-methods.min.js"></script>
     <script type="text/javascript" src="resources/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="resources/js/validacao/inicio.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="resources/css/inicio.css">
@@ -55,7 +56,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header ">
-                <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Login de Administrador</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                 <span aria-hidden="true">&times;</span>
             </div>
@@ -112,7 +113,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Login de Funcionário</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                 <span aria-hidden="true">&times;</span>
             </div>
@@ -194,6 +195,7 @@
                                     <input type="text" name="emailLogin" id="emailLogin" class="form-control">
                                 </div>
                             </div>
+                            <label for="emailLogin" generated="true" class="error"></label>
                         </div>
                     </div>
                     <div class="row">
@@ -208,6 +210,7 @@
                                 </div>
                                 <span class="badge badge-secondary">Senha de até 10 caracteres.</span>
                             </div>
+                            <label for="senhaLoginCad" generated="true" class="error"></label>
                         </div>
                     </div>
                     <div class="row">
@@ -223,6 +226,7 @@
                                 <small style="color: red; display: none;" id="senhasDiferentesMsg">As senhas devem ser iguais!
                                 </small>
                             </div>
+                            <label for="senhaLoginCon" generated="true" class="error"></label>
                         </div>
                     </div>
                     <div class="row">
@@ -238,6 +242,13 @@
 
 <script type="text/javascript" src="resources/js/request_api.js"></script>
 <script type="text/javascript" src="resources/js_page/inicio.js"></script>
-<script type="text/javascript" src="resources/js/validacao/inicio.js"></script>
 </body>
 </html>
+
+<style type="text/css">
+    label.error{
+        color: #8C1717;
+        font-size: 8pt;
+        text-align: left;
+    }
+</style>
