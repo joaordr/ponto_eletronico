@@ -23,7 +23,7 @@
                                     <input type="text" name="nome" id="nome" class="form-control">                                
                                 </div>
                             </div>
-                            <small id="erroNome"></small>
+                            <label for="nome" generated="true" class="error"></label>
                         </div>
                     </div>
                     <div class="row">
@@ -36,6 +36,7 @@
                                     </div>
                                     <input type="text" name="cpf" id="cpf" class="form-control">
                                 </div>
+                                <label for="cpf" generated="true" class="error"></label>
                             </div>
                         </div>
                         <div class="col">
@@ -48,6 +49,7 @@
                                     <input type="text" name="rg" id="rg" class="form-control">
                                 </div>
                             </div>
+                            <label for="rg" generated="true" class="error"></label>
                         </div>
                     </div>
                     <div class="row">
@@ -61,6 +63,7 @@
                                     <input type="date" name="dtNasc" id="dtNasc" class="form-control">
                                 </div>
                             </div>
+                            <label for="dtNasc" generated="true" class="error"></label>
                         </div>
                         <div class="col">
                             <div class="form-group">
@@ -72,6 +75,7 @@
                                     <input type="text" name="telefone" id="telefone" class="form-control">
                                 </div>
                             </div>
+                            <label for="telefone" generated="true" class="error"></label>
                         </div>
                     </div>
                     <div class="row">
@@ -85,6 +89,7 @@
                                     <input type="email" name="email" id="email" class="form-control">
                                 </div>
                             </div>
+                            <label for="email" generated="true" class="error"></label>
                         </div>
                     </div>
                     <div class="row">
@@ -98,6 +103,7 @@
                                     <input type="text" name="cargo" id="cargo" class="form-control">
                                 </div>
                             </div>
+                            <label for="cargo" generated="true" class="error"></label>
                         </div>
                         <div class="col">
                             <div class="form-group">
@@ -109,6 +115,7 @@
                                     <input type="text" name="setor" id="setor" class="form-control">
                                 </div>
                             </div>
+                            <label for="setor" generated="true" class="error"></label>
                         </div>
                     </div>
                     <div class="row">
@@ -122,6 +129,7 @@
                                     <input type="text" name="nomeUsuario" id="nomeUsuario" class="form-control">
                                 </div>
                             </div>
+                            <label for="nomeUsuario" generated="true" class="error"></label>
                         </div>
                     </div>
                     <div class="row">
@@ -135,6 +143,7 @@
                                     <input type="text" name="senhaFunc" id="senhaFunc" class="form-control">
                                 </div>
                             </div>
+                            <label for="senhaFunc" generated="true" class="error"></label>
                         </div>
                     </div>
                     <div class="row">

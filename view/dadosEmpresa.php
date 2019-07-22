@@ -1,4 +1,6 @@
 <link rel="stylesheet" type="text/css" href="../resources/css/dadosEmpresa.css">
+<script type="text/javascript" src="../resources/jquery_mask/jquery.mask.min.js"></script>
+<script type="text/javascript" src="../resources/js/validacao/dadosEmpresa.js"></script>
 <div class="row">
     <div class="col"></div>
     <div class="col-lg-6">
@@ -56,6 +58,7 @@
                                 <input type="text" name="nome" id="nome" class="form-control">
                             </div>
                           </div>
+                          <label for="nome" generated="true" class="error"></label>
                       </div>
                     </div>
                     <div class="row">
@@ -69,6 +72,7 @@
                                 <input type="text" name="razaoSocial" id="razaoSocial" class="form-control">
                             </div>
                           </div>
+                          <label for="razaoSocial" generated="true" class="error"></label>
                        </div>
                     </div>
                     <div class="row">
@@ -82,6 +86,7 @@
                                 <input type="text" name="cnpj" id="cnpj" class="form-control">
                             </div>
                         </div>
+                        <label for="cnpj" generated="true" class="error"></label>
                        </div>
                     </div>
                     <div class="row">
@@ -96,6 +101,7 @@
                             </div>
                           </div>
                        </div>
+                       <label for="ramo" generated="true" class="error"></label>
                        <div class="col-lg-6 col-md-12">
                           <div class="form-group">
                             <label for="telefone">Telefone</label>
@@ -106,6 +112,7 @@
                                 <input type="text" name="telefone" id="telefone" class="form-control">
                             </div>
                         </div>
+                        <label for="telefone" generated="true" class="error"></label>
                        </div>
                     </div>
                     <div class="row">
@@ -118,4 +125,4 @@
 </div>
 
 <script type="text/javascript" src="../resources/js_page/dadosEmpresa.js"></script>
-<script type="text/javascript" src="../resources/js/validacao/dadosEmpresa.js"></script>
+
