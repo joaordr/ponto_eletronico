@@ -27,6 +27,7 @@ $(document).ready(function () {
         let dados = $(this).serialize() + "&update=true";
         let retorno = request("empresa", dados);
         if (retorno) {
+            alert(retorno);
             load_info();
             $.confirm({
                 columnClass: 'small',

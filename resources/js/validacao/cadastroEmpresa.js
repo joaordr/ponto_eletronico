@@ -4,7 +4,7 @@ $(document).ready(function(){
     $("#cadEmpresa").validate({
           rules: {
             nome: {
-              maxlength: 3,
+              maxlength: 50,
               maxWords: 5,
               depends: function(){
                 $("#nome").css("border", "1px solid #8C1717"); }

@@ -95,11 +95,11 @@
                             <button type="submit" class="btn btn-primary btn-lg btn-block" id="btnEntrar">Entrar</button>
                         </div>
                     </div>
-                    <div class="row">
+                    <!--<div class="row">
                         <div class="col">
                             <button type="button" class="btn btn-secondary btn-lg btn-block" data-toggle="modal" data-target="#modalRegistrarAdm" data-dismiss="modal" id="btnRegistrar">Registrar-se</button>
                         </div>
-                    </div>
+                    </div>-->
                     
                 </form>
             </div>
@@ -159,7 +159,7 @@
 </div>
 
 <!-- Modal login Registrar adm -->
-<div class="modal fade" id="modalRegistrarAdm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<!--<div class="modal fade" id="modalRegistrarAdm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -238,7 +238,7 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->
 
 <script type="text/javascript" src="resources/js/request_api.js"></script>
 <script type="text/javascript" src="resources/js_page/inicio.js"></script>

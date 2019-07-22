@@ -77,15 +77,86 @@
 </div>
 
 <!-- Modal quadro de horarios -->
-<div class="modal fade" id="modalQuadro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
+<div class="modal fade" id="modalQuadro" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header ">
                 <h5 class="modal-title" id="exampleModalLabel">Quadro de Horários</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
             </div>
             <div class="modal-body">
-                <img src="../resources/img/icone.png">
+                <div class="table-responsive">
+                    <table class="table table-hover rounded" id="tabelaQuadro">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Dia da semana</th>
+                                <th scope="col">Entrada 1</th>
+                                <th scope="col">Saida 1</th>
+                                <th scope="col">Entrada 2</th>
+                                <th scope="col">Saida 2</th>
+                                <th scope="col">Entrada 3</th>
+                                <th scope="col">Saida 3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Segunda</th>
+                                <td>08:00 ás 08:10</td>
+                                <td>12:00 ás 12:10</td>
+                                <td>13:00 ás 13:10</td>
+                                <td>17:00 ás 17:10</td>
+                                <td>Hora Extra</td>
+                                <td>Hora extra</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Terça</th>
+                                <td>08:00 ás 08:10</td>
+                                <td>12:00 ás 12:10</td>
+                                <td>13:00 ás 13:10</td>
+                                <td>17:00 ás 17:10</td>
+                                <td>Hora Extra</td>
+                                <td>Hora extra</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Quarta</th>
+                                <td>08:00 ás 08:10</td>
+                                <td>12:00 ás 12:10</td>
+                                <td>13:00 ás 13:10</td>
+                                <td>17:00 ás 17:10</td>
+                                <td>Hora Extra</td>
+                                <td>Hora extra</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Quinta</th>
+                                <td>08:00 ás 08:10</td>
+                                <td>12:00 ás 12:10</td>
+                                <td>13:00 ás 13:10</td>
+                                <td>17:00 ás 17:10</td>
+                                <td>Hora Extra</td>
+                                <td>Hora extra</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Sexta</th>
+                                <td>08:00 ás 08:10</td>
+                                <td>12:00 ás 12:10</td>
+                                <td>13:00 ás 13:10</td>
+                                <td>17:00 ás 17:10</td>
+                                <td>Hora Extra</td>
+                                <td>Hora extra</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Sábado</th>
+                                <td>08:00 ás 08:10</td>
+                                <td>12:00 ás 12:10</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>

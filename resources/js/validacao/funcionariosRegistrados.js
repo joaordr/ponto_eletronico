@@ -7,7 +7,7 @@ $(document).ready(function(){
         rules:{
             nome: {
                 required: true,
-                maxlength: 3,
+                maxlength: 80,
                 depends: function(){
                     $("#nome").css("border", "1px solid #8C1717"); }
             },
