@@ -8,49 +8,33 @@ $(document).ready(function(){
             nome: {
                 required: true,
                 maxlength: 80,
-                depends: function(){
-                    $("#nome").css("border", "1px solid #8C1717"); }
             },
             cpf: {
                 cpfBR: true,
                 required: true,
-                depends: function(){
-                    $("#cpf").css("border", "1px solid #8C1717"); }
             },
             rg:{
                 required: true,
-                depends: function(){
-                    $("#rg").css("border", "1px solid #8C1717"); }
             },
             dtNasc:{
                 required: true,
                 date: true,
-                depends: function(){
-                    $("#dtNasc").css("border", "1px solid #8C1717"); }
             },
             email:{
                 required: true,
                 email: true,
-                depends: function(){
-                    $("#email").css("border", "1px solid #8C1717"); }
             },
             telefone:{
                 required: true,
                 maxlength: 14,
-                depends: function(){
-                    $("#telefone").css("border", "1px solid #8C1717"); }
             },
             cargo:{
                 required: true,
                 maxlength: 100,
-                depends: function(){
-                    $("#cargo").css("border", "1px solid #8C1717"); }
             },
             setor:{
                 required: true,
                 maxlength: 100,
-                depends: function(){
-                    $("#setor").css("border", "1px solid #8C1717"); }
             }
         },
         messages: {

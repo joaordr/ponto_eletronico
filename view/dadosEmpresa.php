@@ -1,8 +1,8 @@
 <link rel="stylesheet" type="text/css" href="../resources/css/dadosEmpresa.css">
 <script type="text/javascript" src="../resources/jquery_mask/jquery.mask.min.js"></script>
 <script type="text/javascript" src="../resources/js/validacao/dadosEmpresa.js"></script>
-<script type="text/javascript" src="../resources/js/pace.min.js"></script>
-<link rel="stylesheet" type="text/css" href="../resources/css/pace.css">
+<!--<script type="text/javascript" src="../resources/js/pace.min.js"></script>-->
+<!--<link rel="stylesheet" type="text/css" href="../resources/css/pace.css">-->
 
 
 <div class="row">
@@ -104,6 +104,7 @@
                                 <input type="text" name="ramo" id="ramo" class="form-control">
                             </div>
                           </div>
+                          <label for="ramo" generated="true" class="error"></label>
                        </div>
                        <label for="ramo" generated="true" class="error"></label>
                        <div class="col-lg-6 col-md-12">
@@ -120,7 +121,7 @@
                        </div>
                     </div>
                     <div class="row">
-                        <button type="submit" class="btn btn-primary btn-block">Alterar dados</button>
+                        <button type="submit" class="btn btn-primary">Alterar dados</button>
                     </div>   
                   </form>
             </div>

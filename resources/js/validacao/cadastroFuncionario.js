@@ -7,49 +7,53 @@ $(document).ready(function () {
         rules:{
             nome: {
                 required: true,
-                maxlength: 3
+                maxlength: 80,
             },
             cpf: {
                 cpfBR: true,
-                required: true
+                required: true,
             },
             rg:{
-                required: true
+                required: true,
             },
             dtNasc:{
                 required: true,
-                date: true
+                date: true,
             },
             email:{
                 required: true,
-                email: true
+                email: true,
             },
             telefone:{
                 required: true,
-                maxlength: 14
+                maxlength: 14,
             },
             cargo:{
                 required: true,
-                maxlength: 100
+                maxlength: 100,
             },
             setor:{
                 required: true,
-                maxlength: 100
+                maxlength: 100,
             },
             nomeUsuario:{
                 required: true,
-                maxlength: 100
+                maxlength: 100,
+                depends: function(){
+                    $("#nomeUsuario").css("border", "1px solid #8C1717"); }
             },
             senhaFunc:{
                 required: true,
-                maxlength: 10
+                maxlength: 10,
+                depends: function(){
+                    $("#senhaFunc").css("border", "1px solid #8C1717"); }
 
             }
         },
         messages: {
             nome: {
                 required: "Campo Obrigatório",
-                maxlength: "O campo pode ter no máximo 3 caracteres",
+                maxlength: "O campo pode ter no máximo 80 caracteres",
             },
             cpf: {
                 required: "Campo Obrigatório",

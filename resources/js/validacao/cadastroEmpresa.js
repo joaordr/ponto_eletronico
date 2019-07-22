@@ -6,33 +6,23 @@ $(document).ready(function(){
             nome: {
               maxlength: 50,
               maxWords: 5,
-              depends: function(){
-                $("#nome").css("border", "1px solid #8C1717"); }
             },
             razaoSocial: {
               required: true,
               maxlength: 80,
               maxWords: 5,
-              depends: function(){
-                $("#razaoSocial").css("border", "1px solid #8C1717"); }
             },
             cnpj: {
               required: true,
               cnpjBR: true,
-              depends: function(){
-                $("#cnpj").css("border", "1px solid #8C1717"); }
             }, 
             ramo: {
               maxlength: 100,
               maxWords: 5,
-              depends: function(){
-                $("#ramo").css("border", "1px solid #8C1717"); }
             },
             telefone: {
               required: true,
               maxlength: 14,
-              depends: function(){
-                $("#telefone").css("border", "1px solid #8C1717"); }
             }
           },
           messages: {
