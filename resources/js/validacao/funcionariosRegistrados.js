@@ -10,7 +10,7 @@ $(document).ready(function(){
                 maxlength: 80,
             },
             cpf: {
-                cpfBR: true,
+                minlength: 14,
                 required: true,
             },
             rg:{
@@ -26,7 +26,7 @@ $(document).ready(function(){
             },
             telefone:{
                 required: true,
-                maxlength: 14,
+                minlength: 14,
             },
             cargo:{
                 required: true,
@@ -44,7 +44,7 @@ $(document).ready(function(){
             },
             cpf: {
                 required: "Campo Obrigatório",
-                cpfBR: "Informe um cpf válido"
+                maxlength: "Informe um cpf válido"
             },
             rg:{
                 required: "Campo Obrigatório",

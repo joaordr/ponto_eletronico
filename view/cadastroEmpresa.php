@@ -29,7 +29,7 @@
         <div class="col-lg-6">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h5>Cadastre de empresa</h5>
+                    <h5>Cadastro de empresa</h5>
                 </div>
                 <div class="panel-body">
                     <form name="cadEmpresa" id="cadEmpresa" method="POST">

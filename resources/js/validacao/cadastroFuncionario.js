@@ -10,7 +10,7 @@ $(document).ready(function () {
                 maxlength: 80,
             },
             cpf: {
-                cpfBR: true,
+                minlength: 14,
                 required: true,
             },
             rg:{
@@ -26,7 +26,7 @@ $(document).ready(function () {
             },
             telefone:{
                 required: true,
-                maxlength: 14,
+                minlength: 14,
             },
             cargo:{
                 required: true,
@@ -39,14 +39,10 @@ $(document).ready(function () {
             nomeUsuario:{
                 required: true,
                 maxlength: 100,
-                depends: function(){
-                    $("#nomeUsuario").css("border", "1px solid #8C1717"); }
             },
             senhaFunc:{
                 required: true,
                 maxlength: 10,
-                depends: function(){
-                    $("#senhaFunc").css("border", "1px solid #8C1717"); }
 
             }
         },
@@ -57,7 +53,7 @@ $(document).ready(function () {
             },
             cpf: {
                 required: "Campo Obrigatório",
-                cpfBR: "Informe um cpf válido"
+                minlength: "Informe um cpf válido"
             },
             rg:{
                 required: "Campo Obrigatório",
@@ -72,7 +68,7 @@ $(document).ready(function () {
             },
             telefone:{
                 required: "Campo Obrigatório",
-                maxlength: "O campo pode ter no máximo 14 caracteres",
+                minlength: "O campo pode ter no máximo 14 caracteres",
             },
             cargo:{
                 required: "Campo Obrigatório",

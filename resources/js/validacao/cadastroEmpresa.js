@@ -14,7 +14,7 @@ $(document).ready(function(){
             },
             cnpj: {
               required: true,
-              cnpjBR: true,
+              minlength: 18,
             }, 
             ramo: {
               maxlength: 100,
@@ -22,7 +22,7 @@ $(document).ready(function(){
             },
             telefone: {
               required: true,
-              maxlength: 14,
+              minlength: 14,
             }
           },
           messages: {
@@ -37,7 +37,7 @@ $(document).ready(function(){
             },
             cnpj: {
               required: "Campo obrigatório",
-              cnpjBR: "Digite um cnpj válido"
+              minlength: "Digite um cnpj válido"
             }, 
             ramo: {
               maxlength: "O campo pode ter no máximo 100 caracteres",
@@ -45,7 +45,7 @@ $(document).ready(function(){
             },
             telefone: {
               required: "Campo obrigatório",
-              maxlength: "Informe um número de telefone valido"
+              minlength: "Informe um número de telefone valido"
             }
           }
         })

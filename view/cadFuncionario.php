@@ -3,7 +3,7 @@
 <head>
     <title>Administrador</title>
     <link rel="icon" type="imagem/png" href="../resources/img/icone.png"/>
-	<title>Cadastro de Administrador</title>
+	 <title>Cadastro de Administrador</title>
 	<link rel="icon" type="imagem/png" href="../resources/img/icone.png" />
     <!-- Required meta tags -->
     <meta charset="utf-8">
